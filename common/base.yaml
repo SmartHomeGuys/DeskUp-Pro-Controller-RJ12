@@ -1,1 +1,493 @@
+#substitutions that can be used in the main yaml:
+  #name                  e.g. "office-desk-controller"
+  #friendly_name         e.g. "Office Desk Controller"
+  #desk_min_height       e.g. "62"
+  #desk_max_height       e.g. "126"
+  #tx_pin                e.g. "GPIO13"
+  #tx_pin                e.g. "GPIO12"
 
+esphome:
+  name: ${name}
+  friendly_name: ${friendly_name}
+  project:
+    name: SmartHomeGuys.RJ12 Standing Desk Controller
+    version: "2.0.0.0"
+  on_boot:
+    priority: 800
+    then:
+      - uart.write: [0xf1, 0xf1, 0x07,0x00,0x07,0x7e,0xf1, 0xf1, 0x08,0x00,0x08,0x7e,0xf1, 0xf1, 0x09,0x00,0x09,0x7e,0xf1, 0xf1, 0x0c,0x00,0x0c,0x7e,0xf1, 0xf1, 0x0e,0x00,0x0e,0x7e]
+      - script.execute: script_idle_timer_tick
+
+esp32:
+  board: esp32-s3-devkitc-1
+  framework:
+    type: arduino
+
+#logger:
+  #loglevel:  e.g. NONE, ERROR, WARN, INFO, DEBUG, VERBOSE, VERY_VERBOSE
+
+wifi:
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Office-Desk-Controller"
+    password: "1234567890"
+
+# After 1 minute of unsuccessful WiFi connection attempts, the 
+# ESP will start a WiFi hotspot using the above ssid/password which can be used to update wifi connection details.
+captive_portal:
+
+# For configuring Wi-Fi on an ESPHome device by using a serial connection to the device, eg. USB.
+improv_serial:
+
+# For configuring Wi-Fi on an ESP32 device by using Bluetooth Low Energy (BLE) to receive the credentials.
+esp32_improv:
+  authorizer: none
+
+uart:
+  - id: uart_bus
+    tx_pin: ${tx_pin}    # Yellow wire (was GPI01 now GPIO13)
+    rx_pin: ${rx_pin}    # Red wire (was GPIO4 now GPIO12)
+    baud_rate: 9600
+    debug:
+      direction: BOTH
+      dummy_receiver: true    # Needed for the code in the lambda section below to execute
+      after:
+        delimiter: [0x7E] 
+      sequence:
+        - lambda: |-
+            if("${log_level}" == "VERBOSE") {
+              UARTDebug::log_string(direction, bytes);     // defaults to hex
+              //UARTDebug::log_int(direction, bytes, ',');
+              UARTDebug::log_hex(direction, bytes, ',');
+              //ESP_LOGD("custom", "Bytes size: %d", bytes.size());       // Logs how many bytes in the message, useful for protocol and message identification.
+            }
+
+            if (direction == UART_DIRECTION_RX) 
+            {
+              if (bytes.size() == 9)      // Only parse messages with 9 bytes.
+              {
+                // Check that it is a height message (byte 2 should be 0x01)
+                if (bytes[0] == 0xF2 && bytes[1] == 0xF2 && bytes[2] == 0x01 && bytes[8] == 0x7E) 
+                {
+                  // Desk changed height
+                  double height = ((bytes[4] * 256) + bytes[5]) /10.0; 
+                  id(number_deskHeight).publish_state(height);
+                }
+              }
+              else if (bytes.size() == 8)    // Only parse messages with 8 bytes.
+              {
+                if (bytes[0] == 0xF2 && bytes[1] == 0xF2 && bytes[7] == 0x7E)
+                {
+                  byte command = bytes[2];
+                  double height = ((bytes[4] * 256) + bytes[5]) /10.0;
+                  
+                  // Check that it is a preset height message (byte 2 should be one of: 0x25, 0x26, 0x27, 0x28)
+                  if(command == 0x25)
+                    id(sensor_deskm1).publish_state(height);
+                  else if(command == 0x26)
+                    id(sensor_deskm2).publish_state(height);
+                  else if(command == 0x27)
+                    id(sensor_deskm3).publish_state(height);
+                  else if(command == 0x28)
+                    id(sensor_deskm4).publish_state(height);
+                }
+              }
+            }
+
+globals:
+  - id: seconds_idle_counter
+    type: long
+    restore_value: no
+    initial_value: "0"
+
+time:
+  - platform: homeassistant
+    id: my_time
+
+script:
+  # Increment idle counter by 1 second every second
+  - id: script_idle_timer_tick
+    mode: queued
+    then:
+      - delay: 1s
+      - lambda: |-
+          id(seconds_idle_counter) += 1;
+          id(script_idle_timer_tick).execute();   // call itself again (essentially an infinate loop)
+
+  # Reset idle counter value to 0
+  - id: script_idle_timer_reset
+    mode: single
+    then:
+      - lambda: |-
+          id(seconds_idle_counter) = 0;
+  
+  # Move the desk to the specified height (in cm)
+  - id: script_set_Desk_Height
+    parameters:
+      newHeight_cm: int   # in cm
+    mode: single
+    then:
+      - logger.log: "Set desk height method started"
+      - uart.write: 
+          data: !lambda |-
+            int height_mm = static_cast<int>(newHeight_cm * 10);      // Convert cm to mm
+            std::vector<uint8_t> bArr(8);
+            bArr[0] = 0xF1;
+            bArr[1] = 0xF1;
+            bArr[2] = 0x1B;
+            bArr[3] = 0x02; 
+            bArr[4] = static_cast<uint8_t>(height_mm / 256);
+            bArr[5] = static_cast<uint8_t>(height_mm % 256);
+            bArr[6] = static_cast<uint8_t>((bArr[2] + bArr[3] + bArr[4] + bArr[5]) % 256);   // Calculate checksum 
+            bArr[7] = 0x7E;
+            return bArr;
+
+            //ESP_LOGD("custom", "started TEST");
+            //int a= (int(newHeight *10) & 0xff);
+            //int b= ((int(newHeight *10) >> 8) & 0xff);
+            //int c= (a+b+0x80+0x02) & 0xff;
+            //ESP_LOGD("custom", "started TEST2");
+            //return {0xf1, 0xf1, 0x80, 2, static_cast<unsigned char>(b), static_cast<unsigned char>(a), static_cast<unsigned char>(c), 0x7e, 0xf1, 0xf1, 0x1b, 0x00, 0x1b, 0x7e};
+      - logger.log: "Set desk height method finished"
+
+
+    # Move the desk to the specified height (in percent)
+  - id: script_set_Desk_Height_In_Percent
+    parameters:
+      heightPercentage: int  # 0 to 100 percent
+    mode: single
+    then:
+      - lambda: |-
+          // Calculate the height in cm given a percentage value
+          int minHeight = (int) id(number_deskMinHeight).state;
+          //int minHeight = ${desk_min_height};
+          int maxHeight = (int) id(number_deskMaxHeight).state;
+          //int maxHeight = ${desk_max_height};
+          int heightDiff = maxHeight - minHeight;
+          float heightInPercent = float(heightPercentage) / 100.0;
+          float heightInCm = (heightDiff * heightInPercent) + minHeight;
+          float value = round(heightInCm);
+          ESP_LOGD("custom", "Setting height to: %f cm from %d percent. minheight:%d, maxheight:%d, diff:%d, heightinpercent:%f", value, heightPercentage, minHeight, maxHeight, heightDiff, heightInPercent);
+          id(script_set_Desk_Height).execute(value);
+
+
+  # Convert the desk height cm into percent then update the sensor_deskheightpercent value
+  - id: script_update_deskheightpercent_sensor
+    mode: single
+    then:
+      - lambda: |-
+          float height = id(number_deskHeight).state;
+          int minHeight = ${desk_min_height};
+          int maxHeight = ${desk_max_height};
+
+          if (id(number_deskMinHeight).has_state() && !std::isnan(id(number_deskMinHeight).state)) {
+            //Override min height with value from input field (if available)
+            minHeight = (int) id(number_deskMinHeight).state;
+          }
+
+          if (id(number_deskMaxHeight).has_state() && !std::isnan(id(number_deskMaxHeight).state)) {
+            //Override max height with value from input field (if available)
+            maxHeight = (int) id(number_deskMaxHeight).state;
+          }
+
+          float value = 100 * (height - minHeight) / (maxHeight - minHeight);
+          float roundedValue = ceilf(value);
+          ESP_LOGD("custom", "Updating sensor desk height percent to: %f, height is: %f, rounded: %f", value, height, roundedValue);
+          id(sensor_deskheightpercent).publish_state(roundedValue);
+
+
+sensor:
+  # Display the desk height in cm
+  # The value is populated from the number_deskheight control when its value changes
+  - platform: template
+    name: "Desk Height"
+    id: "sensor_deskheight"
+    unit_of_measurement: "cm"
+    icon: mdi:human-male-height-variant
+    update_interval: never
+
+  # Display the desk height in percent
+  # The value is populated from the number_deskheight control when its value changes
+  # which then executes the update_deskheightpercent_sensor script 
+  - platform: template
+    name: "Desk Height Percent"
+    id: "sensor_deskheightpercent"
+    unit_of_measurement: "%"
+    icon: mdi:human-male-height-variant
+    update_interval: never
+
+  # 4 sensors which show the desk preset height value (M1, M2, M3, M4)
+  # The values for these are populated from the uart dummy receiver lambda
+  - platform: template
+    name: "Desk M1 Height"
+    id: "sensor_deskm1"
+    icon: mdi:numeric-1-circle-outline
+
+  - platform: template
+    name: "Desk M2 Height"
+    id: "sensor_deskm2"
+    icon: mdi:numeric-2-circle-outline
+
+  - platform: template
+    name: "Desk M3 Height"
+    id: "sensor_deskm3"
+    icon: mdi:numeric-3-circle-outline
+
+  - platform: template
+    name: "Desk M4 Height"
+    id: "sensor_deskm4"
+    icon: mdi:numeric-4-circle-outline
+
+  # Display desk idle time (in seconds) which can then be used in homeassistant  automations
+  # The value for this is populated when the 'Idle Timestamp' text_sensor's value changes
+  - platform: template
+    name: "Idle Time"
+    id: "sensor_desk_idle_time"
+    unit_of_measurement: "s"
+    device_class: "duration"
+    icon: mdi:progress-clock
+    update_interval: never
+
+  # Display the ESP32 device total uptime
+  - platform: uptime
+    type: timestamp
+    name: "ESP32 Uptime"
+    id: "sensor_deviceuptime"
+
+
+text_sensor:
+  # Display desk idle time as 'days and timestamp', for use on homeassistant dashboards
+  # Shows days only if days are > 0
+  # Output format: 2 days, 04:45:02 or just 04:45:02 (if days is 0)
+  - platform: template
+    name: "Idle Timestamp"
+    id: "sensor_desk_idle_timestamp"
+    icon: mdi:progress-clock
+    on_value:
+      then:
+        # Also updates the seconds sensor (deskidletime) when this sensors value changes
+        # which keeps the 2 sensors in perfect synch
+        - lambda: |-
+            int seconds = (int) id(seconds_idle_counter);
+            id(sensor_desk_idle_time).publish_state(seconds);
+    
+    # Calculate the days/timestamp string for this text sensor to display
+    lambda: |-
+      int seconds = (int) id(seconds_idle_counter);
+      int days = seconds / (24 * 3600);
+      seconds = seconds % (24 * 3600);
+      int hours = seconds / 3600;
+      seconds = seconds % 3600;
+      int minutes = seconds /  60;
+      seconds = seconds % 60;
+
+      std::string daystr = "";
+      if(days) {
+        daystr = to_string(days) + " days, ";
+      }
+
+      return (std::string)str_sprintf("%s%02d:%02d:%02d", daystr.c_str(), hours, minutes, seconds);         
+    update_interval: 1s
+
+
+button:
+  # Button in homeassistant to reset the idle counter to 0. 
+  # Can be used in a homeassistant automation
+  #   e.g. if the desk is low and you walk into the room restart the desk idle timer
+  - platform: template
+    name: "Reset Idle Timer"
+    icon: mdi:progress-clock
+    disabled_by_default: False
+    on_press: 
+      then:
+        - logger.log: Reset Idle Timer Pressed
+        - script.execute: script_idle_timer_reset
+
+  # 2 buttons that nudge the desk up or down by 1cm
+  - platform: template
+    name: "Desk Nudge Up"
+    id: "button_nudgedeskup"
+    icon: mdi:arrow-up-bold-circle-outline
+    on_press:
+      then:
+        - logger.log: UP Pressed
+        - uart.write: [0xf1, 0xf1, 0x01,0x00,0x01,0x7e]
+  
+  - platform: template
+    name: "Desk Nudge Down"
+    id: "button_nudgedeskdown"
+    icon: mdi:arrow-down-bold-circle-outline
+    on_press:
+      then:
+        - logger.log: DOWN Pressed
+        - uart.write: [0xf1, 0xf1, 0x02,0x00,0x02,0x7e]      
+  
+  # 4 buttons that do the same as pressing the desk controller preset buttons (M1, M2, M3, M4)
+  - platform: template
+    name: "Desk M1"
+    id: "button_desk_m1"
+    icon: mdi:numeric-1-circle-outline
+    on_press:
+      then:
+        - logger.log: M1 Pressed
+        - uart.write: [0xf1, 0xf1, 0x05,0x00,0x05,0x7e]
+  
+  - platform: template
+    name: "Desk M2"
+    id: "button_desk_m2"
+    icon: mdi:numeric-2-circle-outline
+    on_press:
+      then:
+        - logger.log: M2 Pressed
+        - uart.write: [0xf1, 0xf1, 0x06,0x00,0x06,0x7e]  
+  
+  - platform: template 
+    name: "Desk M3"
+    id: "button_desk_m3"
+    icon: mdi:numeric-3-circle-outline
+    on_press: 
+      then:
+        - logger.log: M3 Pressed 
+        - uart.write: [0xF1, 0xF1, 0x27, 0x00, 0x27, 0x7E]
+  
+  - platform: template
+    name: "Desk M4"
+    id: "button_desk_m4"
+    icon: mdi:numeric-4-circle-outline
+    on_press:
+      then:
+        - logger.log: M4 Pressed
+        - uart.write: [0xf1, 0xf1, 0x28,0x00,0x28,0x7e]
+
+  # ESP32 Reboot button
+  - platform: restart
+    name: "ESP32 Restart"
+    entity_category: diagnostic
+    disabled_by_default: false
+    device_class: restart
+    
+
+cover:
+  - platform: template
+    name: "Min/Max Slider"
+    id: "cover_desk_control"
+    has_position: true   #shows its position (not just open/closed)
+    assumed_state: true  #show open and close buttons in the ui
+    open_action:
+      then:
+        - logger.log: "Cover opening"
+        - script.execute: 
+            id: script_set_Desk_Height_In_Percent
+            heightPercentage: 100
+
+    close_action:
+      then:
+        - logger.log: "Cover closing"
+        - script.execute: 
+            id: script_set_Desk_Height_In_Percent
+            heightPercentage: 0
+
+    # Moves the desk to the covers slider position (in percent)
+    # The upper and lower limits for this control use the values specified in the open_action and close_action above
+    position_action: 
+      then:
+        - logger.log: 
+            format: "Moving desk to position %.2f" 
+            args: ["pos"]   # e.g. 0.51
+
+        # pos variable returns a value between 0.0 and 1.0
+        # need to convert it into a 0 to 100 percentage value
+        - lambda: |-
+            int newHeightPercent = pos * 100;
+            id(script_set_Desk_Height_In_Percent).execute(newHeightPercent);
+
+    lambda: !lambda |-
+      int currentHeightPercent = (int) id(sensor_deskheightpercent).state;
+      if(currentHeightPercent == 100)
+        return COVER_OPEN;
+      else if(currentHeightPercent == 0)
+        return COVER_CLOSED;
+      else {
+        // Cover would be partially open so we return the height value which must be between 0.0 and 1.0
+        return currentHeightPercent / 100.0;
+      }
+
+
+# This control is not exposed to homeassistant as using the cover control instead
+# But this is used to store the desk height in cm
+number:
+  - platform: template
+    name: "Desk Height"
+    id: "number_deskHeight"
+    min_value: ${desk_min_height}
+    max_value: ${desk_max_height}
+    step: 0.1
+    unit_of_measurement: "cm"
+    mode: slider
+    internal: true    # dont expose to Homeassistant as a control
+    on_value:
+      then:
+        # Update the 2 height sensors (cm) and percent (%) with the new height value
+        # And reset the desk idle counter back to 0
+        - lambda: |-
+            id(sensor_deskheight).publish_state(x);
+            id(script_update_deskheightpercent_sensor).execute();
+            id(script_idle_timer_reset).execute();
+    set_action:
+      # When moving the slider in the ui move the desk to that height
+      - script.execute: 
+          id: script_set_Desk_Height
+          newHeight_cm: !lambda 'return x;'
+
+  # Text box to manually change the minimum desk height value (in cm)
+  - platform: template
+    name: "Min Height"
+    id: "number_deskMinHeight"
+    unit_of_measurement: "cm"
+    min_value: 62
+    max_value: 126
+    step: 1
+    initial_value: ${desk_min_height}
+    mode: box
+    update_interval: never
+    optimistic: true
+    restore_value: true
+    icon: "mdi:desk"
+    entity_category: config   
+    on_value:
+      then:
+        # Update the desk height number control with the new min value entered
+        lambda: |
+          id(number_deskHeight)->traits.set_min_value(x);
+          id(script_update_deskheightpercent_sensor).execute();
+
+  # Text box to manually change the maximum desk height value (in cm)
+  - platform: template
+    name: "Max Height"
+    id: "number_deskMaxHeight"
+    unit_of_measurement: "cm"
+    min_value: 62
+    max_value: 126
+    step: 1
+    initial_value: ${desk_max_height}
+    mode: box
+    update_interval: never
+    optimistic: true
+    restore_value: true
+    icon: "mdi:desk"
+    entity_category: config
+    on_value:
+      then:
+        # Update the desk height number control with the new max value entered
+        lambda: |
+          id(number_deskHeight)->traits.set_max_value(x);
+          id(script_update_deskheightpercent_sensor).execute();
+
+light:
+  - platform: neopixelbus
+    variant: WS2812
+    type: RGB
+    pin: GPIO21
+    num_leds: 1
+    name: "ESP32 LED"
+    restore_mode: ALWAYS_OFF

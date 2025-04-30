@@ -26,11 +26,17 @@ esp32:
 #logger:
   #loglevel:  e.g. NONE, ERROR, WARN, INFO, DEBUG, VERBOSE, VERY_VERBOSE
 
+api:
+   # No encryption key should be added when flashed for distribution
+
+ota:
+  platform: esphome
+
 wifi:
-  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  # Dont add wifi details, just Enable fallback hotspot (captive portal to allow wifi setup for users)
   ap:
-    ssid: "Office-Desk-Controller"
-    password: "1234567890"
+    ssid: "Standing-Desk-Controller"
+    password: "12345678"
 
 # After 1 minute of unsuccessful WiFi connection attempts, the 
 # ESP will start a WiFi hotspot using the above ssid/password which can be used to update wifi connection details.
@@ -43,6 +49,12 @@ improv_serial:
 esp32_improv:
   authorizer: none
 
+dashboard_import:
+  package_import_url: github://SmartHomeGuys/ESP32-RJ12-Standing-Desk-Controller/standing-desk-controller.yaml@main
+  import_full_config: false
+
+
+# Desk code begins
 uart:
   - id: uart_bus
     tx_pin: ${tx_pin}    # Yellow wire (was GPI01 now GPIO13)
@@ -101,8 +113,10 @@ globals:
     initial_value: "0"
 
 time:
-  - platform: homeassistant
-    id: my_time
+  #- platform: homeassistant
+   # id: ha_time
+  - platform: sntp
+    id: sntp_time
 
 script:
   # Increment idle counter by 1 second every second

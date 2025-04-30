@@ -1,6 +1,6 @@
 substitutions:
-  name: "office-desk-controller"
-  friendly_name: "Office Desk Controller"
+  name: "standing-desk-controller"
+  friendly_name: "Standing Desk Controller"
   tx_pin: "GPIO13"
   rx_pin: "GPIO12"
   
@@ -28,7 +28,3 @@ logger:
 #    name: Everything Presence Lite Firmware
 #    source: https://everythingsmarthome.github.io/everything-presence-lite/everything-presence-lite-ha-co2-manifest.json
 #    disabled_by_default: true
-
-dashboard_import:
-  package_import_url: github://SmartHomeGuys/ESP32-RJ12-Standing-Desk-Controller/office-desk-controller.yaml@main
-  import_full_config: false

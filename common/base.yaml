@@ -49,9 +49,9 @@ improv_serial:
 esp32_improv:
   authorizer: none
 
-dashboard_import:
-  package_import_url: github://SmartHomeGuys/ESP32-RJ12-Standing-Desk-Controller/standing-desk-controller.yaml@main
-  import_full_config: false
+# dashboard_import:
+#   package_import_url: github://SmartHomeGuys/ESP32-RJ12-Standing-Desk-Controller/standing-desk-controller.yaml@main
+#   import_full_config: false
 
 
 # Desk code begins

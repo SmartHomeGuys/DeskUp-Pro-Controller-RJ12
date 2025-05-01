@@ -35,7 +35,7 @@ ota:
 wifi:
   # Dont add wifi details, just Enable fallback hotspot (captive portal to allow wifi setup for users)
   ap:
-    ssid: "Standing-Desk-Controller"
+    ssid: "Standing-Desk"
     password: "12345678"
 
 # After 1 minute of unsuccessful WiFi connection attempts, the 

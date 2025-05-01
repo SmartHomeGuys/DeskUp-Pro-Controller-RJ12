@@ -1,9 +1,8 @@
-# This file is used by HomeAssistant for devices that are not Adopted in ESPHome. 
 substitutions:
   name: "standing-desk-controller"
   friendly_name: "Standing Desk Controller"
   tx_pin: "GPIO13"
-  rx_pin: "GPIO2"
+  rx_pin: "GPIO12"
   
   #Default to the physical Min and Max height limits for a 
   #Maidesite TH2 Plus Art desk which are the lowest/highest

@@ -1,8 +1,8 @@
 # Making a Maidesite Standing Desk Smart
 
-This is a device that allows you to control your Maidesite standing desk from Home Assistant. 
+This is a device that simply plugs into the Maidesite desk controllers RJ12 port which then allows you to control your standing desk from Home Assistant. 
 
-It simply plugs into the desk controllers RJ12 port and after connecting it to your home's Wi-Fi will appear in Home Assistant as a device allowing you to control your desk from your phone or from automations.  
+After plugging it into the desks RJ12 port and connecting it to your home's Wi-Fi it will appear in Home Assistant as a device allowing you to control your desk from your phone or from automations.  
 
 All the existing functionality of the desks controller is retained. In fact when you use the desk controller to move the desk it's height is updated in Home Assistant.
 
@@ -30,16 +30,16 @@ However if you'd like to get a device pre-built, in a box and ready to go you ca
 ### ADD EBAY LINK
 
 #### ⚠️ Check Compatibility before you buy
-Your Maidesite desk must have a free RJ12 port on the controller.
-There is no guarantee that even if it does that this device will work with your desk due to the different models out there. and the desk manufacturer can change their specifications at anytime even with the same model number.
+- Your Maidesite desk must have a free RJ12 port on the controller.
+- There is no guarantee that this device will work with your desk due to the different models out there. and the desk manufacturer can change their specifications at anytime even with the same model number.
+- As this is a product of reverse engineering, until you try it on your desk there is no way to be 100% certain that it will or won't work.
+- The credit goes to the community of people who collaborated to reverse engineer the Maidesite desk controller
 
+LIST OF DESKS HERE
 
+You should understand this risk before purchasing as its your responsibility to determine if its fit for your purpose. The credit community helped build
 
-Since this is a product of reverse engineering, there is no way to be 100% certain that a desk model will or won't work without testing it yourself.
-
-A list of control box models which community members have tested is available here. While the existence of your control box on this list significantly increases the likelihood that it will work, it's not guaranteed since manufacturers may silently make revisions or other incompatible changes while keeping the same model number.
-
-You should understand this risk before purchasing. It is your responsibility to read the documentation to determine whether or not may be fit for your purpose. If you have any questions, please contact me and I will be happy to help!
+If you have any questions, please contact me and I will be happy to help!
 
 
 ### Instructions

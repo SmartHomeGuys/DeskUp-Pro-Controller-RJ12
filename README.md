@@ -29,6 +29,19 @@ However if you'd like to get a device pre-built, in a box and ready to go you ca
 
 ### ADD EBAY LINK
 
+#### ⚠️ Check Compatibility before you buy
+Your Maidesite desk must have a free RJ12 port on the controller.
+There is no guarantee that even if it does that this device will work with your desk due to the different models out there. and the desk manufacturer can change their specifications at anytime even with the same model number.
+
+
+
+Since this is a product of reverse engineering, there is no way to be 100% certain that a desk model will or won't work without testing it yourself.
+
+A list of control box models which community members have tested is available here. While the existence of your control box on this list significantly increases the likelihood that it will work, it's not guaranteed since manufacturers may silently make revisions or other incompatible changes while keeping the same model number.
+
+You should understand this risk before purchasing. It is your responsibility to read the documentation to determine whether or not may be fit for your purpose. If you have any questions, please contact me and I will be happy to help!
+
+
 ### Instructions
 Build one yourself TODO
 

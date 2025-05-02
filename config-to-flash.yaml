@@ -1,19 +1,6 @@
 substitutions:
   name: "standing-desk-controller"
   friendly_name: "Standing Desk Controller"
-  tx_pin: "GPIO13"
-  rx_pin: "GPIO12"
-  
-  #Default to the physical Min and Max height limits for a 
-  #Maidesite TH2 Plus Art desk which are the lowest/highest
-  #height range of all Maidesite desks. 
-  #But you can override these using the 2 text boxes.
-  #Which should either match your desk physical min/max height limit
-  #or just be set to the min/max desk height you will use.
-  #The cover/slider control will then be constrained to these min/max values.
-  #Desk presets and nudge buttons are not constrained to these.
-  desk_min_height: "62"
-  desk_max_height: "126"
 
 packages:
   #device_base: github://SmartHomeGuys/ESP32-RJ12-Standing-Desk-Controller/common/base.yaml@main

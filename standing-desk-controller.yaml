@@ -1,8 +1,8 @@
 substitutions:
   name: "standing-desk-controller"
   friendly_name: "Standing Desk Controller"
-  tx_pin: "GPIO13"
-  rx_pin: "GPIO12"
+  #tx_pin: "GPIO13"
+  #rx_pin: "GPIO12"
   
   #Default to the physical Min and Max height limits for a 
   #Maidesite TH2 Plus Art desk which are the lowest/highest
@@ -12,8 +12,8 @@ substitutions:
   #or just be set to the min/max desk height you will use.
   #The cover/slider control will then be constrained to these min/max values.
   #Desk presets and nudge buttons are not constrained to these.
-  desk_min_height: "62"
-  desk_max_height: "126"
+  #desk_min_height: "62"
+  #desk_max_height: "126"
 
 packages:
   device_base: !include common/base.yaml

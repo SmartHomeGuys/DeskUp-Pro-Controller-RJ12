@@ -13,6 +13,13 @@ packages:
 logger:
   level: DEBUG   #VERBOSE
 
+update:
+  - platform: http_request
+    id: update_http_request
+    name: Desk Firmware
+    source: https://smarthomeguys.github.io/RJ12-Standing-Desk-Controller/manifest.json
+    disabled_by_default: false
+
 dashboard_import:
   package_import_url: github://SmartHomeGuys/ESP32-RJ12-Standing-Desk-Controller/standing-desk-controller.yaml@main
   import_full_config: false  # Adopted fine

@@ -25,8 +25,8 @@ logger:
 #update:
 #  - platform: http_request
 #    id: update_http_request
-#    name: Everything Presence Lite Firmware
-#    source: https://everythingsmarthome.github.io/everything-presence-lite/everything-presence-lite-ha-co2-manifest.json
+#    name: Desk Firmware
+#    source: https://smarthomeguys.github.io/RJ12-Standing-Desk-Controller/manifest.json
 #    disabled_by_default: true
 
 dashboard_import:

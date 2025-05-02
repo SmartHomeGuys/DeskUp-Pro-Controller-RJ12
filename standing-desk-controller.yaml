@@ -28,6 +28,7 @@ update:
     name: Desk Firmware
     source: https://smarthomeguys.github.io/RJ12-Standing-Desk-Controller/manifest.json
     disabled_by_default: false
+    update_interval: 1min
 
 dashboard_import:
   package_import_url: github://SmartHomeGuys/ESP32-RJ12-Standing-Desk-Controller/standing-desk-controller.yaml@main

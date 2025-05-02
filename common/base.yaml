@@ -12,6 +12,7 @@ esphome:
   project:
     name: SmartHomeGuys.RJ12 Standing Desk Controller
     version: "2.0.0.0"
+  name_add_mac_suffix: false
   on_boot:
     priority: 800
     then:

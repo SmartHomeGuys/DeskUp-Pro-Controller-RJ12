@@ -1,2 +1,2 @@
-# Setup using Captive Portal
+# Setup using Captive Portal (Wi-Fi Hotspot)
 

@@ -43,6 +43,8 @@ ota:
   - platform: http_request
     id: ota_http_request
 
+http_request:
+
 wifi:
   # Dont add wifi details, just Enable fallback hotspot (captive portal to allow wifi setup for users)
   ap:

@@ -1,9 +1,14 @@
 # Setup
 
+## Step 1: Connect to Wi-Fi
+To do this choose from one of these options:
+
 [Setup using Bluetooth](setup-using-bluetooth.md)
 
 [Setup using USB](setup-using-usb.md)
 
-[Setup using Captive Portal](setup-using-captive-portal.md)
+[Setup using Captive Portal (Wi-Fi Hotspot)](setup-using-captive-portal.md)
 
+
+## Step 2: Add to Home Assistant
 

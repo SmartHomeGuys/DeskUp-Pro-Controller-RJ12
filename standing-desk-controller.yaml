@@ -16,7 +16,7 @@ substitutions:
   desk_max_height: "126"
 
 packages:
-  device_base: !include common/base.yaml
+  device_base: !include common/base2.yaml
   #bluetooth_base: !include common/bluetooth-base.yaml
 
 logger:

@@ -9,7 +9,7 @@ substitutions:
   #Which should either match your desk physical min/max height limit or just be set to the min/max desk height you will use.
   #The cover/slider control will then be constrained to these min/max values.
   #Desk presets and nudge buttons are not constrained to these.
-  desk_min_height: "63"
+  desk_min_height: "62"
   desk_max_height: "126"
 
 esphome:

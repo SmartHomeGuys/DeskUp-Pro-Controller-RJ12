@@ -37,7 +37,11 @@ api:
    # No encryption key should be added when flashed for distribution
 
 ota:
-  platform: esphome
+  #platform: esphome
+  - platform: esphome
+    id: ota_esphome
+  - platform: http_request
+    id: ota_http_request
 
 wifi:
   # Dont add wifi details, just Enable fallback hotspot (captive portal to allow wifi setup for users)

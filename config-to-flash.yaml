@@ -6,7 +6,7 @@ packages:
   #device_base: !include common/standingdesk/base.yaml
   device_base:
     url: https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12
-    files: [common/base.yaml, common/deployment-config.yaml]
+    files: [common/base.yaml]
     ref: main
     refresh: 1min
 

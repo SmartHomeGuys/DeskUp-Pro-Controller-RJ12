@@ -1,5 +1,7 @@
 # Making a Maidesite Standing Desk Smart
 
+## ⚠️ Note this project is very much a work in-progress right now, hoping to be completed by end June 2025. 
+
 This is a device that simply plugs into the Maidesite desk controllers RJ12 port which then allows you to control your standing desk from Home Assistant. 
 
 After plugging it into the desks RJ12 port and connecting it to your home's Wi-Fi it will appear in Home Assistant as a device allowing you to control your desk from your phone or from automations.  

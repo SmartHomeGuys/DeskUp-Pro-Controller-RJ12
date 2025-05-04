@@ -3,7 +3,7 @@
 Attach the device to your desk’s RJ12 port.  This will provide it power and it will be automatically detected in Home Assistant (usually within 30 seconds).
 If it’s not detected, try restarting Home Assistant.
 
-!(images/Setup-Bluetooth-Device-Discovered.png)
+![](images/Setup-Bluetooth-Device-Discovered.png)
 
 Click ‘Add’
 Enter your Wi-Fi details when asked

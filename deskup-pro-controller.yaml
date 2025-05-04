@@ -1,6 +1,6 @@
 substitutions:
-  name: "standing-desk-controller"
-  friendly_name: "Standing Desk Controller"
+  name: "deskup-pro-controller"
+  friendly_name: "DeskUp Pro Controller"
   #tx_pin: "GPIO13"
   #rx_pin: "GPIO12"
   
@@ -26,10 +26,10 @@ update:
   - platform: http_request
     id: update_http_request
     name: Desk Firmware
-    source: https://smarthomeguys.github.io/RJ12-Standing-Desk-Controller/manifest.json
+    source: https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/manifest.json
     disabled_by_default: false
     update_interval: 1min
 
 dashboard_import:
-  package_import_url: github://SmartHomeGuys/ESP32-RJ12-Standing-Desk-Controller/standing-desk-controller.yaml@main
+  package_import_url: github://SmartHomeGuys/DeskUp-Pro-Controller-RJ12/deskup-pro-controller.yaml@main
   import_full_config: true

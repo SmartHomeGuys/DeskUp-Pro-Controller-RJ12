@@ -5,7 +5,7 @@ substitutions:
 packages:
   #device_base: !include common/standingdesk/base.yaml
   device_base:
-    url: https://github.com/SmartHomeGuys/ESP32-RJ12-Standing-Desk-Controller
+    url: https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12
     files: [common/base.yaml, common/deployment-config.yaml]
     ref: main
     refresh: 1min
@@ -17,12 +17,12 @@ update:
   - platform: http_request
     id: update_http_request
     name: Desk Firmware
-    source: https://smarthomeguys.github.io/RJ12-Standing-Desk-Controller/manifest.json
+    source: https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/manifest.json
     disabled_by_default: false
     update_interval: 1min
 
 dashboard_import:
-  package_import_url: github://SmartHomeGuys/ESP32-RJ12-Standing-Desk-Controller/standing-desk-controller.yaml@main
+  package_import_url: github://SmartHomeGuys/DeskUp-Pro-Controller-RJ12/deskup-pro-controller.yaml@main
   import_full_config: false  # Adopted fine
   #import_full_config: true  # Failed to import error
 

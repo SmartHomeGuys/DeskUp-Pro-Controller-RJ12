@@ -2,15 +2,15 @@
 
 ## ⚠️ Note this project is very much a work in-progress right now, hoping to be completed by end June 2025. 
 
-This is a device that simply plugs into the Maidesite desk controllers RJ12 port which then allows you to control your standing desk from Home Assistant. 
+Have you purchased a standing desk only to find you don't stand up.  Then if you have a Maidesite Desk we have a device we've called 'DeskUp Pro Controller' that allows you to control your desk from Home Assistant (see some examples below of how you could automate it).
 
-After plugging it into the desks RJ12 port and connecting it to your home's Wi-Fi it will appear in Home Assistant as a device allowing you to control your desk from your phone or from automations.  
+First though you need the device which plugs into the Maidesite desk controllers RJ12 port. Then once connected to Wi-Fi and the device added to Home Assistant you can control your standing desk from your phone or automations. 
 
 All the existing functionality of the desks controller is retained. In fact when you use the desk controller to move the desk it's height is updated in Home Assistant.
 
 ### ADD HA IMAGES HERE
 
-The firmware is based on ESPHome and the device itself uses an ESP32 chip that is powered by the desks controller over the RJ12 Cable.
+The firmware of the DeskUp Pro Controller is based on ESPHome and the device itself uses an ESP32 chip that is powered by the desks controller over the RJ12 Cable, so no USB cable is needed to power it.
 
 ### Example automations you could create that integrate with your desk
 - If you're sitting for too long, automatically raise the desk to standing height.
@@ -23,11 +23,18 @@ The firmware is based on ESPHome and the device itself uses an ESP32 chip that i
 
 ### This project is open source, and in this Github repository you can find
 - Instructions on how to build/wire up the ESP32 controller.
-- The full source code to control the desk. 
+- The full source code to control the desk.
 - Example Home Assistant dashboard cards.
 - Example Home Assistant Automations.
 
-However if you'd like to get a device pre-built, in a box and ready to go you can purchase one from my eBay shop.
+_I take no credit for the reverse engineered code for each of the desks functions as this was done by the community who extracted the hex codes needed to control the desk, if your interested all of this can be found here:_
+
+https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293
+
+
+I've enhanced the ESPHome yaml code to include more features, described how I built the ESP32 board and documented it all in this Git repository.  Your free to use any of this for your own personal use.
+
+However if your not very good at soldering and would simply like to get a device pre-built, in a box that you can plug in to your desk, have HomeAssistant detect it and be automating your desk in 10 minutes then you can purchase one from my eBay shop.
 
 ### ADD EBAY LINK
 

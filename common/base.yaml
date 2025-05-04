@@ -1,6 +1,6 @@
 substitutions:
-  name: "standing-desk-controller"
-  friendly_name: "Standing Desk Controller"
+  name: "deskup-pro-controller"
+  friendly_name: "DeskUp Pro Controller"
   tx_pin: "GPIO13"
   rx_pin: "GPIO12"
 
@@ -12,11 +12,15 @@ substitutions:
   desk_min_height: "62"
   desk_max_height: "126"
 
+packages:
+  # Package needed when flashing devices to let users configure Wi-Fi on their device when 1st powered up.
+  device_base: !include deployment-config.yaml
+
 esphome:
   name: ${name}
   friendly_name: ${friendly_name}
   project:
-    name: SmartHomeGuys.RJ12 Standing Desk Controller
+    name: SmartHomeGuys.DeskUp Pro Controller (RJ12)
     version: "2025.5.0"
   name_add_mac_suffix: false
   on_boot:
@@ -30,38 +34,8 @@ esp32:
   framework:
     type: arduino
 
-#logger:
+logger:
   #loglevel:  e.g. NONE, ERROR, WARN, INFO, DEBUG, VERBOSE, VERY_VERBOSE
-
-api:
-   # No encryption key should be added when flashed for distribution
-
-ota:
-  #platform: esphome
-  - platform: esphome
-    id: ota_esphome
-  - platform: http_request
-    id: ota_http_request
-
-http_request:
-  verify_ssl: false
-
-wifi:
-  # Dont add wifi details, just Enable fallback hotspot (captive portal to allow wifi setup for users)
-  ap:
-    ssid: "Standing-Desk"
-    password: "12345678"
-
-# After 1 minute of unsuccessful WiFi connection attempts, the 
-# ESP will start a WiFi hotspot using the above ssid/password which can be used to update wifi connection details.
-captive_portal:
-
-# For configuring Wi-Fi on an ESPHome device by using a serial connection to the device, eg. USB.
-improv_serial:
-
-# For configuring Wi-Fi on an ESP32 device by using Bluetooth Low Energy (BLE) to receive the credentials.
-esp32_improv:
-  authorizer: none
 
 
 # Desk code begins
@@ -77,12 +51,9 @@ uart:
         delimiter: [0x7E] 
       sequence:
         - lambda: |-
-            if("${log_level}" == "VERBOSE") {
-              UARTDebug::log_string(direction, bytes);     // defaults to hex
-              //UARTDebug::log_int(direction, bytes, ',');
-              UARTDebug::log_hex(direction, bytes, ',');
-              //ESP_LOGD("custom", "Bytes size: %d", bytes.size());       // Logs how many bytes in the message, useful for protocol and message identification.
-            }
+            //UARTDebug::log_int(direction, bytes, ',');
+            //UARTDebug::log_hex(direction, bytes, ',');
+            //ESP_LOGD("custom", "Bytes size: %d", bytes.size());       // Logs how many bytes in the message, useful for protocol and message identification.
 
             if (direction == UART_DIRECTION_RX) 
             {
@@ -136,6 +107,11 @@ script:
       - delay: 1s
       - lambda: |-
           id(seconds_idle_counter) += 1;
+          int seconds = id(seconds_idle_counter);
+          
+          // Update time related sensors
+          id(sensor_desk_idle_time).publish_state(seconds);
+          id(script_set_idle_timestamp).execute(seconds);
           id(script_idle_timer_tick).execute();   // call itself again (essentially an infinate loop)
 
   # Reset idle counter value to 0
@@ -145,16 +121,39 @@ script:
       - lambda: |-
           id(seconds_idle_counter) = 0;
   
-  # Move the desk to the specified height (in cm)
+  - id: script_set_idle_timestamp
+    parameters:
+      seconds: long
+    mode: single
+    then:
+      - lambda: |-
+          //int seconds = (int) id(seconds_idle_counter);
+          int days = seconds / (24 * 3600);
+          seconds = seconds % (24 * 3600);
+          int hours = seconds / 3600;
+          seconds = seconds % 3600;
+          int minutes = seconds /  60;
+          seconds = seconds % 60;
+
+          std::string daystr = "";
+          if(days) {
+            daystr = to_string(days) + " days, ";
+          }
+
+          std::string value = (std::string)str_sprintf("%s%02d:%02d:%02d", daystr.c_str(), hours, minutes, seconds);
+
+          id(sensor_desk_idle_timestamp).publish_state(value);
+
+  # Move the desk to the specified height (in cm, also allows decimal point numbers)
   - id: script_set_Desk_Height
     parameters:
-      newHeight_cm: int   # in cm
+      newHeight_cm: float   # in cm
     mode: single
     then:
       - logger.log: "Set desk height method started"
       - uart.write: 
           data: !lambda |-
-            int height_mm = static_cast<int>(newHeight_cm * 10);      // Convert cm to mm
+            auto height_mm = static_cast<int>(newHeight_cm * 10);      // Convert cm to mm
             std::vector<uint8_t> bArr(8);
             bArr[0] = 0xF1;
             bArr[1] = 0xF1;
@@ -283,36 +282,13 @@ text_sensor:
   # Display desk idle time as 'days and timestamp', for use on homeassistant dashboards
   # Shows days only if days are > 0
   # Output format: 2 days, 04:45:02 or just 04:45:02 (if days is 0)
+  # Value is populated from script_idle_timer_tick
   - platform: template
     name: "Idle Timestamp"
     id: "sensor_desk_idle_timestamp"
     icon: mdi:progress-clock
-    on_value:
-      then:
-        # Also updates the seconds sensor (deskidletime) when this sensors value changes
-        # which keeps the 2 sensors in perfect synch
-        - lambda: |-
-            int seconds = (int) id(seconds_idle_counter);
-            id(sensor_desk_idle_time).publish_state(seconds);
+    update_interval: never 
     
-    # Calculate the days/timestamp string for this text sensor to display
-    lambda: |-
-      int seconds = (int) id(seconds_idle_counter);
-      int days = seconds / (24 * 3600);
-      seconds = seconds % (24 * 3600);
-      int hours = seconds / 3600;
-      seconds = seconds % 3600;
-      int minutes = seconds /  60;
-      seconds = seconds % 60;
-
-      std::string daystr = "";
-      if(days) {
-        daystr = to_string(days) + " days, ";
-      }
-
-      return (std::string)str_sprintf("%s%02d:%02d:%02d", daystr.c_str(), hours, minutes, seconds);         
-    update_interval: 1s
-
 
 button:
   # Button in homeassistant to reset the idle counter to 0. 
@@ -336,7 +312,7 @@ button:
       then:
         - logger.log: UP Pressed
         - uart.write: [0xf1, 0xf1, 0x01,0x00,0x01,0x7e]
-  
+
   - platform: template
     name: "Desk Nudge Down"
     id: "button_nudgedeskdown"
@@ -393,7 +369,7 @@ button:
 
 cover:
   - platform: template
-    name: "Min/Max Slider"
+    name: "Height Slider"
     id: "cover_desk_control"
     has_position: true   #shows its position (not just open/closed)
     assumed_state: true  #show open and close buttons in the ui
@@ -448,7 +424,7 @@ number:
     step: 0.1
     unit_of_measurement: "cm"
     mode: slider
-    internal: true    # dont expose to Homeassistant as a control
+    internal: false    # dont expose to Homeassistant as a control
     on_value:
       then:
         # Update the 2 height sensors (cm) and percent (%) with the new height value

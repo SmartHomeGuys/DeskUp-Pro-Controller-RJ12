@@ -1,0 +1,30 @@
+#This file contains everything needed to allow a user to setup a device by Bluetooth, USB, Captive Portal (Wi-Fi)
+
+api:
+   # No encryption key should be added when flashed for distribution
+
+ota:
+  - platform: esphome
+    id: ota_esphome
+  - platform: http_request
+    id: ota_http_request
+
+http_request:
+  verify_ssl: false
+
+wifi:
+  # Dont add wifi details, just Enable fallback hotspot (captive portal to allow wifi setup for users)
+  ap:
+    ssid: "DeskUp-Pro"
+    password: "12345678"
+
+# After 1 minute of unsuccessful WiFi connection attempts, the 
+# ESP will start a WiFi hotspot using the above ssid/password which can be used to update wifi connection details.
+captive_portal:
+
+# For configuring Wi-Fi on an ESPHome device by using a serial connection to the device, eg. USB.
+improv_serial:
+
+# For configuring Wi-Fi on an ESP32 device by using Bluetooth Low Energy (BLE) to receive the credentials.
+esp32_improv:
+  authorizer: none

@@ -1,12 +1,12 @@
 substitutions:
-  name: "standing-desk-controller"
-  friendly_name: "Standing Desk Controller"
+  name: "deskup-pro-controller"
+  friendly_name: "DeskUp Pro Controller"
 
 packages:
-  #device_base: github://SmartHomeGuys/ESP32-RJ12-Standing-Desk-Controller/common/base.yaml@main
+  #device_base: !include common/standingdesk/base.yaml
   device_base:
     url: https://github.com/SmartHomeGuys/ESP32-RJ12-Standing-Desk-Controller
-    files: [common/base.yaml]  # optional; if not specified, all files will be included
+    files: [common/base.yaml, common/deployment-config.yaml]
     ref: main
     refresh: 1min
 
@@ -25,3 +25,4 @@ dashboard_import:
   package_import_url: github://SmartHomeGuys/ESP32-RJ12-Standing-Desk-Controller/standing-desk-controller.yaml@main
   import_full_config: false  # Adopted fine
   #import_full_config: true  # Failed to import error
+

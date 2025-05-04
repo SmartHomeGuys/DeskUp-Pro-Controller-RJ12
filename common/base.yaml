@@ -21,7 +21,7 @@ esphome:
   friendly_name: ${friendly_name}
   project:
     name: SmartHomeGuys.DeskUp Pro Controller (RJ12)
-    version: "2025.5.0"
+    version: "2025.5.2"
   name_add_mac_suffix: false
   on_boot:
     priority: 800
@@ -351,7 +351,7 @@ button:
         - uart.write: [0xF1, 0xF1, 0x27, 0x00, 0x27, 0x7E]
   
   - platform: template
-    name: "Desk M4"
+    name: "Desk M4 (TEST)"
     id: "button_desk_m4"
     icon: mdi:numeric-4-circle-outline
     on_press:

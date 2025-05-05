@@ -17,8 +17,12 @@ The firmware of the DeskUp Pro Controller is based on ESPHome and the device its
   - Or announce on a smart speaker that you have been sat down too long.
   - Or maybe flash a light
 - If you ignore it then 5 mins later have it nag you to stand up until you do!
+- After lunchtime raise the desk so you start the afternoon standing up (maybe trigger this as you walk into the room if you have a motion sensor).
+- Prefer to do meetings standing up, then if your calendar is exposed to Home Assistant you can automate it to raise the desk 1 minute before your meeting starts.
 - At the end of the working day lower the desk when you turn off the office light or leave the room.
-- Setup a Home Assistant dashboard so you can have an unlimited number of preset buttons e.g. maybe different heights for each family member.
+- Setup a Home Assistant dashboard so you can have an unlimited number of preset height buttons e.g. maybe each family member prefers a different sit & stand desk height.
+- Want to control your desk from something else then as long as it can either integrate with Home Assistant or call a webhook you can.
+- The DeskUp Pro device even has an RGB Led on it, and whilst the DeskUp Pro code doesn't use it we've exposed it to Home Assistant so you can use it in automations.
 - etc, there are many possibilities.
 
 ### This project is open source, and in this Github repository you can find

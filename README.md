@@ -41,7 +41,13 @@ What I've done is:
 - Described in detail how I wired up the ESP32 board and documented it all in this Git repository so you can do the same.  
 - Made all this free to use for your own personal use.
 
-However if you would prefer to avoid buying the parts, soldering it all together, 3d printing a case, downloading & flashing the firmware and would simply like to get a device pre-built, in a box that you can plug in to your desk, have HomeAssistant detect it and be automating your desk in 10 minutes then you can purchase one from our eBay shop.
+However if you would prefer to avoid:
+- Buying the parts
+- Soldering it all together
+- 3d printing a case
+- Downloading & flashing the firmware
+
+And would simply like to get a device pre-built, in a box that you can plug in to your desk and be automating your desk in 10 minutes then you can purchase one from our eBay shop.
 
 ### TODO ADD EBAY LINK
 

@@ -52,7 +52,7 @@ And would simply like to get a device pre-built, in a box that you can plug in t
 ### TODO ADD EBAY LINK
 
 #### ⚠️ Check Compatibility before you buy
-Before you build or buy check the compatibility of your [desk here](compatibility.md)
+Before you build or buy check the compatibility of your [desk here](docs/compatibility.md)
 
 You should understand the risks before purchasing any components to build this yourself or if you purchase a prebuilt one from the shop. It's your responsibility to determine if its fit for your purpose. 
 

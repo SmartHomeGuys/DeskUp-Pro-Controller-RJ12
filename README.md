@@ -2,8 +2,7 @@
 
 ## ⚠️ Note this project is very much a work in-progress right now, hoping to be completed by end June 2025. 
 
-Have you purchased a standing desk only to find you don't stand up.  Then if you have a Maidesite Desk we have a device we've called 'DeskUp Pro Controller' that allows you to control your desk from Home Assistant (see some examples below of how you could automate it).
-
+Have you purchased a standing desk only to find you don't stand up.  Then if you have a Maidesite Desk we have a device we've called 'DeskUp Pro Controller' that allows you to control your desk from Home Assistant ([see some examples below of how you could automate it](#example-automations-you-could-create-that-integrate-with-your-desk))
 First though you need the device which plugs into the Maidesite desk controllers RJ12 port. Then once connected to Wi-Fi and the device added to Home Assistant you can control your standing desk from your phone or automations. 
 
 All the existing functionality of the desks controller is retained. In fact when you use the desk controller to move the desk it's height is updated in Home Assistant.

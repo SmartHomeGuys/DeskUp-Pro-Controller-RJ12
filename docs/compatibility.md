@@ -13,9 +13,6 @@ You should understand the risks before purchasing any components to build this y
 ## Maidesite desks using the Premium controller 
 These desks should be compatible as members of the community have used this controller on some of these.
 
-![](images/MaidesiteDeskControlBox-Premium.png)
-![](images/MaidsiteDeskControlBox-Back.jpg)
-
 - TH2 Plus Art
 - T2 Pro
 - T2 Pro Plus
@@ -24,15 +21,20 @@ These desks should be compatible as members of the community have used this cont
 - EL2 Plus Art
 - S2B Pro
 
+![](images/MaidesiteDeskControlBox-Premium.png)
+![](images/MaidsiteDeskControlBox-Back.jpg)
+
+
 ## Maidesite desks using the Standard controller
 This has a very similar design to the Premium one above but as of now no one in the community has tested it. 
+
+- T1 Pro
+- SN1
 
 ![](images/MaidesiteDeskControlBox-Standard.png)
 
 It has the same 4 presets and nudge up/down as the Premium controller above does, it just has a slightly different screen layout. It does have an RJ12 port. There is a chance this might be compatible.
 
-- T1 Pro
-- SN1
 
 ## Maidesite desks using other controllers 
 These are a very different design so are unlikely to work, and am currently unable to determine if they even have an RJ12 port.

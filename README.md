@@ -22,7 +22,7 @@ The firmware of the DeskUp Pro Controller is based on ESPHome and the device its
 - etc, there are many possibilities.
 
 ### This project is open source, and in this Github repository you can find
-- Instructions on how to build/wire up the ESP32 controller.
+- Instructions on how to build/wire up the ESP32.
 - The full source code to control the desk.
 - Example Home Assistant dashboard cards.
 - Example Home Assistant Automations.
@@ -32,27 +32,25 @@ _I take no credit for the reverse engineered code for each of the desks function
 https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293
 
 
-I've enhanced the ESPHome yaml code to include more features, described how I built the ESP32 board and documented it all in this Git repository.  Your free to use any of this for your own personal use.
+What I've done is:
+- Enhanced the original ESPHome yaml code from the community to include more features and fixed some bugs.
+- Removed the need for an external .h file so only yaml files are now needed.
+- Described in detail how I wired up the ESP32 board and documented it all in this Git repository so you can do the same.  
+- Made all this free to use for your own personal use.
 
-However if your not very good at soldering and would simply like to get a device pre-built, in a box that you can plug in to your desk, have HomeAssistant detect it and be automating your desk in 10 minutes then you can purchase one from my eBay shop.
+However if your not confident at soldering and would simply like to get a device pre-built, in a box that you can plug in to your desk, have HomeAssistant detect it and be automating your desk in 10 minutes then you can purchase one from my eBay shop.
 
 ### ADD EBAY LINK
 
 #### ⚠️ Check Compatibility before you buy
-- Your Maidesite desk must have a free RJ12 port on the controller.
-- There is no guarantee that this device will work with your desk due to the different models out there. and the desk manufacturer can change their specifications at anytime even with the same model number.
-- As this is a product of reverse engineering, until you try it on your desk there is no way to be 100% certain that it will or won't work.
-- The credit goes to the community of people who collaborated to reverse engineer the Maidesite desk controller
+Check the compatibility of your [desk here](compatibility.md)
 
-LIST OF DESKS HERE
-
-You should understand this risk before purchasing as its your responsibility to determine if its fit for your purpose. The credit community helped build
-
-If you have any questions, please contact me and I will be happy to help!
+You should understand the risks before purchasing any components to build this yourself or if you purchase a prebuilt one from the shop. It's your responsibility to determine if its fit for your purpose. 
 
 
 ### Instructions
 Build one yourself TODO
 
-[Setup a prebuilt device](docs/setup/README.md)
+[Setup a purchased device](docs/setup/README.md)
+
 

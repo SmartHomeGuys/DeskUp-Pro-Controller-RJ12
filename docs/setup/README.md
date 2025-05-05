@@ -15,4 +15,4 @@ If you missed it in the previous guids you can add the device so it appears in H
 
 
 ## Step 3: (Optional) Adopt the device in ESPHome in Home Assistant
-[Adopting in ESPHome Builder](adpoting-in-home-assistant.md)
+[Adopting in ESPHome Builder](adopting-in-home-assistant.md)

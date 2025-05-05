@@ -1,4 +1,4 @@
-# Setup
+# Setup your DeskUp Pro Controller and connect it to Home Assistant
 
 ## Step 1: Connect to Wi-Fi
 To do this choose from one of these options:

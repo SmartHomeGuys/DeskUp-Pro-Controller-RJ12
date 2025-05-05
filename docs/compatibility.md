@@ -31,7 +31,7 @@ This has a very similar design to the Premium one above but as of now no one in 
 - T1 Pro
 - SN1
 
-![](images/MaidesiteDeskControlBox-Standard.png)
+![](images/MaidesiteDeskControlBox-standard.png)
 
 It has the same 4 presets and nudge up/down as the Premium controller above does, it just has a slightly different screen layout. It does have an RJ12 port. There is a chance this might be compatible.
 

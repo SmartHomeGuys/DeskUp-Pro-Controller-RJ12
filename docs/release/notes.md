@@ -1,5 +1,14 @@
-### Notes on how to release a new version
 
+### Notes on how flash the latest version to a new device for a customer
+- In a Chrome browser go to: https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/Setup.html
+- Choose the 'Install' option, connect it to Wi-Fi
+- Test the device on a desk.
+- After testing, reflash the device again using the 'Install' option but this time 'Skip' adding it to Wi-Fi.
+- Unplug and package up for shipping.
+
+
+
+### Notes on how to release a new version
 - Make code changes locally (avoiding using Git) on a development version of a DeskUp Pro device.
 - No need to worry about version numbers at this point.
 

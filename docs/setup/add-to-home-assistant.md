@@ -19,3 +19,4 @@ Click 'Finish' and a "DeskUp Pro Controller" device will now appear under the ES
 
 ![](images/Device-Added-To-ESPHome-Integration.png)
 
+You can now optionally 'Adopt' the device in ESP Home by [following this guide](adopting-in-home-assistant.md).

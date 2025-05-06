@@ -1,6 +1,6 @@
 # Adopting the device into ESPHome Builder
 
-After the device is added to Home Assistant you will any updates in Home Assistant as you normally would.
+After the device is added to Home Assistant you will get any updates in Home Assistant as you normally would.
 
 However if you want more control over the device then you can ‘Adopt’ the device into ESPHome Builder.
 

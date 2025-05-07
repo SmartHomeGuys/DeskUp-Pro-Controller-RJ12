@@ -19,4 +19,4 @@ If you missed it in the previous guides, you can add the device so it appears in
 
 
 ## Step 4: How to configure the device in Home Assistant 
-[Configuration in Home Assistant](docs/configuration/README.md)
+[Configuration in Home Assistant](/docs/configuration/README.md)

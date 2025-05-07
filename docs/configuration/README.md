@@ -6,3 +6,5 @@
 
 [Example Automations](home-assistant-automations.md)
 
+[Firmware Updates](firmware-updates.md)
+

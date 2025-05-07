@@ -2,10 +2,11 @@
 
 ## ⚠️ Note this project is very much a work in-progress right now, hoping to be completed by end June 2025. 
 
-Have you purchased a standing desk only to find you don't stand up.  Then if you have a Maidesite Desk we have a device we've called 'DeskUp Pro Controller' that allows you to control your desk from Home Assistant ([see some examples below of how you could automate it](#example-automations-you-could-create-that-integrate-with-your-desk))
-First though you need the device which plugs into the Maidesite desk controllers RJ12 port. Then once connected to Wi-Fi and the device added to Home Assistant you can control your standing desk from your phone or automations. 
+Have you purchased a standing desk only to find you don't stand up!  Then if you have a Maidesite Desk we have built a device called 'DeskUp Pro Controller' that allows you to control your desk from Home Assistant ([see some examples below of how you could automate it](#example-automations-you-could-create-that-integrate-with-your-desk))
 
-All the existing functionality of the desks controller is retained. In fact when you use the desk controller to move the desk it's height is updated in Home Assistant.
+The device plugs into the Maidesite desk controllers RJ12 port. Then once connected to Wi-Fi and added to Home Assistant you can control your standing desk from your phone or automations. 
+
+All the existing functionality of the desks controller is retained. If you use the desk's control panel to move the desk it's height is instantly updated in Home Assistant.
 
 ### ADD HA IMAGES HERE
 
@@ -37,7 +38,6 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
 
 What I've done is:
 - Enhanced the original ESPHome yaml code from the community to include more features and fixed some bugs.
-- Removed the need for an external .h file so only yaml files are now needed.
 - Described in detail how I wired up the ESP32 board and documented it all in this Git repository so you can do the same.  
 - Made all this free to use for your own personal use.
 
@@ -47,7 +47,7 @@ However if you would prefer to avoid:
 - 3d printing a case
 - Downloading & flashing the firmware
 
-And would simply like to get a device pre-built, in a box that you can plug in to your desk and be automating your desk in 10 minutes then you can purchase one from our eBay shop.
+And would simply like to get a device pre-built, in a box that you can plug in to your desk and be automating it in 10 minutes then you can purchase one from our eBay shop.
 
 ### TODO ADD EBAY LINK
 

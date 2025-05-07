@@ -1,5 +1,7 @@
+# 2025.6.0
+- Release of the DeskUp Pro Controller as a product
+
 # 2025.5.0
-- First release of the DeskUp Pro Controller as a product
 - Fixes a bug in the original community code where the slider didn't always move the desk, sometimes needing multiple presses before it did.
 - Fixes a bug that now allows you to set the position of the desk from Home Assistant to a decimal point value rather than a whole number.
 - Adds a Home Assistant Cover to the device so you have that option of controlling the desk.

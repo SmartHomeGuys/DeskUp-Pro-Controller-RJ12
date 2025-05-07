@@ -59,8 +59,7 @@ You should understand the risks before purchasing any components to build this y
 
 
 ### Instructions
-Build one yourself TODO
-
 [Setup a purchased device](docs/setup/README.md)
 
+Build one yourself TODO
 

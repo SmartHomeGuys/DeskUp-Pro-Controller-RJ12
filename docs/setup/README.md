@@ -16,3 +16,7 @@ If you missed it in the previous guides, you can add the device so it appears in
 
 ## Step 3: (Optional) Adopt the device in ESPHome in Home Assistant
 [Adopting in ESPHome Builder](adopting-in-home-assistant.md)
+
+
+## Step 4: How to configure the device in Home Assistant 
+[Configuration in Home Assistant](docs/configuration/README.md)

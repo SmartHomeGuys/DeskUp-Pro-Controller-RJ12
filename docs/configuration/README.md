@@ -1,2 +1,2 @@
-# Configuration in Home Assistant
+# Configure the DeskUp Pro in Home Assistant
 

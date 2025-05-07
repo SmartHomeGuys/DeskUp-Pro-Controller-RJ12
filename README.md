@@ -51,7 +51,7 @@ And would simply like to get a device pre-built, in a box that you can plug in t
 
 ### TODO ADD EBAY LINK
 
-#### ⚠️ Check Compatibility before you buy
+#### ⚠️ Check Compatibility
 - You must be running Home Assistant.
 - Before you decide to build or buy check the compatibility of your [desk here](docs/compatibility.md)
 

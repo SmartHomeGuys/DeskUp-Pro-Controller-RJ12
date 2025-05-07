@@ -1,1 +1,2 @@
+# Example Home Assistant Automations
 

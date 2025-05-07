@@ -11,7 +11,7 @@ To do this choose from one of these options:
 
 
 ## Step 2: Add to Home Assistant
-If you missed it in the previous guides, you can add the device so it appears in Home Assistant as a device by following [this guide](add-to-home-assistant.md).  
+If you missed it in the previous guides, you can add the device so it appears in Home Assistant by following [this guide](add-to-home-assistant.md).  
 
 
 ## Step 3: (Optional) Adopt the device in ESPHome in Home Assistant

@@ -63,6 +63,6 @@ You should understand the risks before purchasing any components to build this y
 
 Build one yourself TODO
 
-[Configuration in Home Assistant](docs/configuration/README.md)
+[Configure the device in Home Assistant](docs/configuration/README.md)
 
 

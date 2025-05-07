@@ -1,6 +1,8 @@
 # Setup using Bluetooth 
+The device already comes with the firmware flashed, but needs to be connected to Wi-Fi.
 
-Attach the device to your desk’s RJ12 port.  This will provide it power and it will be automatically detected in Home Assistant (usually within 30 seconds).
+If your Home Assistant is already setup to use a Bluetooth Proxy then just attach the DeskUp Pro to your desk’s RJ12 port.  This will provide it power and it will be automatically detected in Home Assistant (usually within 30 seconds).
+
 If it’s not detected, try restarting Home Assistant.
 
 ![](images/Setup-Bluetooth-Device-Discovered.png)

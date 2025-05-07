@@ -1,2 +1,2 @@
-# Home Assistant Screen Layout - What it all means
+# Home Assistant Screen Layout - What it all does
 

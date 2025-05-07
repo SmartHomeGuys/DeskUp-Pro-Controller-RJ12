@@ -1,0 +1,2 @@
+# Configuration in Home Assistant
+

@@ -1,6 +1,6 @@
 # Configure the DeskUp Pro in Home Assistant
 
-[Screen Layout](home-assistant-screen-layout.md)
+[Screen Layout and what it all does](home-assistant-screen-layout.md)
 
 [Example Dashboard Cards](home-assistant-dashboard.md)
 

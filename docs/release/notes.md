@@ -37,18 +37,11 @@
   - Open VS Code for the Git repo: smarthomeguys.github.io
   - The 2 bin files and a firmware.md5 file should already be listed under commits. 
   - Update version number and the md5 hash (found in firmware.md5 file) in the manifest.json file
-  - Check 4 updated files into Git
+  - Wait until the the code changes are committed to Git for 24 hours due to caching in user's Home Assistant's of files downloaded from Git.
+  - Now check these 4 updated files into Git
 
 - Copy the ESPHome contents of the development DeskUp Pro device you saved (somewhere safe) back into ESPHome and save it.
 
 ![](images/HomeAssistant-Showing-Update-Available.png)
 
 - Users Home Assistant clients should now start saying an updated version is available to install.
-
-- Users who have adopted the device in ESPHome may see this error in the ESPHome Logs.  The device in Home Assistant will appear as unavailabe until they accept the remove encryption notification that appears in Home Assistant.  However whilst that brings the device online in ESPHome Builder the logs will still show this message.
-
-
-WARNING deskup-pro-controller @ 192.168.xx.xx: Connection error occurred: deskup-pro-controller @ 192.168.xx.xx: The device is using plaintext protocol; Try enabling encryption on the device or turning off encryption on the client (ESPHome Logs 2025.4.0) 
-
-
-- To fix it, install the firmware manually in ESPHome.  I THINK !! Need to wait for my Git cache to clear so the new version is pulled from GitHub to confirm this!!!!

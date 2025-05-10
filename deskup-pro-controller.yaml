@@ -1,4 +1,4 @@
-# Latest version is 2025.5.2
+# Latest version is 2025.6.0
 substitutions:
   name: "deskup-pro-controller"
   friendly_name: "DeskUp Pro Controller"
@@ -31,7 +31,7 @@ update:
     name: Desk Firmware
     source: https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/manifest.json
     disabled_by_default: false
-    update_interval: 1min
+    update_interval: 6h #1min
 
 dashboard_import:
   package_import_url: github://SmartHomeGuys/DeskUp-Pro-Controller-RJ12/deskup-pro-controller.yaml@main

@@ -4,6 +4,8 @@ substitutions:
   friendly_name: "DeskUp Pro Controller"
   #tx_pin: "GPIO13"
   #rx_pin: "GPIO12"
+
+  #esp32_led_order: "RGB"  #GRB
   
   #Default to the physical Min and Max height limits for a 
   #Maidesite TH2 Plus Art desk which are the lowest/highest

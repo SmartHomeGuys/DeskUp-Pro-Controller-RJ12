@@ -36,14 +36,14 @@ The firmware of the DeskUp Pro Controller is based on ESPHome and the device its
 - Example Home Assistant dashboard cards.
 - Example Home Assistant Automations.
 
-_I take no credit for the reverse engineered code for each of the desks functions as this was done by the community who extracted the hex codes needed to control the desk, if your interested all of this can be found here:_
+_This is a product of reverse engineered code where each of the desks functions was extracted by the community, if your interested all of this can be found here:_
 
 https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293
 
 
-What I've done is:
-- Enhanced the original ESPHome yaml code from the community to include more features and fixed some bugs.
-- Described in detail how I wired up the ESP32 board and documented it all in this Git repository so you can do the same.  
+This product builds on that work by:
+- Enhancing the original ESPHome yaml code from the community to include more features and fixed some bugs.
+- Describing in detail how to wire up the ESP32 board which is all documented in this Git repository so you can do the same.  
 - Made all this free to use for your own personal use.
 
 However if you would prefer to avoid:

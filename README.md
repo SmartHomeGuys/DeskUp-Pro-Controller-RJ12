@@ -45,7 +45,7 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
 
 
 This product builds on that work by:
-- Enhancing the original ESPHome yaml code from the community to include more features and fixed some bugs.
+- Enhancing the original ESPHome yaml code from the community to include more features and some bug fixes.
 - Describing in detail how to wire up the ESP32 board which is all documented in this Git repository so you can do the same.  
 - Made all this free to use for your own personal use.
 

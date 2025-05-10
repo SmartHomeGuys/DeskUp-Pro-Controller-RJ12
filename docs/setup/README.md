@@ -19,4 +19,6 @@ If you missed it in the previous guides, you can add the device so it appears in
 
 
 ## Step 4: How to configure the device in Home Assistant 
+The last thing you need to do is specify your desk's physical minimum and maximum height limits.
+
 [Configuration in Home Assistant](/docs/configuration/README.md)

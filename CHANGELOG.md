@@ -1,5 +1,6 @@
 # 2025.6.0
 - Release of the DeskUp Pro Controller as a product
+- Added a substitution variable to allow changing the ESP32 Led from the default of GRB (if required, as some chip batches can swap this to RGB). You have to have adopted the device in ESPHome Builder to use this.
 
 # 2025.5.0
 - Fixes a bug in the original community code where the slider didn't always move the desk, sometimes needing multiple presses before it did.

@@ -4,6 +4,8 @@ substitutions:
   tx_pin: "GPIO13"
   rx_pin: "GPIO12"
 
+  esp32_led_order: "GRB"  #RGB
+
   #Default to the physical Min and Max height limits for a Maidesite TH2 Plus Art desk which are the lowest/highest
   #height range of all Maidesite desks. But you can override these using the 2 text boxes.
   #Which should either match your desk physical min/max height limit or just be set to the min/max desk height you will use.
@@ -14,6 +16,7 @@ substitutions:
 
 packages:
   # Package needed when flashing devices to let users configure Wi-Fi on their device when 1st powered up.
+  # This is not needed if you copy the code from github and adopt it yourself
   device_base: !include deployment-config.yaml
 
 esphome:
@@ -21,7 +24,7 @@ esphome:
   friendly_name: ${friendly_name}
   project:
     name: SmartHomeGuys.DeskUp Pro Controller (RJ12)
-    version: "2025.5.2"
+    version: "2025.6.0"
   name_add_mac_suffix: false
   on_boot:
     priority: 800
@@ -37,6 +40,13 @@ esp32:
 logger:
   #loglevel:  e.g. NONE, ERROR, WARN, INFO, DEBUG, VERBOSE, VERY_VERBOSE
 
+wifi:
+
+time:
+  #- platform: homeassistant
+  # id: ha_time
+  - platform: sntp
+    id: sntp_time
 
 # Desk code begins
 uart:
@@ -92,12 +102,6 @@ globals:
     type: long
     restore_value: no
     initial_value: "0"
-
-time:
-  #- platform: homeassistant
-   # id: ha_time
-  - platform: sntp
-    id: sntp_time
 
 script:
   # Increment idle counter by 1 second every second
@@ -351,7 +355,7 @@ button:
         - uart.write: [0xF1, 0xF1, 0x27, 0x00, 0x27, 0x7E]
   
   - platform: template
-    name: "Desk M4 (TEST)"
+    name: "Desk M4"
     id: "button_desk_m4"
     icon: mdi:numeric-4-circle-outline
     on_press:
@@ -413,8 +417,7 @@ cover:
       }
 
 
-# This control is not exposed to homeassistant as using the cover control instead
-# But this is used to store the desk height in cm
+# This control is used to store the desk height in cm
 number:
   - platform: template
     name: "Desk Height"
@@ -424,7 +427,7 @@ number:
     step: 0.1
     unit_of_measurement: "cm"
     mode: slider
-    internal: false    # dont expose to Homeassistant as a control
+    internal: false    # expose to Homeassistant as a control
     on_value:
       then:
         # Update the 2 height sensors (cm) and percent (%) with the new height value
@@ -486,8 +489,9 @@ number:
 light:
   - platform: neopixelbus
     variant: WS2812
-    type: RGB
+    type: ${esp32_led_order}
     pin: GPIO21
     num_leds: 1
     name: "ESP32 LED"
     restore_mode: ALWAYS_OFF
+

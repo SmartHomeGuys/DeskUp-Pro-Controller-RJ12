@@ -8,7 +8,12 @@ The device plugs into the Maidesite desk controllers RJ12 port. Then once connec
 
 All the existing functionality of the desks controller is retained. If you use the desk's control panel to move the desk it's height is instantly updated in Home Assistant.
 
-### ADD HA IMAGES HERE
+### ADD PRODUCT IMAGE HERE
+<p align="center">
+  <img src="images/DeskUp-Pro-Controls.jpg" height="350px" />
+  <img src="images/DeskUp-Pro-Sensors.jpg" height="350px" />
+  <img src="images/DeskUp-Pro-Cover-Slider.jpg" height="350px" />
+</p>
 
 The firmware of the DeskUp Pro Controller is based on ESPHome and the device itself uses an ESP32 chip that is powered by the desks controller over the RJ12 Cable, so no USB cable is needed to power it.
 

@@ -52,6 +52,12 @@ Confirmed working using RJ11 cable (4 pins which is fine as RJ12 has 6 but only 
 https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/443
 
 
+## Desktopia Pro X
+Confirmed working once the correct pins were specified in config (mentioned if you read the entire chain)
+
+https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/420
+
+
 ## Jiecang JCB35M11C
   
 Confirmed as device used at top of this post

@@ -1,7 +1,7 @@
 # ⚠️ Check if your desk is compatible
 You should understand the risks before purchasing any components to build this yourself or if you purchase a prebuilt one from the shop. It's your responsibility to determine if its fit for your purpose. 
 
-- Your desk must have a free RJ12 port on the controller (6 pins).
+- Your desk must have a free RJ12 port on the controller (6 pins).  Sometimes this will be indicated with an 'F' next to it.
 
 ![](images/MaidsiteDeskControlBox-Back.jpg)
 
@@ -36,23 +36,25 @@ It has the same 4 presets and nudge up/down as the Premium controller above does
 ![](images/MaidesiteDeskControlBox-standard.png)
 
 
-## Other manufacturer desks or controllers that should be compatible
-Members of the community have tested these desks or controllers, which appear to send the same commands so good chance these are compatible.
+# Other manufacturer desks or controllers that should be compatible
+Members of the community have tested these desks or controllers on other similar projects to this one, which appear to send the same commands so there is a good chance these are compatible.
 
-- IKEA MITTZON
+## IKEA MITTZON
 
 Confirmed working in post 3: 
+
 https://github.com/phord/Jarvis/issues/33
 
 
-- Jiecang JCB35M11C
+## Jiecang JCB35M11C
   
-Confirmed device at top of this post
+Confirmed as device used at top of this post
 https://github.com/Rocka84/esphome_components/blob/a083c17882361c58071b85d45587c410582cda75/components/jiecang_desk_controller/
 
 https://www.jiecang.com/product/jcb35m11c.html
 
-**It's very likely that other Jiecang controllers are supported too which are used on Fully Jarvis desks.**
+
+**It's very likely that other Jiecang controllers are supported too which are used on Fully Jarvis and Desky desks.**
 
 
 ## Links to other community info used when compiling this list

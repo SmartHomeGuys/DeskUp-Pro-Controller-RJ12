@@ -1,6 +1,6 @@
 # Making a Maidesite Standing Desk Smart
 
-## ⚠️ Note this project is very much a work in-progress right now, hoping to be completed by end June 2025. 
+## ⚠️ Note this project is a work in-progress right now, hoping to be completed by end June 2025. 
 
 Have you purchased a standing desk only to find you don't stand up!  Then if you have a Maidesite Desk we have a device called 'DeskUp Pro' that allows you to control your desk from Home Assistant ([see some examples below of how you could automate it](#example-automations-you-could-create-that-integrate-with-your-desk))
 

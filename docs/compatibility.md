@@ -53,7 +53,7 @@ https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-des
 
 
 ## Desktopia Pro X
-Confirmed working once the correct pins were specified in config (mentioned if you read the entire chain)
+Confirmed working once the correct pins were specified in config (mentioned here if you read the entire chain)
 
 https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/420
 

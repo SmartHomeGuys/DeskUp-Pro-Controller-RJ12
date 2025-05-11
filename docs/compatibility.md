@@ -43,11 +43,14 @@ Members of the community have tested these desks or controllers.
 
 https://www.jiecang.com/product/jcb35m11c.html
 
-It's very likely that other Jiecang controllers are supported too
+It's very likely that other Jiecang controllers are supported too such as Jiecang JCB36N2CA fitted in recent Fully Jarvis models.
 
 
 ## Links to community info used when compiling this list
 https://www.maidesite.co.uk/pages/buyer-guide
 
 https://github.com/Rocka84/esphome_components/blob/a083c17882361c58071b85d45587c410582cda75/components/jiecang_desk_controller/README.md
+
+https://github.com/phord/Jarvis#physical-interface-rj-12
+
 

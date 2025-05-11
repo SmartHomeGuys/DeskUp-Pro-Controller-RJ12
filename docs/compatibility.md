@@ -39,6 +39,12 @@ It has the same 4 presets and nudge up/down as the Premium controller above does
 ## Other manufacturer desks or controllers that should be compatible
 Members of the community have tested these desks or controllers.
 
+IKEA MITTZON
+https://www.ikea.com/gb/en/p/mittzon-desk-sit-stand-electric-white-s19527573/
+
+Confirmed working on here
+https://github.com/phord/Jarvis/issues/33
+
 - Jiecang JCB35M11C
 
 https://www.jiecang.com/product/jcb35m11c.html

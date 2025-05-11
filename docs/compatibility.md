@@ -46,6 +46,12 @@ Confirmed working in post 3:
 https://github.com/phord/Jarvis/issues/33
 
 
+## Ikea Uppspel
+Confirmed working using RJ11 cable (4 pins which is fine as RJ12 has 6 but only uses 4)
+
+https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/443
+
+
 ## Jiecang JCB35M11C
   
 Confirmed as device used at top of this post

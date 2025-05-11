@@ -37,31 +37,26 @@ It has the same 4 presets and nudge up/down as the Premium controller above does
 
 
 ## Other manufacturer desks or controllers that should be compatible
-Members of the community have tested these desks or controllers, which send the same commands.
+Members of the community have tested these desks or controllers, which appear to send the same commands so good chance these are compatible.
 
 - IKEA MITTZON
-Confirmed working on here in post 3
 
+Confirmed working in post 3: 
 https://github.com/phord/Jarvis/issues/33
 
 
 - Jiecang JCB35M11C
   
-https://www.jiecang.com/product/jcb35m11c.html
+Confirmed device at top of this post
 https://github.com/Rocka84/esphome_components/blob/a083c17882361c58071b85d45587c410582cda75/components/jiecang_desk_controller/
 
-It's very likely that other Jiecang controllers are supported too such as Jiecang JCB36N2CA fitted in recent Fully Jarvis models.
+https://www.jiecang.com/product/jcb35m11c.html
+
+**It's very likely that other Jiecang controllers are supported too which are used on Fully Jarvis desks.**
 
 
-## Links to community info used when compiling this list
+## Links to other community info used when compiling this list
 https://www.maidesite.co.uk/pages/buyer-guide
-
-IKEA MITTZON
-Confirmed working on here in post 3
-https://github.com/phord/Jarvis/issues/33
-
-Jiecang JCB35M11C
-https://github.com/Rocka84/esphome_components/blob/a083c17882361c58071b85d45587c410582cda75/components/jiecang_desk_controller/README.md
 
 https://github.com/phord/Jarvis#physical-interface-rj-12
 

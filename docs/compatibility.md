@@ -1,7 +1,7 @@
 # ⚠️ Check if your desk is compatible
 You should understand the risks before purchasing any components to build this yourself or if you purchase a prebuilt one from the shop. It's your responsibility to determine if its fit for your purpose. 
 
-- Your Maidesite desk must have a free RJ12 port on the controller.
+- Your desk must have a free RJ12 port on the controller (6 pins).
 
 ![](images/MaidsiteDeskControlBox-Back.jpg)
 
@@ -28,19 +28,26 @@ These desks should be compatible as members of the community have used this cont
 ## Maidesite desks using the Standard controller
 This has a very similar design to the Premium one above but as of now no one in the community has tested it. 
 
+It has the same 4 presets and nudge up/down as the Premium controller above does, it just has a slightly different screen layout. It does have an RJ12 port. There is a good chance these might be compatible.
+
 - T1 Pro
 - SN1
 
 ![](images/MaidesiteDeskControlBox-standard.png)
 
-It has the same 4 presets and nudge up/down as the Premium controller above does, it just has a slightly different screen layout. It does have an RJ12 port. There is a chance this might be compatible.
+
+## Other manufacturer desks or controllers that should be compatible
+Members of the community have tested these desks or controllers.
+
+- Jiecang JCB35M11C
+
+https://www.jiecang.com/product/jcb35m11c.html
+
+It's very likely that other Jiecang controllers are supported too
 
 
-## Maidesite desks using other controllers 
-These are a very different design so are unlikely to work, and am currently unable to determine if they even have an RJ12 port.
-
-- TO1 
-- T4 Pro Plus
-
-## Other Info
+## Links to community info used when compiling this list
 https://www.maidesite.co.uk/pages/buyer-guide
+
+https://github.com/Rocka84/esphome_components/blob/a083c17882361c58071b85d45587c410582cda75/components/jiecang_desk_controller/README.md
+

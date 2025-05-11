@@ -56,6 +56,7 @@ https://www.jiecang.com/product/jcb35m11c.html
 
 **It's very likely that other Jiecang controllers are supported too which are used on Fully Jarvis and Desky desks.**
 
+<br />
 
 ## Links to other community info used when compiling this list
 https://www.maidesite.co.uk/pages/buyer-guide

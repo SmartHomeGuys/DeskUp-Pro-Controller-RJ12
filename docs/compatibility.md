@@ -1,7 +1,9 @@
 # ⚠️ Check if your desk is compatible
 You should understand the risks before purchasing any components to build this yourself or if you purchase a prebuilt one from the shop. It's your responsibility to determine if its fit for your purpose. 
 
-- Your desk must have a free RJ12 port on the controller (6 pins).  Sometimes this will be indicated with an 'F' next to it.
+- Your desk must have a free RJ12 port on the controller (6 pins)
+- Or sometimes it's an RJ11 port which is the same size it just has 4 pins. Which is fine because even with the 6 pin RJ12 we only use 4 wires anyway. The 1st and last wires are not used.
+- Sometimes the controller will indicate an RJ11/12 with an 'F' next to it.
 
 ![](images/MaidsiteDeskControlBox-Back.jpg)
 
@@ -65,6 +67,7 @@ https://github.com/Rocka84/esphome_components/blob/a083c17882361c58071b85d45587c
 
 https://www.jiecang.com/product/jcb35m11c.html
 
+<br />
 
 **It's very likely that other Jiecang controllers are supported too which are used on Fully Jarvis and Desky desks.**
 

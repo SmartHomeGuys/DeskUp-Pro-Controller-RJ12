@@ -1,10 +1,10 @@
-# Making a Maidesite Standing Desk Smart
+# Making Standing Desks with RJ11/RJ12 ports Smart
 
 ## ⚠️ Note this project is a work in-progress right now, hoping to be completed by end June 2025. 
 
-Have you purchased a standing desk only to find you don't stand up!  Then if you have a Maidesite Desk we have a device called 'DeskUp Pro' that allows you to control your desk from Home Assistant ([see some examples below of how you could automate it](#example-automations-you-could-create-that-integrate-with-your-desk))
+Have you purchased a standing desk only to find you don't stand up!  Then if you have a desk controller with an RJ11/RJ12 port we have a device called 'DeskUp Pro' that allows you to control your desk from Home Assistant ([see some examples below of how you could automate it](#example-automations-you-could-create-that-integrate-with-your-desk))
 
-The device plugs into the Maidesite desk controllers RJ12 port. Then once connected to Wi-Fi and added to Home Assistant you can control your standing desk from your phone or automations. 
+It connects over Wi-Fi to Home Assistant from there you can control your standing desk from your phone, automations and voice.
 
 All the existing functionality of the desks controller is retained. If you use the desk's control panel to move the desk it's height is instantly updated in Home Assistant.
 
@@ -18,9 +18,9 @@ All the existing functionality of the desks controller is retained. If you use t
   <img src="images/DeskUpPro-Configuration.jpg" height="350px" />
 </p>
 
-The firmware of the DeskUp Pro Controller is based on ESPHome and the device itself uses an ESP32 chip that is powered by the desks controller over the RJ12 Cable, so no USB cable is needed to power it.
+The firmware of the DeskUp Pro Controller is based on ESPHome and the device itself uses an ESP32 chip that is powered by the desks controller over the RJ11/RJ12 Cable, so no USB cable is needed to power it.
 
-### Example automations you could create that integrate with your desk
+### Example automations you could create  with your desk
 - If you're sitting for too long, automatically raise the desk to standing height.
   - Or announce on a smart speaker that you have been sat down too long.
   - Or maybe flash a light
@@ -61,6 +61,7 @@ And would simply like to get a device pre-built, in a box that you can plug in t
 
 #### ⚠️ Check Compatibility
 - You must be running Home Assistant.
+- Your desk must have a free RJ11/RJ12 port.
 - Before you decide to build or buy check the compatibility of your [desk here](docs/compatibility.md)
 
 You should understand the risks before purchasing any components to build this yourself or if you purchase a prebuilt one from the shop. It's your responsibility to determine if its fit for your purpose. 

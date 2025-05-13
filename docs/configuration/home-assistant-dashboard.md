@@ -11,6 +11,8 @@ And using the 'Mushroom Cover Card' to render the height cover.
 
 After 30 minutes with the desk at sitting height the background changes colour on the 'Desk Idle Time' card to indicate its time to standup.
 
+![](images/Desk-Dashboard-Idle-Warning.jpg)
+
 Yaml for this:
 ```
 views:

@@ -1,4 +1,4 @@
-# Example Home Assistant Dashboard Card
+# Example Home Assistant Dashboard
 
 On here we are using the custom button-card to show:
 - The current height of the desk.

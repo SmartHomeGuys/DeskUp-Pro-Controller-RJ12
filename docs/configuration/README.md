@@ -2,7 +2,7 @@
 
 [Screen Layout and what it all does](home-assistant-screen-layout.md)
 
-[Example Dashboard Cards](home-assistant-dashboard.md)
+[Example Dashboard](home-assistant-dashboard.md)
 
 [Example Automations](home-assistant-automations.md)
 

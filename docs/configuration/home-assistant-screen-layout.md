@@ -17,6 +17,6 @@
 
 ## Diagnostics
 
-![](images/DeskUpPro-Siagnostics.jpg)
+![](images/DeskUpPro-Diagnostics.jpg)
 
 

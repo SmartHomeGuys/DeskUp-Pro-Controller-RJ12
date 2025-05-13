@@ -12,10 +12,10 @@ All the existing functionality of the desks controller is retained. If you use t
 
 ## What's shown in Home Assistant
 <p align="center">
-  <img src="images/DeskUp-Pro-Controls.jpg" height="350px" />
+  <img src="images/DeskUpPro-Controls.jpg" height="350px" />
   <img src="images/DeskUp-Pro-Cover-Slider.jpg" height="350px" />
-  <img src="images/DeskUp-Pro-Sensors.jpg" height="350px" />
-  <img src="images/DeskUp-Pro-Configuration-and-Diagnostics.jpg" height="350px" />
+  <img src="images/DeskUpPro-Sensors.jpg" height="350px" />
+  <img src="images/DeskUpPro-Configuration.jpg" height="350px" />
 </p>
 
 The firmware of the DeskUp Pro Controller is based on ESPHome and the device itself uses an ESP32 chip that is powered by the desks controller over the RJ12 Cable, so no USB cable is needed to power it.

@@ -1,7 +1,9 @@
 # Example Home Assistant Automations
 
-## Contents
-[Hey Google Raise the Desk](#Hey Google Raise the Desk)
+## Automations
+1. [Hey Google Raise the Desk](#Hey-Google-Raise-the-Desk)
+
+
 
 ## Hey Google Raise the Desk
 The DeskUp Pro has a Cover entity. Exposing this entity to Google Home allows it to be controllable as a device in Google Home.

@@ -29,13 +29,21 @@ Once connected to Wi-Fi you should be asked to Add the device to Home Assistant.
 
 ![](images/Setup-USB-Ask-to-add-to-homeassistant.png)
 
-You can click that button and follow the wizard to add the device to Home Assistant.  Or If you look in Home Assistant it will already have detected the device and you can click 'Skip' here and go and add the device from within Home Assistant.
+You can click that button and follow the wizard to add the device to Home Assistant.  
+
+If the device isn't detected by Home Assistant it will ask you for the 'Host', just add the IP number of the DeskUp Pro device here, which you will find by looking on your router.
+
+![](images/Setup-USB-Homeassistant-prompt-for-host.png)
+
+ Or if you chose to click 'skip' on the previous screen then usually Home Assistant will already have detected the device and will be asking you to add the device to Home Assistant.
 
 ![](images/Setup-USB-Homeassistant-device-detected.png)
 
 You can follow [this guide to add the device to Home Assistant](add-to-home-assistant.md).
 
 
-## If all else fails Flash the latest firmware
+## You shouldn't need to, but you can also manually Flash the latest firmware
 If you ever need to reset the device's firmware and connect it back to Wi-Fi again just follow the instructions above but choose the 'Install DeskUp Pro Controller' option instead.
+
+This will flash the latest firmware and then prompt to connect it to Wi-Fi.
 

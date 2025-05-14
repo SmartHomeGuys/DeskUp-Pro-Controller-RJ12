@@ -2,11 +2,11 @@
 
 ## Automations
 1. [Announce on Alexa if sat down for 30 mins and nag me at 35](#Announce-on-Alexa-if-sat-down-for-30-mins-and-nag-me-at-35)
-2. todo
+2. [Reset Desk Controller Idle Timer if Presence is Detected](#Reset-Desk-Controller-Idle-Timer-if-Presence-is-Detected)
 3. [Hey Google Raise the Desk](#Hey-Google-Raise-the-Desk)
 
 
-## 1. Announce on Alexa if sat down for 30 mins and nag me at 35
+## Announce on Alexa if sat down for 30 mins and nag me at 35
 Makes an announcement on Alexa if:
 - Someone is in the room (using a presence sensor)
 - And if the desk has been idle at a sitting height for 30 mins.
@@ -72,8 +72,8 @@ actions:
 mode: single
 ```
 
-## 2. Reset Desk Controller Idle Time if Presence is Detected
-This compliments the above so if the desk is at sitting height and I walk out of the room then when I come back in a presence sensor detects me and the automation presses the Reset Idle Time button to start the timer at 0 again.
+## Reset Desk Controller Idle Timer if Presence is Detected
+This compliments the above.  When the desk is at sitting height and I walk out of the room, when I come back in a presence sensor detects me and the automation presses the "Reset Idle Timer button" on the DeskUp Pro to set the timer back to 0 again.
 
 ```
 alias: Office Desk Reset Desk Controller if Presence Detected
@@ -97,7 +97,7 @@ mode: single
 ```
 
 
-## 3. Hey Google Raise the Desk
+## Hey Google Raise the Desk
 The DeskUp Pro has a Cover entity. Exposing this entity to Google Home allows it to be controllable as a device in Google Home.
 
 One option is to use the Home Assistant Matter Hub addon to expose the device to Google Home.

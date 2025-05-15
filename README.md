@@ -2,7 +2,7 @@
 
 ## ⚠️ Note this project is a work in-progress right now, hoping to be completed by end June 2025. 
 
-Have you purchased a standing desk only to find you don't stand up!  Then if you have a desk controller with an RJ11/RJ12 port we have a device called 'DeskUp Pro' that allows you to control your desk from Home Assistant ([see some examples below of how you could automate it](#example-automations-you-could-create-that-integrate-with-your-desk))
+Have you purchased a standing desk only to find you don't stand up!  Then if you have a desk controller with an RJ11/RJ12 port we have a device called 'DeskUp Pro' that lets you control your desk from Home Assistant ([see some examples below of how you could automate it](#example-automations-you-could-create-that-integrate-with-your-desk))
 
 It connects over Wi-Fi to Home Assistant from there you can control your standing desk from your phone, automations and voice.
 
@@ -18,7 +18,14 @@ All the existing functionality of the desks controller is retained. If you use t
   <img src="images/DeskUpPro-Configuration.jpg" height="350px" />
 </p>
 
-The firmware of the DeskUp Pro Controller is based on ESPHome and the device itself uses an ESP32 chip that is powered by the desks controller over the RJ11/RJ12 Cable, so no USB cable is needed to power it.
+
+### Specs
+- The firmware of the DeskUp Pro Controller is based on ESPHome
+- The device itself uses an ESP32 chip that is powered by the desks controller over the RJ11/RJ12 Cable, so no USB cable is needed to power it.
+- Protocol used is 2.4ghz Wi-Fi 
+- Device can be connected to Home Assistant during setup using USB C cable (not supplied), Bluetooth, Captive Portal (Wi-Fi hotspot)
+
+
 
 ### Example automations you could create  with your desk
 - If you're sitting for too long, automatically raise the desk to standing height.
@@ -59,15 +66,29 @@ And would simply like to get a device pre-built, in a box that you can plug in t
 
 ### TODO ADD EBAY LINK
 
+
 #### ⚠️ Check Compatibility
 - You must be running Home Assistant.
-- Your desk must have a free RJ11/RJ12 port.
-- Before you decide to build or buy check the compatibility of your [desk here](docs/compatibility.md)
+- Any standing desk that has a free RJ11 / RJ12 port is likely to be compatible.
+- Before you decide to build or buy check the compatibility of your [desk here](docs/compatibility.md).
 
-You should understand the risks before purchasing any components to build this yourself or if you purchase a prebuilt one from the shop. It's your responsibility to determine if its fit for your purpose. 
+You should understand the risks before purchasing, it's your responsibility to determine if its fit for your purpose. 
 
 
-### Instructions
+### What's in the box if I bought one?
+- DeskUp Pro device with attached RJ12 cable flashed with the latest firmware
+- Housed in a 3D printed case
+- Velcro adhesive
+- Getting started guide
+
+### We test every device before we ship it
+- After building a device we flash it with the latest firmware.
+- We plug it into one of our desks and connect it to Home Assistant where we check the device reads the sensor values from the desk and the button controls move the desk.
+- We unplug and plug back in the device multiple times to check the cable and components are connected securely.
+- Finally we reflash the firmware and package it up in bubble wrap for shipping.
+
+
+### Documentation
 [Setup a purchased device](docs/setup/README.md)
 
 Build one yourself TODO

@@ -42,13 +42,16 @@ All the existing functionality of the desks controller is retained. If you use t
 
 You should understand the risks before purchasing, it's your responsibility to determine if its fit for your purpose. 
 
-_This is a product of reverse engineered code where each of the desks functions was extracted by the community, if your interested all of this can be found here:_
+_This is a product of reverse engineered code where each of the desks functions was extracted by the community. This can be found here and is a great place to go for advice and help:_
 
 https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293
 
-This product builds on that work by: 
-- Enhancing the original ESPHome yaml code from the community to include more features and some bug fixes.
-- Giving you the option to buy a prebuilt device or build one yourself.
+https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790?u=mahko_mahko
+
+This product builds on that great work by: 
+- Combining the desk control code reverse engineered by the community (by various people and projects) and putting it into this project.
+-  Added more features and fixed some bugs.
+- Given you the choice to buy a prebuilt device or follow the instructions to build one yourself.
 
 
 ### What's in the box if I bought one?

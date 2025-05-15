@@ -57,13 +57,14 @@ You should understand the risks before purchasing, it's your responsibility to d
 
 
 ### Specs
-- The firmware of the DeskUp Pro Controller is based on ESPHome
-- The device itself uses an ESP32 chip that is powered by the desks controller over the RJ11/RJ12 Cable, so no USB cable is needed to power it.
+- The firmware of the DeskUp Pro is based on ESPHome
+- The device itself uses an ESP32 chip that is powered by the desk's controller over the RJ11 / RJ12 Cable, so no USB cable is needed to power it.
 - Protocol used is 2.4ghz Wi-Fi 
-- Device can be connected to Home Assistant during setup using USB C cable (not supplied), Bluetooth, Captive Portal (Wi-Fi hotspot)
+- Initial setup of the device to connect it to Home Assistant can be done using a USB C cable (not supplied), Bluetooth or a Captive Portal (Wi-Fi hotspot).
 
 
-## This project is also open source, and in this Github repository you can find
+## Prefer to build one yourself 
+This project is open source, and in this Github repository you can find everything to do just that:
 - Instructions on how to build/wire up the ESP32.
 - The full source code to control the desk.
 - Example Home Assistant dashboard cards.

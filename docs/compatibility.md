@@ -7,13 +7,14 @@ You should understand the risks before purchasing any components to build this y
 
 ![](images/MaidsiteDeskControlBox-Back.jpg)
 
-- There is no guarantee that this device will work with your desk due to the different models out there. and the desk manufacturer can change their specifications at anytime even on the same model number.
+- There is no guarantee that the DeskUp Pro device will work with your desk due to the different models out there. and desk manufacturers can change their specifications at anytime even on the same model number.
 
 - As this is a product of reverse engineering (by the community), until you try it on your desk there is no way to be 100% certain that it will or won't work.
 
+Below is a list of desks we know are compatible or could be:
 
 ## Maidesite desks using the Premium controller 
-These desks should be compatible as members of the community have used this controller on some of these.
+These desks should be compatible as they come with this controller and members of the community have used some of these.
 
 - TH2 Plus Art
 - T2 Pro

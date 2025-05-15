@@ -1,12 +1,15 @@
-# Making Standing Desks with RJ11/RJ12 ports Smart
+# DeskUp Pro - Making Standing Desks with RJ11 / RJ12 ports Smart
 
 ## ⚠️ Note this project is a work in-progress right now, hoping to be completed by end June 2025. 
 
-Have you purchased a standing desk only to find you don't stand up!  Then if you have a desk controller with an RJ11/RJ12 port we have a device called 'DeskUp Pro' that lets you control your desk from Home Assistant ([see some examples below of how you could automate it](#example-automations-you-could-create-that-integrate-with-your-desk))
+Have you purchased a standing desk only to find you don't stand up!  
 
-It connects over Wi-Fi to Home Assistant from there you can control your standing desk from your phone, automations and voice.
+Then if your desk controller has an RJ11 / RJ12 port use DeskUp Pro to control your desk from Home Assistant, from there you can control your standing desk from your phone, dashboards, automations and voice.
 
 All the existing functionality of the desks controller is retained. If you use the desk's control panel to move the desk it's height is instantly updated in Home Assistant.
+
+([see some examples below of how you could automate it](#example-automations-you-could-create-that-integrate-with-your-desk))
+
 
 ### ADD PRODUCT IMAGE HERE
 

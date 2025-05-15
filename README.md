@@ -38,9 +38,17 @@ All the existing functionality of the desks controller is retained. If you use t
 #### ⚠️ Check Compatibility
 - You must be running Home Assistant.
 - Any standing desk that has a free RJ11 / RJ12 port is likely to be compatible.
-- Before you decide to build or buy check the compatibility of your [desk here](docs/compatibility.md).
+- Before you proceed check the compatibility of your [desk here](docs/compatibility.md).
 
 You should understand the risks before purchasing, it's your responsibility to determine if its fit for your purpose. 
+
+_This is a product of reverse engineered code where each of the desks functions was extracted by the community, if your interested all of this can be found here:_
+
+https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293
+
+This product builds on that work by: 
+- Enhancing the original ESPHome yaml code from the community to include more features and some bug fixes.
+- Giving you the option to buy a prebuilt device or build one yourself.
 
 
 ### What's in the box if I bought one?
@@ -48,6 +56,11 @@ You should understand the risks before purchasing, it's your responsibility to d
 - Housed in a 3D printed case
 - Velcro adhesive
 - Getting started guide
+
+Plus in this repository you will find:
+- Example Home Assistant dashboard cards.
+- Example Home Assistant Automations.
+
 
 ### We test every device before we ship it
 - After building a device we flash it with the latest firmware.
@@ -64,21 +77,9 @@ You should understand the risks before purchasing, it's your responsibility to d
 
 
 ## Prefer to build one yourself 
-This project is open source, and in this Github repository you can find everything to do just that:
+In this Github repository you can find everything to do just that:
 - Instructions on how to build/wire up the ESP32.
 - The full source code to control the desk.
-- Example Home Assistant dashboard cards.
-- Example Home Assistant Automations.
-
-_This is a product of reverse engineered code where each of the desks functions was extracted by the community, if your interested all of this can be found here:_
-
-https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293
-
-
-This product builds on that work by:
-- Enhancing the original ESPHome yaml code from the community to include more features and some bug fixes.
-- Describing in detail how to wire up the ESP32 board which is all documented in this Git repository so you can do the same.  
-- Made all this free to use for your own personal use.
 
 However if you would prefer to avoid:
 - Buying the parts

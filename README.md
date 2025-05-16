@@ -4,7 +4,7 @@
 
 If your desk controller has an RJ11 / RJ12 port use DeskUp Pro to integrate your desk with Home Assistant, then control your standing desk from your phone, dashboards, automations or voice.
 
-All the existing functionality of the desks controller is retained. If you use the desk's control panel to move the desk it's height is instantly updated in Home Assistant.
+All the existing functionality of the desk's controller is retained. If you use the desk's control panel to move the desk it's height is instantly updated in Home Assistant.
 
 ### ADD PRODUCT IMAGE HERE
 

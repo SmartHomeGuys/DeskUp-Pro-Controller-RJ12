@@ -37,12 +37,12 @@ All the existing functionality of the desk's controller is retained. If you use 
 
 #### ⚠️ Check Compatibility
 - You must be running Home Assistant.
-- Any standing desk that has a free RJ11 / RJ12 port is likely to be compatible.
+- Any standing desk that has a free RJ11 / RJ12 port could be compatible.
 - Before you proceed check the compatibility of your [desk here](docs/compatibility.md).
 
 You should understand the risks before purchasing, it's your responsibility to determine if its fit for your purpose. 
 
-_This is a product of reverse engineered code where each of the desks functions was extracted by the community, not us. If you need help to determine if your desk might be compatible or find out it isnt the community sites in our need help section are a hreat place to go for advice._
+_This is a product of reverse engineered code where each of the desks functions was extracted by the community, not us. If you need help to determine if your desk might be compatible or find out it isnt the community sites in our need help section are a great place to go for advice._
 
 ### What's in the box if I bought one?
 - DeskUp Pro device with attached RJ12 cable flashed with the latest firmware
@@ -58,7 +58,7 @@ Plus in this repository you will find:
 ### We test every device before we ship it
 - After building a device we flash it with the latest firmware.
 - We plug it into one of our desks and connect it to Home Assistant where we check the device reads the sensor values from the desk and the button controls move the desk.
-- We unplug and plug back in the device multiple times to check the cable and components are connected securely.
+- We unplug and plug the device back in multiple times to check the cable and components are connected securely.
 - Finally we reflash the firmware and package it up in bubble wrap for shipping.
 
 

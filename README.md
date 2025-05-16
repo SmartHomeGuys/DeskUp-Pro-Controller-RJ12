@@ -72,7 +72,9 @@ Plus in this repository you will find:
 ## Prefer to build one yourself 
 In this Github repository you can find everything to do just that:
 - Instructions on how to build/wire up the ESP32.
-- The full source code to control the desk.
+- The full source code to control the desk wriiten using community reverse engineered desk logic (from multiple git repos) and pulled together the best bits in to this project.
+- Made a yaml only version of the code to make it easier for non c++ programmers to change.
+- Added a number of our own features to it
 
 However if you would prefer to avoid:
 - Buying the parts

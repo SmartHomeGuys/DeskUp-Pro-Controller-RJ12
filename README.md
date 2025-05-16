@@ -42,17 +42,7 @@ All the existing functionality of the desks controller is retained. If you use t
 
 You should understand the risks before purchasing, it's your responsibility to determine if its fit for your purpose. 
 
-_This is a product of reverse engineered code where each of the desks functions was extracted by the community. This can be found here and is a great place to go for advice and help:_
-
-https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293
-
-https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790?u=mahko_mahko
-
-This product builds on that great work by: 
-- Combining the desk control code reverse engineered by the community (by various people and projects) and putting it into this project.
--  Added more features and fixed some bugs.
-- Given you the choice to buy a prebuilt device or follow the instructions to build one yourself.
-
+_This is a product of reverse engineered code where each of the desks functions was extracted by the community, not us. If you need help to determine if your desk might be compatible or find out it isnt the community sites in our need help section are a hreat place to go for advice._
 
 ### What's in the box if I bought one?
 - DeskUp Pro device with attached RJ12 cable flashed with the latest firmware
@@ -100,4 +90,12 @@ Build one yourself TODO
 
 [Configure the device in Home Assistant](docs/configuration/README.md)
 
+### Need Help
+The community sites are a great place to ask for advice:
+
+https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293
+
+https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790?u=mahko_mahko
+
+### License
 

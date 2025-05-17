@@ -73,6 +73,26 @@ or just 04:45:02 (if days is 0)
 
 
 ## Controls
+All these controls can be pressed in a Home Assistant automation.
+
+### Desk Height (defaults to cm)
+Shows the height of the desk that is being returned from the desk's controller. But also let's you set the height of the desk using the slider or from a Home Assistant automation.
+
+If you chose inches for your height unit then "in" will be shown here.
+
+### Desk M1, M2, M3, M4 Buttons
+When pressed moves the desk to the height set in the memory preset.
+
+### Desk Nudge Down / Up Buttons
+When pressed moves the desk up or down by approximately 10mm.
+
+### Desk Stop
+When pressed stops a moving desk.
+
+
+
+
+
 
 ![](images/DeskUpPro-Controls.jpg)
 

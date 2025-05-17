@@ -101,7 +101,7 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
 
 https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790?u=mahko_mahko
 
-_A gental reminder that we did not reverse engineer the desk controller code, that was done by members from the community. If your desk doesn't work or only partially works the sites above are the best place for help.  You can then take control of all the yaml code in ESPHome Builder and adjust it to work with your desk.  If you do and it's compatible with the code in this project we'd appreciate you adding a pull request we can review so we can help others with the same desk too._
+_A gental reminder that we did not reverse engineer the desk controller code, that was done by members from the community. If your desk doesn't work or only partially works the sites above are the best place for help.  You can then take control of all the yaml code in ESPHome Builder and adjust it to work with your desk.  If you do and it's compatible with the code in this project we'd appreciate you adding a pull request so we can help others with the same desk too._
 
 Or if it's not a compatibility question then log an issue to this Git Repo and we will try to help.
 

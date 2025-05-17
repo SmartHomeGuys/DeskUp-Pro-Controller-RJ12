@@ -45,6 +45,10 @@ Push each wire through the correct hpin ole so it comes out the bottom and solde
 Thats the board and cable all done.  If anything doesn't work later in Home Assistant it's more than likely to do with the soldering!
 
 
+## 3D Print a Box
+TODO
+
+
 ## Home Assistant Configuration
 You first need to setup the ESP32 in Home Assistant which can be done within Home Assistant using ESPHome Builder.
 

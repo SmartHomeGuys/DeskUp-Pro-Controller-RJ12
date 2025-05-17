@@ -20,6 +20,8 @@ You should change this to either:
 
     Doing this gives you a better experience when using the cover slider in Home Assistant as this has go up (100%) & go down (0%) buttons.
 
+    _Note: This does not prevent you using memory preset buttons or nudge up/down controls to move the desk outside of this range._
+
 If you chose inches for your height unit then you will need to enter inches values into this box.
 
   

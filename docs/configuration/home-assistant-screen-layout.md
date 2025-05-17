@@ -79,6 +79,13 @@ or just 04:45:02 (if days is 0)
 
 ## Diagnostics
 
+### ESP32 Restart
+Pressing this will reboot the device.
+
+### ESP32 Uptime
+Shows how long the device has been online for.
+
+
 ![](images/DeskUpPro-Diagnostics.jpg)
 
 

@@ -64,6 +64,9 @@ Converts the idle seconds into a timestamp value that can be displayed on a Home
 
 Days will only be shown if the desk is idle for 1 day.
 
+e.g. 2 days, 04:45:02 
+
+or just 04:45:02 (if days is 0)
 
 
 ![](images/DeskUpPro-Sensors.jpg)

@@ -42,7 +42,7 @@ All the existing functionality of the desk's controller is retained. If you use 
 
 You should understand the risks before purchasing, it's your responsibility to determine if its fit for your purpose. 
 
-_This is a product of reverse engineered code where each of the desks functions was extracted by the community, not us. If you need help to determine if your desk might be compatible or find out it isnt the community sites in our [need help section](#need-help) are a great place to go for advice._
+_This is a product of reverse engineered code where each of the desks functions were extracted by the community, not us. If you need help to determine if your desk might be compatible or find out it isnt the community sites in our [need help section](#need-help) are a great place to go for advice._
 
 ### What's in the box if I bought one?
 - DeskUp Pro device with attached RJ12 cable flashed with the latest firmware
@@ -72,7 +72,7 @@ Plus in this repository you will find:
 ## Prefer to build one yourself 
 In this Github repository you can find everything to do just that:
 - Instructions on how to build/wire up the ESP32.
-- The full source code to control the desk wriiten using community reverse engineered desk logic (from multiple git repos) and pulled together the best bits in to this project.
+- The full source code to control the desk wriiten using community reverse engineered desk logic (from multiple git repos) we pulled together the best bits in to this project.
 - Made a yaml only version of the code to make it easier for non c++ programmers to change.
 - Added a number of our own features to it
 

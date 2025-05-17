@@ -54,10 +54,15 @@ Shows the height of the memory preset button that is being returned from the des
 
 If you chose inches for your height unit then "in" will be shown here.
 
-### Idle Time
+### Idle Time (seconds)
+Timer on the DeskUp Pro device that counts the number of seconds the desk has been idle/not moved for.
 
+Use this sensor in Home Assistant automations when you want to trigger an automation to start after the desk has been idle for X number of seconds.
 
-### Idle Timestamp
+### Idle Timestamp (days, hh:mm:ss)
+Converts the idle seconds into a timestamp value that can be displayed on a Home Assistant dashboard.
+
+Days will only be shown if the desk is idle for 1 day.
 
 
 

@@ -51,8 +51,8 @@ _This is a product of reverse engineered code where each of the desks functions 
 - Getting started guide
 
 Plus in this repository you will find:
-- Example Home Assistant dashboard cards.
-- Example Home Assistant Automations.
+- Example Home Assistant [dashboard cards](docs/configuration/home-assistant-dashboards.md).
+- Example Home Assistant [automations](docs/configuration/home-assistant-automations.md).
 
 
 ### We test every device before we ship it

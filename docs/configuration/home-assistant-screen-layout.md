@@ -89,9 +89,24 @@ When pressed moves the desk up or down by approximately 10mm.
 ### Desk Stop
 When pressed stops a moving desk.
 
+### ESP32 LED
+Turns on/off the onboard led light. You can also set the color of it.
+
+This is not used by the DeskUp Pro firmware but is exposed to Home Assistant anyway, in case you can think of any use cases.
+
+### Height Slider
+This is a Home Assistant Cover (currently there is no control in Home Assistant specifically for desks).
+
+It uses the desk height percent sensor to determine its value (0% to 100%).
+
+You can control the desk using the cover slider.
+An added benefit of having a Cover entity exposed to Home Assistant is it can also be integrated to Google Home where the desk can be controlled by voice. See the example automations page for an example of this bring used.
 
 
+### Reset Idle Time 
+When pressed sets the Idle Time sensor back to 0.
 
+See the example automations page for an example of this bring used.
 
 
 ![](images/DeskUpPro-Controls.jpg)

@@ -101,13 +101,13 @@ It uses the desk height percent sensor to determine its value (0% to 100%).
 
 You can control the desk using the cover slider.
 
-An added benefit of having a Cover entity exposed to Home Assistant is it can also be integrated to Google Home where the desk can be controlled by voice. See the example automations page for an example of this bring used.
+An added benefit of having a Cover entity exposed to Home Assistant is it can also be integrated to Google Home where the desk can be controlled by voice. See the [example automations](home-assistant-automations.md) page for an example of this bring used.
 
 
 ### Reset Idle Time 
 When pressed sets the Idle Time sensor back to 0.
 
-See the example automations page for an example of this bring used.
+See the [example automations](home-assistant-automations.md) page for an example of this bring used.
 
 
 ![](images/DeskUpPro-Controls.jpg)

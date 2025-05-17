@@ -66,7 +66,7 @@ Plus in this repository you will find:
 - The firmware of the DeskUp Pro is based on ESPHome
 - The device itself uses an ESP32 chip that is powered by the desk's controller over the RJ11 / RJ12 Cable, so no USB cable is needed to power it.
 - Protocol used is 2.4ghz Wi-Fi 
-- Initial setup of the device to connect it to Home Assistant can be done using a USB C cable (not supplied), Bluetooth or a Captive Portal (Wi-Fi hotspot).
+- Initial setup of the device to connect it to Home Assistant can be done using a USB C cable (not supplied), Bluetooth (if your Home Assistant has a Bluetooth proxy) or a Captive Portal (Wi-Fi hotspot).
 
 
 ## Prefer to build one yourself 

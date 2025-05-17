@@ -67,6 +67,7 @@ Plus in this repository you will find:
 - The device itself uses an ESP32 chip that is powered by the desk's controller over the RJ11 / RJ12 Cable, so no USB cable is needed to power it.
 - Protocol used is 2.4ghz Wi-Fi 
 - Initial setup of the device to connect it to Home Assistant can be done using a USB C cable (not supplied), Bluetooth (if your Home Assistant has a Bluetooth proxy) or a Captive Portal (Wi-Fi hotspot).
+- Configure the DeskUp Pro in Home Assistant to show the desk's height measurements in cm or inches.
 
 
 ## Prefer to build one yourself 

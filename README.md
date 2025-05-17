@@ -1,4 +1,4 @@
-# DeskUp Pro - Making Standing Desks with RJ11 / RJ12 port Smart
+# DeskUp Pro - Making Standing Desks with an RJ11 / RJ12 port Smart
 
 ## ⚠️ Note this project is a work in-progress right now, hoping to be completed by end June 2025. 
 

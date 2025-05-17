@@ -40,6 +40,27 @@ Pressing these will set the current desk's height in to the corresponding memory
 
 ## Sensors
 
+### Desk Height (defaults to cm)
+Shows the height of the desk that is being returned from the desk's controller.
+
+If you chose inches for your height unit then "in" will be shown here.
+
+### Desk Height Percent
+Shows the height of the desk as a percentage value. This is used by the Cover control which can go from 0% to 100%.
+
+
+### Desk M1, M2, M3, M4 Height (defaults to cm)
+Shows the height of the memory preset button that is being returned from the desk's controller.
+
+If you chose inches for your height unit then "in" will be shown here.
+
+### Idle Time
+
+
+### Idle Timestamp
+
+
+
 ![](images/DeskUpPro-Sensors.jpg)
 
 

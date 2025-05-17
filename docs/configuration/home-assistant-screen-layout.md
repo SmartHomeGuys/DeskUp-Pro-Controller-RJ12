@@ -100,6 +100,7 @@ This is a Home Assistant Cover (currently there is no control in Home Assistant 
 It uses the desk height percent sensor to determine its value (0% to 100%).
 
 You can control the desk using the cover slider.
+
 An added benefit of having a Cover entity exposed to Home Assistant is it can also be integrated to Google Home where the desk can be controlled by voice. See the example automations page for an example of this bring used.
 
 

@@ -24,7 +24,7 @@ Below is a list of desks we know are compatible or could be. This is not a compl
 - IKEA MITTZON
 - IKEA Uppspel
 - Desktopia Pro X
-- Jiecang JCB35M11C (so probably any Jiecang) e.g. used for example on:
+- Jiecang JCB35M11C (so probably any Jiecang used for example on):
   - Fully Jarvis
   - Desky
 

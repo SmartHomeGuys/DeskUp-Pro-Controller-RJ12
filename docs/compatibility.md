@@ -9,7 +9,7 @@ You should understand the risks before purchasing any components to build this y
 
 - There is no guarantee that the DeskUp Pro device will work with your desk due to the different models out there. and desk manufacturers can change their specifications at anytime even on the same model number.
 
-- As this is a product of reverse engineering (by the community), until you try it on your desk there is no way to be 100% certain that it will or won't work.
+- As this is a product of reverse engineering, until you try it on your desk there is no way to be 100% certain that it will or won't work.
 
 Below is a list of desks we know are compatible or could be. This is not a complete list as any desk with an RJ11 / RJ12 port could work, let us know your desk if it does and we will add it to the list to help others.
 

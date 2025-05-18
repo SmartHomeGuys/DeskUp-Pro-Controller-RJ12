@@ -13,7 +13,24 @@ You should understand the risks before purchasing any components to build this y
 
 Below is a list of desks we know are compatible or could be. This is not a complete list as any desk with an RJ11 / RJ12 port could work, let us know your desk if it does and we will add it to the list to help others.
 
-## Maidesite desks using the Premium controller 
+## Summary of Compatible Desks or Controllers
+- Maidesite TH2 Plus Art
+- Maidesite T2 Pro
+- Maidesite T2 Pro Plus
+- Maidesite SC2 Pro
+- Maidesite EL2 Pro Art
+- Maidesite EL2 Plus Art
+- Maidesite S2B Pro
+- IKEA MITTZON
+- IKEA Uppspel
+- Desktopia Pro X
+- Jiecang JCB35M11C (so probably any Jiecang) e.g. used for example on:
+  - Fully Jarvis
+  - Desky
+
+## Desks in more Detail
+
+### Maidesite desks using the Premium controller 
 These desks should be compatible as they come with this controller and members of the community have used some of these.
 
 - TH2 Plus Art
@@ -28,7 +45,7 @@ These desks should be compatible as they come with this controller and members o
 ![](images/MaidsiteDeskControlBox-Back.jpg)
 
 
-## Maidesite desks using the Standard controller
+### Maidesite desks using the Standard controller
 This has a very similar design to the Premium one above but as of now no one in the community has tested it. 
 
 It has the same 4 presets and nudge up/down as the Premium controller above does, it just has a slightly different screen layout. It does have an RJ12 port. There is a good chance these might be compatible.
@@ -39,29 +56,29 @@ It has the same 4 presets and nudge up/down as the Premium controller above does
 ![](images/MaidesiteDeskControlBox-standard.png)
 
 
-# Other manufacturer desks or controllers that should be compatible
+## Other manufacturer desks or controllers that should be compatible
 Members of the community have tested these desks or controllers on other similar projects to this one, which appear to send the same commands so there is a good chance these are compatible.
 
-## IKEA MITTZON
+### IKEA MITTZON
 
 Confirmed working in post 3: 
 
 https://github.com/phord/Jarvis/issues/33
 
 
-## Ikea Uppspel
+### Ikea Uppspel
 Confirmed working using RJ11 cable (4 pins which is fine as RJ12 has 6 but only uses 4)
 
 https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/443
 
 
-## Desktopia Pro X
+### Desktopia Pro X
 Confirmed working once the correct pins were specified in config (mentioned here if you read the entire chain)
 
 https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/420
 
 
-## Jiecang JCB35M11C
+### Jiecang JCB35M11C
   
 Confirmed as device used at top of this post
 https://github.com/Rocka84/esphome_components/blob/a083c17882361c58071b85d45587c410582cda75/components/jiecang_desk_controller/

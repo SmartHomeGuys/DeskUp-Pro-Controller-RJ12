@@ -35,7 +35,7 @@ Other than knowing this the instructions are the same as the description above, 
 ### Set Desk M1, M2, M3, M4 buttons
 Pressing these will set the current desk's height in to the corresponding memory number preset on the desk's controller.
 
-![](images/DeskUpPro-Configuration.jpg)
+![](images/DeskUpPro-Configuration2.jpg)
 
 
 ## Sensors
@@ -69,7 +69,7 @@ e.g. 2 days, 04:45:02
 or just 04:45:02 (if days is 0)
 
 
-![](images/DeskUpPro-Sensors.jpg)
+![](images/DeskUpPro-Sensors2.jpg)
 
 
 ## Controls

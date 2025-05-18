@@ -13,8 +13,8 @@ All the existing functionality of the desk's controller is retained. If you use 
 <p align="center">
   <img src="images/DeskUpPro-Controls.jpg" height="350px" />
   <img src="images/DeskUp-Pro-Cover-Slider.jpg" height="350px" />
-  <img src="images/DeskUpPro-Sensors.jpg" height="350px" />
-  <img src="images/DeskUpPro-Configuration.jpg" height="350px" />
+  <img src="images/DeskUpPro-Sensors2.jpg" height="350px" />
+  <img src="images/DeskUpPro-Configuration2.jpg" height="350px" />
 </p>
 
 

@@ -2,12 +2,6 @@
 
 ## Configuration 
 Before using your DeskUp Pro you need to configure:
-### Height Unit (defaults to cm)
-
-If you use inches toggle this here.
-
-Then restart the DeskUp Pro device for it to take effect. Either press the 'ESP32 Restart' button in Home Assistant or unplug the device and plug it back in.
-
   
 ### Max Height (defaults to cm)
 
@@ -22,8 +16,6 @@ You should change this to either:
 
     _Note: This does not prevent you using memory preset buttons or nudge up/down controls to move the desk outside of this range._
 
-If you chose inches for your height unit then you will need to enter inches values into this box.
-
   
 ### Min Height (defaults to cm)
 
@@ -31,6 +23,11 @@ By default we set this to the lowest allowed physical height of the Maidesite ra
 
 Other than knowing this the instructions are the same as the description above, just for setting the minimum height.
 
+### Offset Down By (defaults to mm)
+If you find when lowering the desk it consistently misses the height you wanted when using the "desk height" slider this allows you to fine tune it by x number of mm.
+
+### Offset Up By (defaults to mm)
+If you find when raising the desk it consistently misses the height you wanted when using the "desk height" slider this allows you to fine tune it by x number of mm.
 
 ### Set Desk M1, M2, M3, M4 buttons
 Pressing these will set the current desk's height in to the corresponding memory number preset on the desk's controller.
@@ -43,7 +40,6 @@ Pressing these will set the current desk's height in to the corresponding memory
 ### Desk Height (defaults to cm)
 Shows the height of the desk that is being returned from the desk's controller.
 
-If you chose inches for your height unit then "in" will be shown here.
 
 ### Desk Height Percent
 Shows the height of the desk as a percentage value. This is used by the Cover control which can go from 0% to 100%.
@@ -52,7 +48,8 @@ Shows the height of the desk as a percentage value. This is used by the Cover co
 ### Desk M1, M2, M3, M4 Height (defaults to cm)
 Shows the height of the memory preset button that is being returned from the desk's controller.
 
-If you chose inches for your height unit then "in" will be shown here.
+### Desk Status
+Shows if the desk is currently Idle, Raising, or Lowering.
 
 ### Idle Time (seconds)
 Timer on the DeskUp Pro device that counts the number of seconds the desk has been idle/not moved for.
@@ -78,7 +75,6 @@ All these controls can be pressed in a Home Assistant automation.
 ### Desk Height (defaults to cm)
 Shows the height of the desk that is being returned from the desk's controller. But also let's you set the height of the desk using the slider or from a Home Assistant automation.
 
-If you chose inches for your height unit then "in" will be shown here.
 
 ### Desk M1, M2, M3, M4 Buttons
 When pressed moves the desk to the height set in the memory preset.

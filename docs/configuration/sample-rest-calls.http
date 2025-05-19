@@ -1,0 +1,75 @@
+
+#Useful guide for commands
+#https://esphome.io/web-api/index.html
+
+
+# Get current desk height
+#GET http://192.168.68.73/sensor/desk_height
+#GET http://192.168.68.73/number/desk_height
+#GET http://192.168.68.73/sensor/desk_height_percent
+
+# Get preset button M1,2,3,4 height value from the desk
+#GET http://192.168.68.73/sensor/desk_m1_height
+#GET http://192.168.68.73/sensor/desk_m2_height
+#GET http://192.168.68.73/sensor/desk_m3_height
+#GET http://192.168.68.73/sensor/desk_m4_height
+
+# Get desk idle time in secconds
+#GET http://192.168.68.73/sensor/idle_time
+
+# Get desk idle timestanp
+#GET http://192.168.68.73/text_sensor/idle_timestamp
+
+# Get desk Status
+#GET http://192.168.68.73/text_sensor/desk_status
+
+#GET http://192.168.68.73/sensor/esp32_uptime
+
+
+# Move the desk to the specified height
+#POST http://192.168.68.73/number/desk_height/set?value=80 HTTP/1.1
+
+
+# Press preset button M1,2,3,4 on the desk
+#POST http://192.168.68.73/button/desk_m1/press
+#POST http://192.168.68.73/button/desk_m2/press
+#POST http://192.168.68.73/button/desk_m3/press
+#POST http://192.168.68.73/button/desk_m4/press
+
+#POST http://192.168.68.73/button/desk_nudge_down/press
+#POST http://192.168.68.73/button/desk_nudge_up/press
+#POST http://192.168.68.73/button/desk_stop/press
+
+# Press Memory Preset Buttons 1,2,3,4
+#POST http://192.168.68.73/button/set_desk_m1/press
+#POST http://192.168.68.73/button/set_desk_m2/press
+#POST http://192.168.68.73/button/set_desk_m3/press
+#POST http://192.168.68.73/button/set_desk_m4/press
+
+#Restart the ESP32 device
+#POST http://192.168.68.73/button/esp32_restart/press
+
+
+# Get / Set Min & Max Heights
+#GET http://192.168.68.73/number/max_height
+#GET http://192.168.68.73/number/min_height
+
+#POST http://192.168.68.73/number/max_height/set?value=102
+#POST http://192.168.68.73/number/min_height/set?value=74
+
+# Get / Set Up & Down Offset values
+#GET http://192.168.68.73/number/offset_down_by
+#GET http://192.168.68.73/number/offset_up_by
+#POST http://192.168.68.73/number/offset_down_by/set?value=0
+#POST http://192.168.68.73/number/offset_up_by/set?value=1
+
+
+#Cover / Slider 
+#GET http://192.168.68.73/cover/height_slider
+#POST http://192.168.68.73/cover/height_slider/set?position=0.1
+
+
+#ESP32 LED
+#GET http://192.168.68.73/light/esp32_led
+#POST http://192.168.68.73/light/esp32_led/turn_on?r=25&g=25&b=125
+#POST http://192.168.68.73/light/esp32_led/turn_off

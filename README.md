@@ -2,9 +2,12 @@
 
 ## ⚠️ Note this project is a work in-progress right now, hoping to be completed by end June 2025. 
 
-If your desk controller has an RJ11 / RJ12 port use DeskUp Pro to integrate your desk with Home Assistant, then control your standing desk from your phone, dashboards, automations or voice.
+If your desk controller has an RJ11 / RJ12 port use DeskUp Pro to integrate your desk with your home automation system then control your standing desk from your phone, dashboards, automations or voice.
 
-All the existing functionality of the desk's controller is retained. If you use the desk's control panel to move the desk it's height is instantly updated in Home Assistant.
+DeskUp Pro has full integration with Home Assistant but any smart home hub that can make a Rest Api call to it is also supported using its Api.
+
+All the existing functionality of the desk's controller is retained, the DeskUp Pro just lets you control it from your smart home hub.
+
 
 ### ADD PRODUCT IMAGE HERE
 
@@ -27,16 +30,15 @@ All the existing functionality of the desk's controller is retained. If you use 
 - After lunchtime raise the desk so you start the afternoon standing up (maybe trigger this as you walk into the room if you have a motion sensor).
 - Prefer to do meetings standing up, then if your calendar is exposed to Home Assistant you could raise the desk 1 minute before your meeting starts.
 - At the end of the working day lower the desk when you turn off the office light or leave the room.
-- Setup a Home Assistant dashboard so you can have an unlimited number of preset height buttons e.g. maybe each family member prefers a different sit & stand desk height.
-- Want to control your desk from something else then as long as it can either integrate with Home Assistant or call a Home Assistant webhook you can.
-- The DeskUp Pro device even has an RGB Led on it, and whilst the DeskUp Pro firmware doesn't currently use it we've exposed it to Home Assistant so you can use it in automations.
+- Setup a dashboard on your smart home hub so you can have an unlimited number of preset height buttons e.g. maybe each family member prefers a different sit & stand desk height.
+- Want to control your desk from something else then as long as it can either integrate with Home Assistant or call a Rest Api you can.
+- The DeskUp Pro device even has an RGB Led on it, and whilst the DeskUp Pro firmware doesn't currently use it we've exposed it so you can use it in automations.
 - etc, there are many possibilities.
 
 ### TODO ADD EBAY LINK
 
 
 #### ⚠️ Check Compatibility
-- You must be running Home Assistant.
 - Any standing desk that has a free RJ11 / RJ12 port could be compatible.
 - Before you proceed check the compatibility of your [desk here](docs/compatibility.md).
 
@@ -66,7 +68,7 @@ Plus in this repository you will find:
 - The firmware of the DeskUp Pro is based on ESPHome
 - The device itself uses an ESP32 chip that is powered by the desk's controller over the RJ11 / RJ12 Cable, so no USB cable is needed to power it.
 - Protocol used is 2.4ghz Wi-Fi 
-- Initial setup of the device to connect it to Home Assistant can be done using a USB C cable (not supplied), Bluetooth (if your Home Assistant has a Bluetooth proxy) or a Captive Portal (Wi-Fi hotspot).
+- Initial setup of the device to connect it to Wi-Fi can be done using a USB C cable (not supplied), Bluetooth (if you use Home Assistant and have a Bluetooth proxy) or a Captive Portal (Wi-Fi hotspot).
 
 
 ## Prefer to build one yourself 
@@ -74,7 +76,8 @@ In this Github repository you can find everything to do just that:
 - Instructions on how to build/wire up the ESP32.
 - The full source code to control the desk wriiten using community reverse engineered desk logic (from multiple git repos) we pulled together what we thought were the best bits in to this project.
 - Made a yaml only version of the code to make it easier for non c++ programmers to change.
-- Added a number of our own features to it
+- Added a number of our own features to it.
+- You will need to use ESPHome Builder in Home Assistant to follow our guide.
 
 However if you would prefer to avoid:
 - Buying the parts

@@ -1,5 +1,5 @@
 substitutions:
-  name: "deskup-pro-controller"
+  name: "deskup-pro"
   friendly_name: "DeskUp Pro Controller"
   #tx_pin: "GPIO13"
   #rx_pin: "GPIO12"
@@ -19,7 +19,6 @@ substitutions:
 
 packages:
   device_base: !include common/base.yaml
-  #bluetooth_base: !include common/bluetooth-base.yaml
 
 logger:
   level: DEBUG   #VERBOSE

@@ -1,5 +1,5 @@
 substitutions:
-  name: "deskup-pro-controller"
+  name: "deskup-pro"
   friendly_name: "DeskUp Pro Controller"
 
 packages:

@@ -1,6 +1,14 @@
-# 2025.6.0
+# 2025.6.1
 - Release of the DeskUp Pro Controller as a product
+- Added Web Server to allow other smart home hubs to use the Rest API
+- Added up and down offset fields which are in mm, these allow compensating the height of the desk when using the slider to move it, as sometimes it can be consistently off by a millimeter or 2 so this allows for fine tuning.
+- New Desk Status sensor returns Idle, Raising, Lowering
+- Added 4 Set Memory Preset buttons which when used set the height the desk is currently at to that preset.
+
+
+# 2025.6.0
 - Added a substitution variable to allow changing the ESP32 Led from the default of GRB (if required, as some chip batches can swap this to RGB). You have to have adopted the device in ESPHome Builder to use this.
+
 
 # 2025.5.0
 - Fixes a bug in the original community code where the slider didn't always move the desk, sometimes needing multiple presses before it did.

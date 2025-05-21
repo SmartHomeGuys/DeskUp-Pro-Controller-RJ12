@@ -7,11 +7,11 @@ To automate your desk, what we are going to make is the cable below with an RJ12
 
 
 ## Materials needed
-- An ESP32, I used an ESP-S3 Zero/Mini:
+- An ESP32, we used an ESP-S3 Zero/Mini:
 
 - An RJ12 to RJ12 Cable (6P6C)
 
-- Wire Stripper, Preciva Automatic Cable Stripper and Cutter Tool
+- Wire Stripper, Preciva Automatic Cable Stripper and Cutter Tool is pretty good
 
 [Amazon.co.uk](https://amzn.to/3FbW10A) or [Amazon.com](https://amzn.to/4iwLz20)
 

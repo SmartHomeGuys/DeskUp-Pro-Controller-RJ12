@@ -15,7 +15,7 @@ Before you use the DeskUp Pro make sure to specify your desks min / max physical
 
 Use the DeskUp Pro's built in Web server to configure the desks min / max physical limits.
 
-Just enter http://deviceip in a web browser.
+Just enter http://device-ip-number in a web browser.
 
 ## TODO ADD PIC
 

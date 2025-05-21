@@ -11,7 +11,7 @@ Before you use the DeskUp Pro make sure to specify your desks min / max physical
 [Example Automations](home-assistant-automations.md)
 
 
-# Configure the DeskUp Pro without Home Assistant
+# Configure and use the DeskUp Pro with another Smart Home Hub
 
 Use the DeskUp Pro's built in Web server to configure the desks min / max physical limits.
 

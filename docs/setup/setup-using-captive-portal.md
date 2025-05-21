@@ -15,5 +15,5 @@ You will see the page below saying it will try to connect to the network.  But y
 
 ![](images/Setup-CaptivePortal-WiFi-Save.PNG)
 
-You can now follow [this guide to add the device to Home Assistant](add-to-home-assistant.md).
+If you have Home Assistant you can now follow [this guide to add the device to Home Assistant](add-to-home-assistant.md).
 

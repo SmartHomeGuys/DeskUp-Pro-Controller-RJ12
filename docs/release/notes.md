@@ -1,5 +1,5 @@
 
-### Notes on how flash the latest version to a new device for a customer
+### Notes on how to flash the latest version to a new device for a customer
 - Make sure in Home Assistant the 'DeskUp Pro Controller' does not exist as a device or under ESPHome Builder.
 - In a Chrome browser go to: https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/Setup.html
 - Choose the 'Install' option, connect it to Wi-Fi

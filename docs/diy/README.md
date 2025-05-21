@@ -38,7 +38,7 @@ _Note: I chose GPIO12 & GPIO13 purley for their location on the board, most othe
 
 Place a very small amount of solder onto each of the 4 wires and let it cooldown.  It makes it so much easier to thread the wires through the holes in the board this way.
 
-Push each wire through the correct hpin ole so it comes out the bottom and solder it on the back of the board.
+Push each wire through the correct pin hole so it comes out the bottom and solder it on the back of the board.
 
 ![](images/diy-board-closeup.jpg)
 

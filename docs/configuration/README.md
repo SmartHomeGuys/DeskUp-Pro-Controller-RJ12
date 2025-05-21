@@ -10,3 +10,5 @@ Before you use the DeskUp Pro make sure to specify your desks min / max physical
 
 [Example Automations](home-assistant-automations.md)
 
+[Rest API](rest-api.md)
+

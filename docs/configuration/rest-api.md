@@ -1,6 +1,13 @@
 # Using the Rest API
 
-Using the api is fairly simple as long as your using a Smart Home hub that sends local (with-in your house) rest api calls.
+Using the api is fairly simple as long as your using a Smart Home hub that sends local (on your house network) rest api calls.
+
+Smart home hubs that should be able to send local Rest Api requests are:
+- Homey Pro with flows o4 homey script
+- Samsung Smartthings using web requester
+- Apple Homebridge with http-webhooks
+- Hubitat
+- Probably others
 
 Then you can make a call to the api endpoints using http e.g.
 

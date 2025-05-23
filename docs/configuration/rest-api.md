@@ -138,7 +138,6 @@ Response
 ### Move the desk to the specified height
 ```
 POST http://<ipnumberhere>/number/desk_height/set?value=80
-
 ```
 Response
 ```
@@ -151,7 +150,6 @@ No data returned just a 200 OK status
 POST http://<ipnumberhere>/button/desk_m1/press
 
 Changing m1 to m2, m3 or m4 for the other memory presets.
-
 ```
 Response
 ```

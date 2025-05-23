@@ -20,6 +20,8 @@ All the existing functionality of the desk's controller is retained, the DeskUp 
   <img src="images/DeskUpPro-Configuration2.jpg" height="350px" />
 </p>
 
+## Or other smart home systems can use the built in Web Interface and its Rest API
+
 
 ### Automations you could create for your desk
 - If you're sitting down for too long, then automatically raise the desk to standing height.

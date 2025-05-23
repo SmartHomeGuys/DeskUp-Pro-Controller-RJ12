@@ -329,6 +329,8 @@ Response
 ### Set Cover Position
 ```
 POST http://<ipnumberhere>/cover/height_slider/set?position=0.1
+
+Allowed values 0.0 to 1.0
 ```
 Response
 ```

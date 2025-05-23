@@ -53,7 +53,7 @@ Every function of the DeskUp pro can be controlled using its [Api](docs/configur
 
 You should understand the risks before purchasing, it's your responsibility to determine if its fit for your purpose. 
 
-_This is a product of reverse engineered code where each of the desks functions were extracted by the community, not us. If you need help to determine if your desk might be compatible or find out it isnt the community sites in our [need help section](#need-help) are a great place to go for advice._
+_This is a product of reverse engineered code where each of the desks functions were extracted by the community, not us. If you need help to determine if your desk might be compatible or find out it isnt the community sites in the [need help section](#need-help) are a great place to go for advice._
 
 ### What's in the box if I bought one?
 - DeskUp Pro device with attached RJ12 cable flashed with the latest firmware

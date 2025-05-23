@@ -17,7 +17,10 @@ Use the DeskUp Pro's built in Web server to configure the desks min / max physic
 
 Just enter http://device-ip-number in a web browser.
 
-## TODO ADD PIC
+<p align="center">
+  <img src="images/WebServer-screen1.jpg" height="350px" />
+  <img src="images/WebServer-screen2.jpg" height="350px" />
+</p>
 
 Once the device is configured use the rest api from your smart home hub to control your desk.
 

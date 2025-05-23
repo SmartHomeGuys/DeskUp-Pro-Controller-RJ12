@@ -21,7 +21,7 @@ Buttons
 - [Move the desk to the specified height](#move-the-desk-to-the-specified-height)
 - [Press preset button M1, M2, M3, M4 on the desk](#press-preset-button-m1-m2-m3-m4-on-the-desk)
 - [Press Nudge Down button on the desk](#press-nudge-down-button-on-the-desk)
--[Press Nudge Up button on the desk](#press-nudge-up-button-on-the-desk)
+- [Press Nudge Up button on the desk](#press-nudge-up-button-on-the-desk)
 - [Stop the desk moving](#stop-the-desk-moving)
 - [Press Desk Memory Preset Buttons M1, M2, M3, M4](#press-desk-memory-preset-buttons-m1-m2-m3-m4)
 - [Restart the ESP32 device](#restart-the-esp32-device)

@@ -12,7 +12,7 @@ Smart home hubs that should be able to send local Rest Api requests are:
 Then you can make a call to the api endpoints using http e.g.
 
 ```
-http://192.168.68.120/apimethod
+http://192.168.68.120/api-endpoint
 ```
 
 ## List of Api endpoints

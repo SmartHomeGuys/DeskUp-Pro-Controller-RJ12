@@ -132,6 +132,7 @@ Response
 }
 ```
 
+---
 
 ## Button Controls
 
@@ -204,6 +205,7 @@ Response
 No data returned just a 200 OK status
 ```
 
+---
 
 ## Number Controls
 
@@ -308,6 +310,7 @@ Response
 No data returned just a 200 OK status
 ```
 
+---
 
 ## Cover Control
 
@@ -336,6 +339,8 @@ Response
 ```
 No data returned just a 200 OK status
 ```
+
+---
 
 ## Light Control
 

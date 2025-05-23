@@ -3,7 +3,7 @@
 Using the api is fairly simple as long as your using a Smart Home hub that sends local (on your house network) rest api calls.
 
 Smart home hubs that should be able to send local Rest Api requests are:
-- Homey Pro with flows o4 homey script
+- Homey Pro with flows or homey script
 - Samsung Smartthings using web requester
 - Apple Homebridge with http-webhooks
 - Hubitat

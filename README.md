@@ -103,7 +103,7 @@ And would simply like to get a device pre-built, in a box that you can plug in t
 
 [Build one yourself](docs/diy/README.md)
 
-[Configure the device in Home Assistant](docs/configuration/README.md)
+[Configure the device for your smart home hub](docs/configuration/README.md)
 
 
 ### Need Help

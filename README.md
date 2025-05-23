@@ -20,12 +20,15 @@ All the existing functionality of the desk's controller is retained, the DeskUp 
   <img src="images/DeskUpPro-Configuration2.jpg" height="350px" />
 </p>
 
+31 entities are exposed in Home Assistant that let you control every function of the Desk Up pro.
+
 ## Or other smart home systems can use the built in Web Interface and its Rest API
 <p align="center">
   <img src="images/WebServer-screen1.jpg" height="350px" />
   <img src="images/WebServer-screen2.jpg" height="350px" />
 </p>
 
+Every function of the DeskUp pro can be controlled using its [Api](docs/configuration/rest-api.md).
 
 ### Automations you could create for your desk
 - If you're sitting down for too long, then automatically raise the desk to standing height.

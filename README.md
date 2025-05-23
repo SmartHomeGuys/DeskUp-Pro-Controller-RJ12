@@ -21,6 +21,10 @@ All the existing functionality of the desk's controller is retained, the DeskUp 
 </p>
 
 ## Or other smart home systems can use the built in Web Interface and its Rest API
+<p align="center">
+  <img src="images/WebServer-screen1.jpg" height="350px" />
+  <img src="images/WebServer-screen2.jpg" height="350px" />
+</p>
 
 
 ### Automations you could create for your desk

@@ -27,6 +27,8 @@ Below is a list of desks we know are compatible or could be. This is not a compl
 - Jiecang JCB35M11C (so probably any Jiecang used for example on):
   - Fully Jarvis
   - Desky
+ 
+If your desk works but is not in the list please let us know so we can add it and help other people.
 
 ## Desks in more Detail
 

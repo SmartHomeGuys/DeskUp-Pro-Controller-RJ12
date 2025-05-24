@@ -11,7 +11,7 @@ You should understand the risks before purchasing any components to build this y
 
 - As this is a product of reverse engineering, until you try it on your desk there is no way to be 100% certain that it will or won't work.
 
-Below is a list of desks we know should be compatible. This is not a complete list as any desk with an RJ11 / RJ12 port could work, let us know your desk if it does and we will add it to the list to help others.
+Below is a list of desks we know should be compatible. This is not a complete list as any desk with an RJ11 / RJ12 port could work.
 
 ## Summary of Compatible Desks or Controllers
 - Maidesite TH2 Plus Art

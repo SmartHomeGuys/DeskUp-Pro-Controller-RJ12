@@ -28,7 +28,7 @@ Below is a list of desks we know are compatible or could be. This is not a compl
   - Fully Jarvis
   - Desky
  
-If your desk works but is not in the list please let us know so we can add it and help other people.
+_If your desk works but is not in the list please let us know by logging an issue to update this page so we can help other people._
 
 ## Desks in more Detail
 

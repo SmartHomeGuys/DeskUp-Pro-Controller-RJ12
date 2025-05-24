@@ -5,9 +5,9 @@ To do this via USB, Open a Chrome browser to this page:
 
 https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/Setup.html
 
-Connect the device to a USB C cable and a USB A port on your laptop (the cable must support data not just be one for charging).
+Connect the device to a USB C cable and a USB A or C port on your laptop (the cable must support data not just be one for charging).
 
-![](images/Setup-USB-Setup-page.png)
+![](images/Setup-USB-Setup-page2.png)
 
 Click the 'Connect' button, you should see a popup asking you to choose the device on the USB port you plugged it into.
 

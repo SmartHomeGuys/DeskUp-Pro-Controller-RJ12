@@ -31,7 +31,7 @@
   - Open Powershell and go to that fireware folder.
   - We need to create an MD5 Hash for the ota file, run this in Powershell:
 
-    (Get-FileHash -Path deskup-pro-controller.ota.bin -Algorithm md5).Hash.ToLower() | Out-File -FilePath firmware.md5 -Encoding ASCII
+    (Get-FileHash -Path deskup-pro.ota.bin -Algorithm md5).Hash.ToLower() | Out-File -FilePath firmware.md5 -Encoding ASCII
 
 
   - Open VS Code for the Git repo: smarthomeguys.github.io

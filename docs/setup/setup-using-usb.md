@@ -27,7 +27,9 @@ Select your Wi-Fi SSID and enter the password
 
 ![](images/Setup-USB-Connect-to-wifi.png)
 
-Once connected to Wi-Fi you should be asked to Add the device to Home Assistant.
+Once connected to Wi-Fi the Red Led will turn off and you should be asked to Add the device to Home Assistant.
+
+If you use Home Assistant follow the rest of this article to integrate it. Otherwise you will need to control the desk using the Api with your Smart Home system.
 
 ![](images/Setup-USB-Ask-to-add-to-homeassistant.png)
 

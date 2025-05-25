@@ -2,7 +2,7 @@
 
 The device already comes with the firmware flashed, but needs to be connected to Wi-Fi.
 
-When you first power on the DeskUp Pro it's Led will be solid Red, this just means it is not connected to your Wi-Fi, once it is the Led will be off.
+_Note: When you first power on the DeskUp Pro it's Led will be solid Red, this just means it is not connected to your Wi-Fi, once it is the Led will be off._
 
 If you can't use Bluetooth or the USB cable options to connect it then after you plug the device in and it's powered for 1 minute it will start broadcasting a Wi-Fi SSID of "DeskUp-Pro".
 

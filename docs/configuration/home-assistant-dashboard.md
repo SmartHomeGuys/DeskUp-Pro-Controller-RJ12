@@ -24,7 +24,7 @@ views:
       - type: grid
         cards:
           - type: custom:button-card
-            entity: deskup_pro_controller_height_slider
+            entity: sensor.deskup_pro_controller_desk_height
             show_state: false
             show_label: true
             show_icon: true

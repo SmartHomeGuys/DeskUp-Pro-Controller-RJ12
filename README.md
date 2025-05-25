@@ -1,6 +1,6 @@
 # DeskUp Pro - Making Standing Desks with an RJ11 / RJ12 port Smart
 
-## ⚠️ Note this project is a work in-progress right now, hoping to be completed by end June 2025. 
+## ⚠️ Note this project is a work in-progress right now, extected to be completed by end June 2025. 
 
 If your standing desk controller has an RJ11 / RJ12 port use DeskUp Pro to integrate your desk with your smart home automation system to control your standing desk from your phone, dashboards, automations or voice.
 

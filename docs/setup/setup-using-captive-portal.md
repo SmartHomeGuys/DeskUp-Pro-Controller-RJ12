@@ -14,7 +14,7 @@ You should see a page with all the Wi-Fi networks to choose from.  Select the on
 
 ![](images/Setup-CaptivePortal-WiFi-SSIDs.PNG)
 
-You will see the page below saying it will try to connect to the network.  But you don't need to wait, the device should now be showing as a discovered device in Home Assistant.
+You will see the page below saying it will try to connect to the network.  But you don't need to wait, once the device is connected to Wi-Fi the Red Led light will turn off and the device should now be showing as a discovered device in Home Assistant.
 
 ![](images/Setup-CaptivePortal-WiFi-Save.PNG)
 

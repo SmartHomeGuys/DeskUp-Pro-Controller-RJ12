@@ -65,7 +65,7 @@ views:
                 - margin-bottom: 0px
                 - padding-top: 2px
           - type: custom:button-card
-            entity: deskup_pro_controller_height_slider
+            entity: sensor.deskup_pro_controller_desk_status
             show_state: false
             show_label: true
             show_icon: true

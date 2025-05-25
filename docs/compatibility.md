@@ -21,10 +21,11 @@ Below is a list of desks we know should be compatible. This is not a complete li
 - Maidesite EL2 Pro Art
 - Maidesite EL2 Plus Art
 - Maidesite S2B Pro
+- Desktopia Pro X
 - IKEA MITTZON
 - IKEA Uppspel
-- Desktopia Pro X
 - Jiecang JCB35M11C (so probably any Jiecang might work)
+- Omnidesk
  
 _If your desk works but is not in the list please let us know by logging an issue for us to update this page so we can help other people._
 
@@ -57,7 +58,14 @@ It has the same 4 presets and nudge up/down as the Premium controller above does
 
 
 ## Other manufacturer desks or controllers that should be compatible
-Members of the community have tested these desks or controllers on other similar projects to this one, which appear to send the same commands so there is a good chance these are compatible.
+Members of the community have tested these desks or controllers on other similar projects to this one, which send the same commands so there is a good chance these are compatible.
+
+
+### Desktopia Pro X
+Confirmed working once the correct pins were specified in config (mentioned here if you read the entire chain)
+
+https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/420
+
 
 ### IKEA MITTZON
 
@@ -72,12 +80,6 @@ Confirmed working using RJ11 cable (4 pins which is fine as RJ12 has 6 but only 
 https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/443
 
 
-### Desktopia Pro X
-Confirmed working once the correct pins were specified in config (mentioned here if you read the entire chain)
-
-https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/420
-
-
 ### Jiecang JCB35M11C
   
 Confirmed as device used at top of this post
@@ -88,6 +90,12 @@ https://www.jiecang.com/product/jcb35m11c.html
 <br />
 
 **It's very likely that other Jiecang controllers are supported too which are used on Fully Jarvis and Desky desks.**
+
+
+## Omnidesk
+Confirmed working in this post
+
+https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/449
 
 <br />
 

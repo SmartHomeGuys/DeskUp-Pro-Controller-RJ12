@@ -124,4 +124,5 @@ automations:
     - type: device.command.OpenClose # Set the open-close state of the device
       # Indicates the percentage that a device is opened, where 0 is closed and 100 is fully open. [Available parameter options: openPercent, openDirection]
       openPercent: 100
+      devices: Office Desk - Office
 ```

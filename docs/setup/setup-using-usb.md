@@ -1,7 +1,9 @@
 # Setup using USB
 The device already comes with the firmware flashed, but needs to be connected to Wi-Fi.
 
-To do this via USB, Open a Chrome browser to this page:
+_Note: When you first power on the DeskUp Pro it's Led will be solid Red, this just means it is not connected to your Wi-Fi, once it is the Led will be off._
+
+To setup via USB, Open a Chrome browser to this page:
 
 https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/Setup.html
 

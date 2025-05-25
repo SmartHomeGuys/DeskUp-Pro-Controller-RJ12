@@ -374,6 +374,8 @@ Response
 ```
 POST http://<ipnumberhere>/light/esp32_led/turn_on?r=25&g=25&b=125
 ```
+For more info view [this page](https://esphome.io/web-api/#light).
+
 Response
 ```
 No data returned just a 200 OK status

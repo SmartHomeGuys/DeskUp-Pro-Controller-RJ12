@@ -83,9 +83,9 @@ Plus in this repository you will find:
 ## Prefer to build one yourself 
 In this Github repository you can find everything to do just that:
 - Instructions on how to build/wire up the ESP32.
-- The full source code to control the desk wriiten using community reverse engineered desk logic (from multiple git repos) we pulled together what we thought were the best bits in to this project.
-- Made a yaml only version of the code to make it easier for non c++ programmers to change.
-- Added a number of our own features to it.
+- The full source code to control the desk wriiten using community reverse engineered desk logic (from multiple git repos) we pulled together what we thought were the best bits into this project.
+- We decided to make this a yaml only version of the code to make it easier for non c++ programmers to understand and change.
+- Then added a number of our own features to it.
 - You will need to use ESPHome Builder in Home Assistant to follow our guide.
 
 However if you would prefer to avoid:

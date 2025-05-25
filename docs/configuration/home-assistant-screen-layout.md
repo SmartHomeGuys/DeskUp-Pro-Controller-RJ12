@@ -88,7 +88,7 @@ When pressed stops a moving desk.
 ### ESP32 LED
 Turns on/off the onboard led light. You can also set the color of it.
 
-This is not used by the DeskUp Pro firmware but is exposed to Home Assistant anyway, in case you can think of any use cases.
+This is used by the DeskUp Pro firmware only to detect if it is not connected to Wi-Fi, it turns solid red when disconnected and is off when connected. Its exposed to Home Assistant, in case you can think of any other use cases.
 
 ### Height Slider
 This is a Home Assistant Cover (currently there is no control in Home Assistant specifically for desks).

@@ -50,7 +50,7 @@ Thats the board and cable all done.  If anything doesn't work later in Home Assi
 ## Home Assistant Configuration
 You first need to setup the ESP32 in Home Assistant which can be done within Home Assistant using ESPHome Builder.
 
-You will need to do this from a laptop/PC. Attach the ESP32 via a USB-C cable to a USB-A port on your laptop and then click add a ‘New Device’ and follow the prompts, I called mine: “Office DeskUp Pro Controller”
+You will need to do this from a laptop/PC. Attach the ESP32 via a USB-C cable to a USB-A or C port on your laptop and then click add a ‘New Device’ and follow the prompts, I called mine: “Office DeskUp Pro Controller”
 
 Once you have the ESP32 device connected to your Wi-Fi you won’t need the USB cable once we are finished.
 

@@ -23,8 +23,8 @@ http://device-ip-number
 ```
 
 <p align="center">
-  <img src="images/WebServer-screen1c.jpg" height="350px" width=350px" />
-  <img src="images/WebServer-screen2c.jpg" height="350px" width=350px" />
+  <img src="images/WebServer-screen1c.jpg" height="320px" width=350px" />
+  <img src="images/WebServer-screen2c.jpg" height="380px" width=350px" />
 </p>
 
 Once the device is configured with Min Height and Max Height values that match your needs use the rest api from your smart home hub to control your desk.

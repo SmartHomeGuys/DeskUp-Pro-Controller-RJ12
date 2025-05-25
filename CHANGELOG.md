@@ -1,5 +1,10 @@
-# 2025.6.1
+# 2025.6.2
 - Release of the DeskUp Pro Controller as a product
+- Added a check that if Wi-Fi is disconnected it turns on the LED in solid red.
+- Added missing entity/platform ids
+
+
+# 2025.6.1
 - Added Web Server to allow other smart home hubs to use the Rest API
 - Added up and down offset fields which are in mm, these allow compensating the height of the desk when using the slider to move it, as sometimes it can be consistently off by a millimeter or 2 so this allows for fine tuning.
 - New Desk Status sensor returns Idle, Raising, Lowering

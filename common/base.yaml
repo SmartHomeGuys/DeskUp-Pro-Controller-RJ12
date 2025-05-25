@@ -24,7 +24,7 @@ esphome:
   friendly_name: ${friendly_name}
   project:
     name: SmartHomeGuys.DeskUp Pro Controller (RJ12)
-    version: "2025.6.1"
+    version: "2025.6.2"
   name_add_mac_suffix: true
   on_boot:
     priority: 800
@@ -110,6 +110,7 @@ globals:
     restore_value: no
     initial_value: "0"
 
+
 script:
   # Increment idle counter by 1 second every second
   - id: script_idle_timer_tick
@@ -181,7 +182,7 @@ script:
               float current_height = id(number_deskHeight).state;
               int go_up_offset = id(number_deskOffsetGoUp).state;
               int go_down_offset = id(number_deskOffsetGoDown).state;
-                       
+              
               if (newHeight_cm > current_height) {
                 // Going up seems to consistently be 0.1cm off from desired height so compensate
                 height_mm = height_mm + go_up_offset;
@@ -372,6 +373,7 @@ button:
   #   e.g. if the desk is low and you walk into the room restart the desk idle timer
   - platform: template
     name: "Reset Idle Timer"
+    id: "button_reset_idle_timer"
     icon: mdi:progress-clock
     disabled_by_default: False
     on_press: 
@@ -506,6 +508,7 @@ button:
   # ESP32 Reboot button
   - platform: restart
     name: "ESP32 Restart"
+    id: "button_reboot"
     entity_category: diagnostic
     disabled_by_default: false
     device_class: restart
@@ -662,9 +665,44 @@ number:
 
 light:
   - platform: neopixelbus
+    id: "light_esp32led"
     variant: WS2812
     type: ${esp32_led_order}
     pin: GPIO21
     num_leds: 1
     name: "ESP32 LED"
     restore_mode: ALWAYS_OFF
+
+
+interval:
+  # Check if WiFi is disconnected and if so set Led light to Red
+  - interval: 5s
+    then:
+      lambda: |-
+        static bool has_wifi_connected_run_once = false;
+        static bool is_wifi_connected = false; 
+
+        is_wifi_connected = wifi::global_wifi_component->is_connected();
+        
+        if(is_wifi_connected)
+        {
+          if(has_wifi_connected_run_once == false)
+          {
+            auto call = id(light_esp32led).turn_off();
+            call.set_rgb(0.0, 0.0, 0.0);  //white
+            call.perform();
+
+            ESP_LOGD("wifi_check", "Wi-Fi connected — LED Off");
+            has_wifi_connected_run_once = true;
+          }
+        }
+        else
+        {
+          auto call = id(light_esp32led).turn_on();
+          call.set_rgb(1.0, 0.0, 0.0);  //red
+          call.perform();
+          
+          ESP_LOGD("wifi_check", "Wi-Fi disconnected — LED RED");
+          has_wifi_connected_run_once = false;
+        }
+

@@ -1,6 +1,6 @@
 # Reverse Engineered Desk Controller Hex Codes
 
-This is a list of the community sites that contained the reverse engineered hex codes  used within this project.
+This is a list of the community sites that contained the reverse engineered hex codes used within this project, which started from a combination of the Maidesite project & Mahko_Mahko's yaml version and then evolved when I found the others.
 
 ### Pimp my Desk
 https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering

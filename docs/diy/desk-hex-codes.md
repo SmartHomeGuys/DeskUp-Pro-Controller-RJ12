@@ -214,8 +214,9 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
     <td>Match</td>
     <td></td>
   </tr>
-  
 </table>
+
+_Note: Blanks in the above table means that function was not implemented in that codebase._
 
 
 ## Not used in DeskUp Pro

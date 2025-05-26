@@ -20,7 +20,7 @@ I ended up combining code from a few different sources written by the community 
 That's when I decided to:
 - Fully document everything I had done into this Git repository.
 - Make the device accessible to any Smart Home system that can call a Rest Api.
-- Start selling DeskUp Pro devices to anyone that wants one but in the spirit of open source if you want to make your own all the details to do that are in here too.
+- Sell DeskUp Pro devices to anyone that just wants to plug it in and start automating, but in the spirit of open source if you want to build your own all the details to do that are in here too.
 
 
 ## What is shown in Home Assistant

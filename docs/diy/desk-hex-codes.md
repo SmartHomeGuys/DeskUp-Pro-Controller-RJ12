@@ -143,7 +143,7 @@ https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_des
       Match
     </td>
     <td>
-      Almost a match just uses a different calculation.
+      Match with a different calculation.
       <br />
       high_byte = ((int) height * 10) >> 8;
       <br />

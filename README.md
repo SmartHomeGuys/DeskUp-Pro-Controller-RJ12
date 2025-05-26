@@ -11,7 +11,7 @@ All the existing functionality of the desk's controller is retained, the DeskUp 
 ### ADD PRODUCT IMAGE HERE
 
 ## Why did we start this project?
-To automate the desk so Alexa can tell me to stand up more!
+To integrate the desk into my Smart Home System so Alexa can tell me to stand up more!
 
 I ended up combining code from a few different sources written by the community and then kept adding more features. It was then I realised that RJ12 devices were only available to people who could build their own device and had Home Assistant. 
 

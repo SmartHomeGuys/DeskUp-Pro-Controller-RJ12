@@ -142,6 +142,15 @@ https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_des
     <td>
       Match
     </td>
+    <td>
+       cmd = 0x1B;
+       high_byte = ((int) height * 10) >> 8;
+       low_byte = ((int) height * 10) & 0xFF;
+       checksum = cmd + 2 + high_byte + low_byte;
+
+       0xF1, 0xF1, cmd, 0x02, high_byte, low_byte, checksum, 0x7E
+      
+    </td>
   </tr>
 
   <tr>

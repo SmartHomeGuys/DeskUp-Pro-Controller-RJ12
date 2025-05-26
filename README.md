@@ -1,4 +1,4 @@
-# DeskUp Pro - Making Standing Desks with an RJ11 / RJ12 port Smart
+# DeskUp Pro - Control your standing desk (Maidesite, Ikea, etc) from a smart home automation system
 
 ## ⚠️ Note this project is a work in-progress right now, expect to be completed by end June 2025. 
 

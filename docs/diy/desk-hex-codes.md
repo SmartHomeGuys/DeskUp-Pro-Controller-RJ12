@@ -15,7 +15,7 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
 https://github.com/shades66/Maidesite-standing-desk/tree/main
 
 
-### List
+### Comparison List
 
 <table>
   <th>Name</th>

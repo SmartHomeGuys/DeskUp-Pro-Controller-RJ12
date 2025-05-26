@@ -8,6 +8,9 @@ https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering
 ### Rocka84
 https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_desk_controller
 
+### Mahko_Mahko original yaml only version
+https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293/17
+
 
 ### List
 
@@ -16,6 +19,7 @@ https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_des
   <th>Hex Code</th>
   <th>Pimp my Desk</th>
   <th>Rocka84</th>
+  <th>Mahko_Mahko</th>
 
   <tr>
     <td>Nudge Up</td>

@@ -4,11 +4,23 @@
 
 If your standing desk controller has an RJ11 / RJ12 port use DeskUp Pro to integrate your desk with your smart home automation system to control your standing desk from your phone, dashboards, automations or voice.
 
-### ADD PRODUCT IMAGE HERE
-
 DeskUp Pro has full integration with Home Assistant but any smart home hub that can send a Rest Api request is also supported using its [Api](docs/configuration/rest-api.md).
 
 All the existing functionality of the desk's controller is retained, the DeskUp Pro just lets you control it from your smart home system.
+
+### ADD PRODUCT IMAGE HERE
+
+## Why did we start this project?
+To automate the desk so Alexa can tell me to stand up more!
+
+I ended up combining code from a few different sources written by the community and then kept adding our own features. It was then I realised that RJ12 devices were only available to people who could build their own device and had Home Assistant. 
+
+That's when I decided:
+- to fully document everything we had done into this Git repository
+- make the device accessible to other Smart Home systems using the ESPHome Api
+- start selling DeskUp Pro devices to anyone that wants one but in the spirit of open source if you want to make your own all the details to do that are in here too.
+
+### TODO ADD EBAY LINK
 
 
 ## What is shown in Home Assistant
@@ -42,8 +54,6 @@ Every function of the DeskUp pro can be controlled using its [Api](docs/configur
 - Want to control your desk from something else then as long as it can either integrate with Home Assistant or call a Rest Api you can.
 - The DeskUp Pro device even has an RGB Led on it, and whilst the DeskUp Pro firmware doesn't currently use it we've exposed it so you can use it in automations.
 - etc, there are many possibilities.
-
-### TODO ADD EBAY LINK
 
 
 #### ⚠️ Check Compatibility
@@ -97,6 +107,7 @@ However if you would prefer to avoid:
 
 And would simply like to get a device pre-built, in a box that you can plug in to your desk and be automating it in 10 minutes then you can purchase one from our eBay shop.
 
+### TODO ADD EBAY LINK
 
 ### Documentation
 [Setup a purchased device](docs/setup/README.md)

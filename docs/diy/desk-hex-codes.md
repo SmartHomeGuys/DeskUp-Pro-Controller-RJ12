@@ -5,6 +5,11 @@ This is a list of the community sites that contained the reverse engineered hex 
 <table>
   <th>Name</th>
   <th>Hex Code</th>
+
+  <tr>
+    <td>Get Desk Height</td>
+    <td>0xf1, 0xf1, 0x07, 0x00, 0x07, 0x7e</td>
+  </tr>
   
   <tr>
     <td>Press Preset 1</td>

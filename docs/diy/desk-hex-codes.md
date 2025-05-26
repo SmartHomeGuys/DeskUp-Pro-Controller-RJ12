@@ -178,6 +178,7 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
     <td>0xF1, 0xF1, 0x07, 0x00, 0x00, 0x07, 0x7E</td>
     <td></td>
     <td>Match</td>
+    <td>Match</td>
   </tr>
 
   <tr>
@@ -194,7 +195,7 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
 ## Not used
 
 ### Pimp my desk
-- Height range
+- Fetch Height range
   
   0xF1, 0xF1, 0x0C, 0x00, 0x00, 0x0C, 0x7E
   
@@ -202,11 +203,6 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
 - Fetch High Low Limit
 
   0xF1, 0xF1, 0x20, 0x00, 0x00, 0x20, 0x7E
-
-
-- Patch
-  
-  0xF1, 0xF1, 0xA0, 0x00, 0x00, 0xA0, 0x7E
 
 
 - Fetch Stand Time
@@ -231,6 +227,12 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
     <li>VARIABLE
     <li>0x7E
   </ul>
+
+
+  - Patch
+  
+  0xF1, 0xF1, 0xA0, 0x00, 0x00, 0xA0, 0x7E
+  
 
 ### Rocka84
 - Request Physical Limits
@@ -263,4 +265,33 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
   physical_max = byte2float(message[2], message[3]);
   physical_min = byte2float(message[4], message[5]);
 ```
+
+
+### Mahko_Mahko
+
+- Fetch Height Range
+
+  0xF1, 0xF1, 0x0C, 0x00, 0x0C, 0x7E
+  
+
+- Fetch High Low Limit
+
+  0xF1, 0xF1, 0x20, 0x00, 0x20, 0x7E
+
+
+- Fetch Stand Time
+
+  0xF1, 0xF1, 0xA6, 0x01, 0xA7, 0x7E
+
+  
+- Fetch All Time
+
+  0xF1, 0xF1, 0xAA, 0x00, 0xAA, 0x7E
+  
+
+- Patch
+
+  0xF1, 0xF1, 0xA0, 0x00, 0xA0, 0x7E
+  
+
 

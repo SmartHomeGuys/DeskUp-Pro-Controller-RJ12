@@ -67,6 +67,7 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
     <td>0xF1, 0xF1, 0x27, 0x00, 0x00, 0x27, 0x7E</td>
     <td>Match</td>
     <td>Match</td>
+    <td></td>
   </tr>
 
   <tr>
@@ -84,6 +85,7 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
     <td>0xF1, 0xF1, 0x03, 0x00, 0x00, 0x03, 0x7e</td>
     <td>Match</td>
     <td>Match</td>
+    <td></td>
   </tr>
 
   <tr>
@@ -92,6 +94,7 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
     <td>0xF1, 0xF1, 0x04, 0x00, 0x00, 0x04, 0x7E</td>
     <td>Match</td>
     <td>Match</td>
+    <td></td>
   </tr>
   
   <tr>
@@ -100,6 +103,7 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
     <td>0xF1, 0xF1, 0x25, 0x00, 0x00, 0x25, 0x7E</td>
     <td>Match</td>
     <td>Match</td>
+    <td></td>
   </tr>
   
   <tr>
@@ -107,6 +111,7 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
     <td>0xf1, 0xf1, 0x26, 0x00, 0x26, 0x7e</td>
     <td></td>
     <td>Match</td>
+    <td></td>
     <td></td>
   </tr>
 
@@ -182,6 +187,13 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
       0xF1, 0xF1, 0x1B, 0x02, high_byte, low_byte, checksum, 0x7E
     </td>
     <td>Match</td>
+    <td>
+      This one worked intermittently.  <br /> <br />
+      int a= (int(x) & 0xff); <br />
+      int b= ((int(x) >> 8) & 0xff); <br />
+      int c= (a+b+0x80+0x02) & 0xff; <br />
+      return {0xf1, 0xf1, 0x80, 2, b,a,c,0x7e,0xf1, 0xf1, 0x1b, 0x00, 0x1b,0x7e};
+    </td>
   </tr>
 
   <tr>
@@ -190,6 +202,7 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
     <td>0xF1, 0xF1, 0x07, 0x00, 0x00, 0x07, 0x7E</td>
     <td></td>
     <td>Match</td>
+    <td></td>
   </tr>
 
   <tr>
@@ -198,6 +211,7 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
     <td>0xF1, 0xF1, 0x2B, 0x00, 0x00, 0x2B, 0x7E</td>
     <td>Match</td>
     <td>Match</td>
+    <td></td>
   </tr>
   
 </table>

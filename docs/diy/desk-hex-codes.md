@@ -14,6 +14,7 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
 ### Maidesite project 
 https://github.com/shades66/Maidesite-standing-desk/tree/main
 
+---
 
 ### Comparison List
 
@@ -217,7 +218,7 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
 </table>
 
 
-## Not used
+## Not used in DeskUp Pro
 
 ### Pimp my desk
 - Fetch Height range

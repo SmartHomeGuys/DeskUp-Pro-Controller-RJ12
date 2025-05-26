@@ -124,6 +124,7 @@ https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering
   <tr>
     <td>Get Desk Height</td>
     <td>0xf1, 0xf1, 0x07, 0x00, 0x07, 0x7e</td>
+    <td>0xF1, 0xF1, 0x07, 0x00, 0x00, 0x07, 0x7E</td>
   </tr>
 
   <tr>
@@ -133,5 +134,12 @@ https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering
   
 </table>
 
+
+## Not used
+
+### Pimp my desk
+- Height range
+  
+  0xF1, 0xF1, 0x0C, 0x00, 0x00, 0x0C, 0x7E
 
 

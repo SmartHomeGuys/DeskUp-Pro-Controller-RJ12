@@ -11,6 +11,9 @@ https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_des
 ### Mahko_Mahko original yaml only version
 https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293/17
 
+### Maidesite project 
+https://github.com/shades66/Maidesite-standing-desk/tree/main
+
 
 ### List
 
@@ -20,6 +23,7 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
   <th>Pimp my Desk</th>
   <th>Rocka84</th>
   <th>Mahko_Mahko</th>
+  <th>Maidesite Project</th>
 
   <tr>
     <td>Nudge Up</td>
@@ -119,6 +123,7 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
   <td></td>
   <td>Match with a different calculation</td>
   <td>Match</td>
+  <td>Match</td>
   </tr>
 
   <tr>
@@ -139,6 +144,7 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
     <td></td>
     <td>Match with a different calculation</td>
     <td></td>
+    <td>Match</td>
   </tr>
 
   <tr>

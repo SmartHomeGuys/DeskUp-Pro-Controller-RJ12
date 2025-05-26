@@ -19,7 +19,7 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
 ### Comparison List
 
 <table>
-  <th>Name</th>
+  <th>Function</th>
   <th>Hex Code Used in DeskUp Pro</th>
   <th>Pimp my Desk</th>
   <th>Rocka84</th>

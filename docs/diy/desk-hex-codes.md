@@ -2,15 +2,23 @@
 
 This is a list of the community sites that contained the reverse engineered hex codes  used within this project.
 
+### Pimp my Desk
+https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering
+
+
+### List
+
 <table>
   <th>Name</th>
   <th>Hex Code</th>
+  <th>Pimp my Desk</th>
 
   <tr>
     <td>Nudge Up</td>
     <td>0xf1, 0xf1, 0x01, 0x00, 0x01, 0x7e</td>
+    <td>0xF1 0xF1 0x01 0x00 0x00 0x01 0x7E</td>
   </tr>
-
+  
   <tr>
     <td>Nudge Down</td>
     <td>0xf1, 0xf1, 0x02, 0x00, 0x02, 0x7e</td>

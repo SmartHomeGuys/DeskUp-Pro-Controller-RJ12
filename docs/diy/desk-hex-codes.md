@@ -138,6 +138,7 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
     </td>
     <td></td>
     <td>Match with a different calculation</td>
+    <td></td>
   </tr>
 
   <tr>
@@ -177,7 +178,6 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
     <td>0xf1, 0xf1, 0x07, 0x00, 0x07, 0x7e</td>
     <td>0xF1, 0xF1, 0x07, 0x00, 0x00, 0x07, 0x7E</td>
     <td></td>
-    <td>Match</td>
     <td>Match</td>
   </tr>
 

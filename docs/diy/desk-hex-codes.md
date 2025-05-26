@@ -40,12 +40,14 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
     <td>0xf1, 0xf1, 0x05, 0x00, 0x05, 0x7e</td>
     <td>0xF1, 0xF1, 0x05, 0x00, 0x00, 0x05, 0x7E</td>
     <td>Match</td>
+    <td>Match</td>
   </tr>
 
   <tr>
     <td>Press Preset 2</td>
     <td>0xf1, 0xf1, 0x06, 0x00, 0x06, 0x7e</td>
     <td>0xF1, 0xF1, 0x06, 0x00, 0x00, 0x06, 0x7E</td>
+    <td>Match</td>
     <td>Match</td>
   </tr>
 
@@ -54,6 +56,7 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
     <td>0xF1, 0xF1, 0x27, 0x00, 0x27, 0x7E</td>
     <td>0xF1, 0xF1, 0x27, 0x00, 0x00, 0x27, 0x7E</td>
     <td>Match</td>
+    <td>Match</td>
   </tr>
 
   <tr>
@@ -61,6 +64,7 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
     <td>0xf1, 0xf1, 0x28, 0x00, 0x28, 0x7e</td>
     <td></td>
     <td>Match</td>
+    <td></td>
   </tr>
 
   <tr>
@@ -108,6 +112,7 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
   </td>
   <td></td>
   <td>Match with a different calculation</td>
+  <td>Match</td>
   </tr>
 
   <tr>
@@ -171,6 +176,7 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
     <td>Stop Desk</td>
     <td>0xf1, 0xf1, 0x2B, 0x00, 0x2B, 0x7e</td>
     <td>0xF1, 0xF1, 0x2B, 0x00, 0x00, 0x2B, 0x7E</td>
+    <td>Match</td>
     <td>Match</td>
   </tr>
   

@@ -31,12 +31,14 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
     <td>0xF1, 0xF1, 0x01, 0x00, 0x00, 0x01, 0x7E</td>
     <td>Match</td>
     <td>Match</td>
+    <td>Match</td>
   </tr>
   
   <tr>
     <td>Nudge Down</td>
     <td>0xf1, 0xf1, 0x02, 0x00, 0x02, 0x7e</td>
     <td>0xF1, 0xF1, 0x02, 0x00, 0x00, 0x02, 0x7E</td>
+    <td>Match</td>
     <td>Match</td>
     <td>Match</td>
   </tr>
@@ -47,12 +49,14 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
     <td>0xF1, 0xF1, 0x05, 0x00, 0x00, 0x05, 0x7E</td>
     <td>Match</td>
     <td>Match</td>
+    <td>Match</td>
   </tr>
 
   <tr>
     <td>Press Preset 2</td>
     <td>0xf1, 0xf1, 0x06, 0x00, 0x06, 0x7e</td>
     <td>0xF1, 0xF1, 0x06, 0x00, 0x00, 0x06, 0x7E</td>
+    <td>Match</td>
     <td>Match</td>
     <td>Match</td>
   </tr>
@@ -71,6 +75,7 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
     <td></td>
     <td>Match</td>
     <td></td>
+    <td>Match</td>
   </tr>
 
   <tr>

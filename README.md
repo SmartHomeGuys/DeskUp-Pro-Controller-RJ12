@@ -40,7 +40,7 @@ That's when I decided to:
 
 Every function of the DeskUp pro can be controlled using its [Api](docs/configuration/rest-api.md).
 
-### Automations you could create for your desk
+## Automations you could create for your desk
 - If you're sitting down for too long, then automatically raise the desk to standing height.
   - Or announce on a smart speaker that you have been sat down too long.
   - Or maybe flash a light
@@ -55,7 +55,7 @@ Every function of the DeskUp pro can be controlled using its [Api](docs/configur
 - etc, there are many possibilities.
 
 
-#### ⚠️ Check Compatibility
+## ⚠️ Check Compatibility
 - Any standing desk that has a free RJ11 / RJ12 port could be compatible.
 - Before you proceed check the compatibility of your [desk here](docs/compatibility.md).
 
@@ -108,7 +108,7 @@ And would simply like to get a device pre-built, in a box that you can plug in t
 
 ### TODO ADD EBAY LINK
 
-### Documentation
+## Documentation
 [Setup a purchased device](docs/setup/README.md)
 
 [Build one yourself](docs/diy/README.md)
@@ -116,7 +116,7 @@ And would simply like to get a device pre-built, in a box that you can plug in t
 [Configure the device for your smart home hub](docs/configuration/README.md)
 
 
-### Need Help
+## Need Help
 The community sites are a great place to ask for advice, especially if it's to do with desk compatibility:
 
 https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293

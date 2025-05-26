@@ -113,6 +113,10 @@ This is a list of the community sites that contained the reverse engineered hex 
     <td>0xf1, 0xf1, 0x07, 0x00, 0x07, 0x7e</td>
   </tr>
 
+  <tr>
+    <td>Stop Desk</td>
+    <td>0xf1, 0xf1, 0x2B, 0x00, 0x2B, 0x7e</td>
+  </tr>
   
 </table>
 

@@ -53,6 +53,23 @@ This is a list of the community sites that contained the reverse engineered hex 
       </ul>
     </td>
   </tr>
+
+  <tr>
+    <td>Move Desk to position</td>
+    <td>
+      <ul>
+      <li>byte[0] = 0xF1;
+      <li>byte[1] = 0xF1;
+      <li>byte[2] = 0x1B;
+      <li>byte[3] = 0x02; 
+      <li>byte[4] = height_mm / 256
+      <li>byte[5] = height_mm % 256
+      <li>byte[6] = ((byte[2] + byte[3] + byte[4] + byte[5]) % 256);   // checksum 
+      <li>byte[7] = 0x7E
+      </ul>
+    </td>
+  </tr>
+
   
 </table>
 

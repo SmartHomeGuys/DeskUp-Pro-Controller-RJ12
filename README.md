@@ -8,8 +8,9 @@ DeskUp Pro has full integration with Home Assistant but any smart home hub that 
 
 All the existing functionality of the desk's controller is retained, the DeskUp Pro just lets you control it from your smart home system.
 
-### ADD PRODUCT IMAGE HERE
-### ADD EBAY LINK HERE
+<p align="center">
+  <b>ADD PRODUCT IMAGE AND EBAY LINK HERE</b>
+</p>
 
 ## Why did we start this project?
 To integrate the desk into my Smart Home System so Alexa can tell me to stand up more!

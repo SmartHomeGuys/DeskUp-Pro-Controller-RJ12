@@ -160,6 +160,7 @@ https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_des
     <td>Get Desk Height</td>
     <td>0xf1, 0xf1, 0x07, 0x00, 0x07, 0x7e</td>
     <td>0xF1, 0xF1, 0x07, 0x00, 0x00, 0x07, 0x7E</td>
+    <td></td>
   </tr>
 
   <tr>

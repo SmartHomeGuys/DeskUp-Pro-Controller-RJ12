@@ -5,11 +5,6 @@ This is a list of the community sites that contained the reverse engineered hex 
 <table>
   <th>Name</th>
   <th>Hex Code</th>
-
-  <tr>
-    <td>Get Desk Height</td>
-    <td>0xf1, 0xf1, 0x07, 0x00, 0x07, 0x7e</td>
-  </tr>
   
   <tr>
     <td>Press Preset 1</td>
@@ -19,6 +14,16 @@ This is a list of the community sites that contained the reverse engineered hex 
   <tr>
     <td>Press Preset 2</td>
     <td>0xf1, 0xf1, 0x06, 0x00, 0x06, 0x7e</td>
+  </tr>
+
+  <tr>
+    <td>Press Preset 3</td>
+    <td>0xF1, 0xF1, 0x27, 0x00, 0x27, 0x7E</td>
+  </tr>
+
+  <tr>
+    <td>Press Preset 4</td>
+    <td>0xf1, 0xf1, 0x28, 0x00, 0x28, 0x7e</td>
   </tr>
 
   <tr>
@@ -68,6 +73,11 @@ This is a list of the community sites that contained the reverse engineered hex 
       <li>byte[7] = 0x7E
       </ul>
     </td>
+  </tr>
+
+  <tr>
+    <td>Get Desk Height</td>
+    <td>0xf1, 0xf1, 0x07, 0x00, 0x07, 0x7e</td>
   </tr>
 
   

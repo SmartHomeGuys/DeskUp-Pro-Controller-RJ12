@@ -5,6 +5,9 @@ This is a list of the community sites that contained the reverse engineered hex 
 ### Pimp my Desk
 https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering
 
+### Rocka84
+https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_desk_controller
+
 
 ### List
 
@@ -12,6 +15,7 @@ https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering
   <th>Name</th>
   <th>Hex Code</th>
   <th>Pimp my Desk</th>
+  <th>Rocka84</th>
 
   <tr>
     <td>Nudge Up</td>
@@ -46,6 +50,7 @@ https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering
   <tr>
     <td>Press Preset 4</td>
     <td>0xf1, 0xf1, 0x28, 0x00, 0x28, 0x7e</td>
+    <td></td>
   </tr>
 
   <tr>
@@ -69,6 +74,7 @@ https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering
   <tr>
     <td>Set Preset 4</td>
     <td>0xf1, 0xf1, 0x26, 0x00, 0x26, 0x7e</td>
+    <td></td>
   </tr>
 
 
@@ -88,6 +94,7 @@ https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering
   <li>bytes[8] == 0x7E
     </ul>
   </td>
+  <td></td>
   </tr>
 
   <tr>
@@ -105,6 +112,7 @@ https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering
       <li>bytes[7] == 0x7E
       </ul>
     </td>
+    <td></td>
   </tr>
 
   <tr>

@@ -103,7 +103,7 @@ https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_des
     </ul>
   </td>
   <td></td>
-  <td>Match</td>
+  <td>Match with a different calculation</td>
   </tr>
 
   <tr>
@@ -122,7 +122,7 @@ https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_des
       </ul>
     </td>
     <td></td>
-    <td>Match</td>
+    <td>Match with a different calculation</td>
   </tr>
 
   <tr>

@@ -17,7 +17,7 @@ I ended up combining code from a few different sources written by the community 
 
 That's when I decided to:
 - Fully document everything I had done into this Git repository
-- Make the device accessible to other Smart Home systems using the ESPHome Api
+- Make the device accessible to any Smart Home system that can call the ESPHome Api
 - Start selling DeskUp Pro devices to anyone that wants one but in the spirit of open source if you want to make your own all the details to do that are in here too.
 
 ### TODO ADD EBAY LINK

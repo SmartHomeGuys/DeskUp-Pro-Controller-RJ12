@@ -222,14 +222,26 @@ https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_des
 - Request Limits
   
   0xF1, 0xF1, 0x20, 0x00, 0x20, 0x7E
+```
+  if ((message[2] & 1) == 0) { // low nibble 0 -> no max limit, use physical_max
+    limit_max = physical_max;
+    if (height_max != nullptr) height_max->publish_state(limit_max);
+    if (number_height != nullptr) number_height->set_max_value(limit_max);
+  } 
+  if ((message[2]>>4) == 0) { // high nibble 0 -> no min limit, use physical_min
+    limit_min = physical_min;
+    if (height_min != nullptr) height_min->publish_state(limit_min);
+    if (number_height != nullptr) number_height->set_min_value(limit_min);
+  }
+```
 
   
 - Request Settings
   
   0xF1, 0xF1, 0x07, 0x00, 0x07, 0x7E
-
-  physical_max = byte2float(message[2], message[3]);
-  <br />
-  physical_min = byte2float(message[4], message[5]);
   
+```
+  physical_max = byte2float(message[2], message[3]);
+  physical_min = byte2float(message[4], message[5]);
+```
 

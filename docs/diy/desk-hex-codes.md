@@ -37,6 +37,29 @@ This is a list of the community sites that contained the reverse engineered hex 
   </tr>
 
   <tr>
+    <td>Set Preset 1</td>
+    <td>0xf1, 0xf1, 0x03, 0x00, 0x03, 0x7e</td>
+  </tr>
+
+  <tr>
+    <td>Set Preset 2</td>
+    <td>0xf1, 0xf1, 0x04, 0x00, 0x04, 0x7e</td>
+  </tr>
+  
+  <tr>
+    <td>Set Preset 3</td>
+    <td>0xf1, 0xf1, 0x25, 0x00, 0x25, 0x7e</td>
+  </tr>
+  
+  <tr>
+    <td>Set Preset 4</td>
+    <td>0xf1, 0xf1, 0x26, 0x00, 0x26, 0x7e</td>
+  </tr>
+
+
+  
+
+  <tr>
     <td>Height Changed Message</td>
     <td>
       Message size = 9 bytes.

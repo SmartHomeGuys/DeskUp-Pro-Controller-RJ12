@@ -5,7 +5,7 @@ This is a list of the community sites that contained the reverse engineered hex 
 ### Pimp my Desk
 https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering
 
-Most of these hex codes did not work on a Maidesite Desk seems they are close but contain an extra 0x00.
+Most of these hex codes did not work on a Maidesite Desk, they are very close to matching but contain an extra 0x00.  
 
 ### Rocka84
 https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_desk_controller

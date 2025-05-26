@@ -91,6 +91,8 @@ Plus in this repository you will find:
 - Wi-Fi protocol used is 2.4ghz.
 - Initial setup of the device to connect it to Wi-Fi can be done using a USB C cable (not supplied), Bluetooth (if you use Home Assistant and have a Bluetooth proxy) or a Captive Portal (Wi-Fi hotspot).
 
+### TODO ADD DIMENSIONS 
+
 
 ## Prefer to build one yourself 
 In this Github repository you can find everything to do just that:

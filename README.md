@@ -16,8 +16,8 @@ To integrate the desk into my Smart Home System so Alexa can tell me to stand up
 I ended up combining code from a few different sources written by the community and then kept adding more features. I then realised that RJ12 devices were only available to people who could build their own device and had Home Assistant. 
 
 That's when I decided to:
-- Fully document everything I had done into this Git repository
-- Make the device accessible to any Smart Home system that can call the ESPHome Api
+- Fully document everything I had done into this Git repository.
+- Make the device accessible to any Smart Home system that can call a Rest Api.
 - Start selling DeskUp Pro devices to anyone that wants one but in the spirit of open source if you want to make your own all the details to do that are in here too.
 
 ### TODO ADD EBAY LINK

@@ -78,7 +78,7 @@ Plus in this repository you will find:
 
 ### We test every device before we ship it
 - After building a device we flash it with the latest firmware.
-- We plug it into one of our desks and connect it to Home Assistant where we check the device reads the sensor values from the desk and the button controls move the desk.
+- We plug it into one of our desks and connect it to Home Assistant where we check the device reads the sensor values from the desk and the controls move the desk.
 - We unplug and plug the device back in multiple times to check the cable and components are connected securely.
 - Finally we reflash the firmware and package it up in bubble wrap for shipping.
 
@@ -86,7 +86,8 @@ Plus in this repository you will find:
 ### Specs
 - The firmware of the DeskUp Pro is based on ESPHome
 - The device itself uses an ESP32 chip that is powered by the desk's controller over the RJ12 Cable, so no USB cable is needed to power it.
-- Protocol used is 2.4ghz Wi-Fi 
+- Has a USB C port for setup / powering it (if your desk won't power it via the RJ12 cable).
+- Wi-Fi protocol used is 2.4ghz.
 - Initial setup of the device to connect it to Wi-Fi can be done using a USB C cable (not supplied), Bluetooth (if you use Home Assistant and have a Bluetooth proxy) or a Captive Portal (Wi-Fi hotspot).
 
 

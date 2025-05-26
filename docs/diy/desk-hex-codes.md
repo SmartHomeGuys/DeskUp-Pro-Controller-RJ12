@@ -1,9 +1,11 @@
 # Reverse Engineered Desk Controller Hex Codes
 
-This is a list of the community sites that contained the reverse engineered hex codes used within this project, which started from a combination of the Maidesite project & Mahko_Mahko's yaml version and then evolved when we found the others.
+This is a list of the community sites that contained the reverse engineered hex codes used within this project, which started from a combination of the Maidesite project & Mahko_Mahko's yaml version and then evolved when we found the other projects.
 
 ### Pimp my Desk
 https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering
+
+Most of these hex codes did not work on a Maidesite Desk seems they are close but contain an extra 0x00.
 
 ### Rocka84
 https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_desk_controller

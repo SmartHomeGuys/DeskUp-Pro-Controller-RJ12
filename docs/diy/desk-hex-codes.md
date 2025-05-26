@@ -167,4 +167,17 @@ https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering
 - Fetch All Time
 
   0xF1, 0xF1, 0xAA, 0x00, 0x00, 0xAA, 0x7E
+
+- Set specific height to memory preset
   
+  See 3 examples at bottom of this page: https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering
+  
+  <ul>
+    <li>0xF1
+    <li>0xF1
+    <li>0xAD
+    <li>0x03
+    <li>0x01-0x03 & Height in mm in base 10 to base 16 in 2 Bytes
+    <li>VARIABLE
+    <li>0x7E
+  </ul>

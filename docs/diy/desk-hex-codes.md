@@ -143,16 +143,14 @@ https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_des
       Match
     </td>
     <td>
-      cmd = 0x1B;
-      <br />
       high_byte = ((int) height * 10) >> 8;
       <br />
       low_byte = ((int) height * 10) & 0xFF;
       <br />
-      checksum = cmd + 2 + high_byte + low_byte;
+      checksum = 0x1B + 2 + high_byte + low_byte;
       <br />
       <br />
-      0xF1, 0xF1, cmd, 0x02, high_byte, low_byte, checksum, 0x7E
+      0xF1, 0xF1, 0x1B, 0x02, high_byte, low_byte, checksum, 0x7E
     </td>
   </tr>
 

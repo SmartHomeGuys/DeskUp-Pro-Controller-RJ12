@@ -226,6 +226,10 @@ https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_des
   
 - Request Settings
   
-  0xF1, 0xF1, 0x27, 0x00, 0x07, 0x7E
+  0xF1, 0xF1, 0x07, 0x00, 0x07, 0x7E
+
+  physical_max = byte2float(message[2], message[3]);
+  <br />
+  physical_min = byte2float(message[4], message[5]);
   
 

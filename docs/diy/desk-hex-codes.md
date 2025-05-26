@@ -88,8 +88,6 @@ https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_des
   </tr>
 
 
-  
-
   <tr>
     <td>Height Changed Message</td>
     <td>
@@ -105,6 +103,7 @@ https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_des
     </ul>
   </td>
   <td></td>
+  <td>Match</td>
   </tr>
 
   <tr>
@@ -123,6 +122,7 @@ https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_des
       </ul>
     </td>
     <td></td>
+    <td>Match</td>
   </tr>
 
   <tr>

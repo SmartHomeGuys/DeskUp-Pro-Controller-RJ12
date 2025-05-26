@@ -120,15 +120,7 @@ https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering
       </ul>
     </td>
     <td>
-      <ul>
-      <li>0xF1
-      <li>0xF1
-      <li>0x1B
-      <li>0x02
-      <li>[mm]/256 (division) & [mm]%256 (modulus)
-      <li>VARIABLE
-      <li>0x7E
-      </ul>
+      Match
     </td>
   </tr>
 

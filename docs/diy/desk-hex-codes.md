@@ -5,6 +5,16 @@ This is a list of the community sites that contained the reverse engineered hex 
 <table>
   <th>Name</th>
   <th>Hex Code</th>
+
+  <tr>
+    <td>Nudge Up</td>
+    <td>0xf1, 0xf1, 0x01, 0x00, 0x01, 0x7e</td>
+  </tr>
+
+  <tr>
+    <td>Nudge Down</td>
+    <td>0xf1, 0xf1, 0x02, 0x00, 0x02, 0x7e</td>
+  </tr>
   
   <tr>
     <td>Press Preset 1</td>

@@ -12,16 +12,6 @@ All the existing functionality of the desk's controller is retained, the DeskUp 
   <b>ADD PRODUCT IMAGE AND EBAY LINK HERE</b>
 </p>
 
-## Why did we start this project?
-To integrate the desk into my Smart Home System so Alexa can tell me to stand up more!
-
-I ended up combining code from a few different sources written by the community and then kept adding more features. I then realised that RJ12 devices were only available to people who could build their own device and had Home Assistant. 
-
-That's when I decided to:
-- Fully document everything I had done into this Git repository.
-- Make the device accessible to any Smart Home system that can call a Rest Api.
-- Sell DeskUp Pro devices to anyone that just wants to plug it in and start automating, but in the spirit of open source if you want to build your own all the details to do that are in here too.
-
 
 ## What is shown in Home Assistant
 <p align="center">
@@ -129,6 +119,16 @@ https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-des
 
 If it's not a compatibility question, and prehaps you have an idea for a new feature to add, or find out there are other desk hex codes and know what they are and do, then log an issue to this Git Repo and we will try to help, or even better submit a pull request with the change.
 
+
+## Why did I start this project?
+I was finding I sat down at my desk too much so I wanted to integrate it into my Smart Home System and have Alexa nag me to stand up more!
+
+I ended up combining code from a few different sources written by the community and then kept adding more features. I then realised that RJ12 devices were only available to people who could build their own device and had Home Assistant. 
+
+That's when I decided to:
+- Fully document everything I had done into this Git repository.
+- Make the device accessible not only to Home Assistant but to any Smart Home system that can call a Rest Api.
+- Sell DeskUp Pro devices to anyone that just wants to plug it in and start automating, but in the spirit of open source if you want to build your own all the details to do that are in here too.
 
 ### License
 

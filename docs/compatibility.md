@@ -106,4 +106,5 @@ https://github.com/phord/Jarvis#physical-interface-rj-12
 
 https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790?u=mahko_mahko
 
+A comparison of the different community projects and reverse engineered desk hex codes [can be found here](/docs/diy/desk-hex-codes.md).
 

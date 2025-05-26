@@ -26,12 +26,14 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
     <td>0xf1, 0xf1, 0x01, 0x00, 0x01, 0x7e</td>
     <td>0xF1, 0xF1, 0x01, 0x00, 0x00, 0x01, 0x7E</td>
     <td>Match</td>
+    <td>Match</td>
   </tr>
   
   <tr>
     <td>Nudge Down</td>
     <td>0xf1, 0xf1, 0x02, 0x00, 0x02, 0x7e</td>
     <td>0xF1, 0xF1, 0x02, 0x00, 0x00, 0x02, 0x7E</td>
+    <td>Match</td>
     <td>Match</td>
   </tr>
   
@@ -72,12 +74,14 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
     <td>0xf1, 0xf1, 0x03, 0x00, 0x03, 0x7e</td>
     <td>0xF1, 0xF1, 0x03, 0x00, 0x00, 0x03, 0x7e</td>
     <td>Match</td>
+    <td>Match</td>
   </tr>
 
   <tr>
     <td>Set Preset 2</td>
     <td>0xf1, 0xf1, 0x04, 0x00, 0x04, 0x7e</td>
     <td>0xF1, 0xF1, 0x04, 0x00, 0x00, 0x04, 0x7E</td>
+    <td>Match</td>
     <td>Match</td>
   </tr>
   
@@ -86,6 +90,7 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
     <td>0xf1, 0xf1, 0x25, 0x00, 0x25, 0x7e</td>
     <td>0xF1, 0xF1, 0x25, 0x00, 0x00, 0x25, 0x7E</td>
     <td>Match</td>
+    <td>Match</td>
   </tr>
   
   <tr>
@@ -93,6 +98,7 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
     <td>0xf1, 0xf1, 0x26, 0x00, 0x26, 0x7e</td>
     <td></td>
     <td>Match</td>
+    <td></td>
   </tr>
 
 
@@ -163,6 +169,7 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
       <br />
       0xF1, 0xF1, 0x1B, 0x02, high_byte, low_byte, checksum, 0x7E
     </td>
+    <td>Match</td>
   </tr>
 
   <tr>
@@ -170,6 +177,7 @@ https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/60229
     <td>0xf1, 0xf1, 0x07, 0x00, 0x07, 0x7e</td>
     <td>0xF1, 0xF1, 0x07, 0x00, 0x00, 0x07, 0x7E</td>
     <td></td>
+    <td>Match</td>
   </tr>
 
   <tr>

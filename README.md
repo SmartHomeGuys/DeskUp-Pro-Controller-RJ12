@@ -131,4 +131,7 @@ That's when I decided to:
 - Sell DeskUp Pro devices to anyone that just wants to plug it in and start automating, but in the spirit of open source if you want to build your own all the details to do that are in here too.
 
 ### License
+This project is licensed for **personal, non-commercial use only**.  
+Redistribution, resale, or commercial use is **not permitted**.  
+See the [LICENSE](./LICENSE) file for details.
 

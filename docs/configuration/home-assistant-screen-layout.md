@@ -29,10 +29,13 @@ If you find when lowering the desk it consistently misses the height you wanted 
 ### Offset Up By (defaults to mm)
 If you find when raising the desk it consistently misses the height you wanted when using the "desk height" slider this allows you to fine tune it by x number of mm.
 
+### Send Wake Up Cmd
+On some desks the desk controller goes to sleep after afew seconds. Enabling this will send a wake up command before sending the desk command. The controller should then respond to the desk command you requested.
+
 ### Set Desk M1, M2, M3, M4 buttons
 Pressing these will set the current desk's height in to the corresponding memory number preset on the desk's controller.
 
-![](images/DeskUpPro-Configuration2.jpg)
+![](images/DeskUpPro-Configuration3.jpg)
 
 
 ## Sensors

@@ -93,7 +93,7 @@ https://www.jiecang.com/product/jcb35m11c.html
 
 
 ## Omnidesk
-Confirmed working in this post
+Confirmed working in this post, but you may need to toggle on the 'Send wake up command' as the desk controller may go to sleep, this will wake the desk controller up then send the button command you asked for.
 
 https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/449
 

@@ -15,18 +15,18 @@ All the existing functionality of the desk's controller is retained, the DeskUp 
 
 ## What is shown in Home Assistant
 <p align="center">
-  <img src="images/DeskUpPro-Controls.jpg" height="350px" />
-  <img src="images/DeskUp-Pro-Cover-Slider.jpg" height="350px" />
-  <img src="images/DeskUpPro-Sensors2.jpg" height="350px" />
-  <img src="images/DeskUpPro-Configuration3.jpg" height="350px" />
+  <img src="images/DeskUpPro-Controls-black.jpg" height="350px" />
+  <img src="images/DeskUp-Pro-Cover-Slider-black.jpg" height="350px" />
+  <img src="images/DeskUpPro-Sensors-black.jpg" height="350px" />
+  <img src="images/DeskUpPro-Configuration-black.jpg" height="350px" />
 </p>
 
 32 entities are exposed in Home Assistant that let you control every function of the DeskUp pro.
 
 ## Or other smart home systems can use the built in Web Interface and its Rest API
 <p align="center">
-  <img src="images/WebServer-screen1c.jpg" height="350px" width=320px" />
-  <img src="images/WebServer-screen2c.jpg" height="350px" width=380px" />
+  <img src="images/WebServer-screen1-black.jpg" height="350px" width=320px" />
+  <img src="images/WebServer-screen2-black.jpg" height="250px" width=320px" />
 </p>
 
 Every function of the DeskUp pro can be controlled using its [Api](docs/configuration/rest-api.md).

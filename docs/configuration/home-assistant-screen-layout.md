@@ -35,7 +35,7 @@ On some desks the desk controller goes to sleep after afew seconds. Enabling thi
 ### Set Desk M1, M2, M3, M4 buttons
 Pressing these will set the current desk's height in to the corresponding memory number preset on the desk's controller.
 
-![](images/DeskUpPro-Configuration3.jpg)
+![](images/DeskUpPro-Configuration-black.jpg)
 
 
 ## Sensors
@@ -69,7 +69,7 @@ e.g. 2 days, 04:45:02
 or just 04:45:02 (if days is 0)
 
 
-![](images/DeskUpPro-Sensors2.jpg)
+![](images/DeskUpPro-Sensors-black.jpg)
 
 
 ## Controls
@@ -109,7 +109,7 @@ When pressed sets the Idle Time sensor back to 0.
 See the [example automations](home-assistant-automations.md) page for an example of this bring used.
 
 
-![](images/DeskUpPro-Controls.jpg)
+![](images/DeskUpPro-Controls-black.jpg)
 
 
 ## Diagnostics
@@ -121,6 +121,6 @@ Pressing this will reboot the device.
 Shows how long the device has been online for.
 
 
-![](images/DeskUpPro-Diagnostics.jpg)
+![](images/DeskUpPro-Diagnostics-black.jpg)
 
 

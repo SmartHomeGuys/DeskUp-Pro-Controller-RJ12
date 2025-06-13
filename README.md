@@ -36,7 +36,7 @@ Every function of the DeskUp pro can be controlled using its [Api](docs/configur
   - Or announce on a smart speaker that you have been sat down too long.
   - Or maybe flash a light
 - If you ignore it then 5 mins later have it nag you to stand up until you do!
-- Use voice e.g. Hey Google raise my desk!
+- Use voice e.g. Hey Google/Alexa raise my desk!
 - After lunchtime raise the desk so you start the afternoon standing up (maybe trigger this as you walk into the room if you have a motion sensor).
 - Prefer to do meetings standing up, then if your calendar is exposed to Home Assistant you could raise the desk 1 minute before your meeting starts.
 - At the end of the working day lower the desk when you turn off the office light or leave the room.

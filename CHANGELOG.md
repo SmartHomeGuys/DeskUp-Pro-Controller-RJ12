@@ -1,5 +1,9 @@
-# 2025.6.2
+# 2025.6.3
 - Release of the DeskUp Pro Controller as a product
+- Added the ability to send a wake up desk command prior to it sending the command requested. Can be toggled on with the 'Send Wake Up Cmd' switch in the configuration section.
+
+
+# 2025.6.2
 - Added a check that if Wi-Fi is disconnected it turns on the LED in solid red.
 - Added missing entity/platform ids
 

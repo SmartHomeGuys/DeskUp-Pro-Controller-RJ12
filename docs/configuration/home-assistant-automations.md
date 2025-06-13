@@ -4,6 +4,7 @@
 1. [Announce on Alexa if sat down for 30 mins and nag me at 35](#Announce-on-Alexa-if-sat-down-for-30-mins-and-nag-me-at-35)
 2. [Reset Desk Controller Idle Timer if Presence is Detected](#Reset-Desk-Controller-Idle-Timer-if-Presence-is-Detected)
 3. [Hey Google Raise the Desk](#Hey-Google-Raise-the-Desk)
+4. [Alexa Raise the Desk](#Alexa-Raise-the-Desk)
 
 
 ## Announce on Alexa if sat down for 30 mins and nag me at 35
@@ -126,3 +127,9 @@ automations:
       openPercent: 100
       devices: Office Desk - Office
 ```
+
+## Alexa Raise the Desk
+The DeskUp Pro has a Cover entity. Exposing this entity to Alexa allows it to be controllable as a device in Alexa.
+
+One option is to use the Home Assistant Matter Hub addon to expose the device to Alexa.  Then just configure a routine in the Alexa app.
+<img src="images/Automation-Alexa-Cover2.jpg" height="700px" />

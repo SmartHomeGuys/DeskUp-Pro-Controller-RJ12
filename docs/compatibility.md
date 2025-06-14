@@ -1,15 +1,15 @@
 # ⚠️ Check if your desk is compatible
-You should understand the risks before purchasing any components to build this yourself or if you purchase a prebuilt one from the shop. It's your responsibility to determine if its fit for your purpose. 
+There is **no guarantee** that the DeskUp Pro device will work with your desk as desk manufacturers can change their specifications at anytime even on the same model number.
 
-- Your desk must have a free RJ12 port on the controller (6 pins)
-- Or sometimes it's an RJ11 port which is the same size it just has 4 pins. Which is fine because even with the 6 pin RJ12 we only use 4 wires anyway. The 1st and last wires are not used.
+This is a product of reverse engineering, so until you try it on your desk there is no way to be 100% certain that it will or won't work.
+
+You should understand these risks before purchasing any components to build this yourself or if you purchase a prebuilt one from the shop. It's your responsibility to determine if its fit for your purpose. 
+
+Your desk must also have a free RJ12 port on the controller (6 pins):
+- Sometimes it's an RJ11 port which is the same size it just has 4 pins. Which is fine because even with the 6 pin RJ12 we only use 4 wires anyway. The 1st and last wires are not used.
 - Sometimes the controller will indicate an RJ11/12 with an 'F' next to it.
 
 ![](images/MaidsiteDeskControlBox-Back.jpg)
-
-- There is no guarantee that the DeskUp Pro device will work with your desk due to the different models out there. and desk manufacturers can change their specifications at anytime even on the same model number.
-
-- As this is a product of reverse engineering, until you try it on your desk there is no way to be 100% certain that it will or won't work.
 
 Below is a list of desks we know should be compatible. This is not a complete list as any desk with an RJ11 / RJ12 port could work.
 

@@ -23,7 +23,7 @@ All the existing functionality of the desk's controller is retained, the DeskUp 
 
 32 entities are exposed in Home Assistant that let you control every function of the DeskUp pro.
 
-## Or other smart home systems can use the built in Web Interface and its Rest API
+## Other smart home systems can use the built in Web Interface and its Rest API
 <p align="center">
   <img src="images/WebServer-screen1-black.jpg" height="350px" width=320px" />
   <img src="images/WebServer-screen2-black.jpg" height="250px" width=320px" />
@@ -47,7 +47,12 @@ Every function of the DeskUp pro can be controlled using its [Api](docs/configur
 
 
 ## ⚠️ Check Compatibility
+There is **no guarantee** that the DeskUp Pro device will work with your desk as desk manufacturers can change their specifications at anytime even on the same model number.
+
+- This is a product of reverse engineering, so until you try it on your desk there is no way to be 100% certain that it will or won't work.
+
 - Any standing desk that has a free RJ11 / RJ12 port could be compatible.
+
 - Before you proceed check the compatibility of your [desk here](docs/compatibility.md).
 
 You should understand the risks before purchasing, it's your responsibility to determine if its fit for your purpose. 

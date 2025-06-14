@@ -7,7 +7,7 @@ To automate your desk, what we are going to make is the cable below with an RJ12
 
 
 ## Materials needed
-- An ESP32, we used an ESP-S3 Zero/Mini:
+- An ESP32, we used an ESP32-S3 Zero/Mini:
 
 - An RJ12 to RJ12 Cable (6P6C)
 
@@ -16,7 +16,11 @@ To automate your desk, what we are going to make is the cable below with an RJ12
 - Soildering Iron
 
 
-Cut the RJ12 cable to the desired length to fit under your standing desk, then use the wire stripper tool to strip the following wires, the 2 unused wires can just be cut off.
+Cut the RJ12 cable to the desired length to fit under your standing desk (we use 9cm).
+
+Then use the wire stripper tool to strip the cable back 2.5cm. 
+
+Then strip off a small amount (lowest setting on the wire stripper) for the following wires, the 2 unused wires can just be cut off.
 
 
 ## RJ12 to ESP32-S3-Zero Pin Mapping
@@ -30,11 +34,10 @@ Cut the RJ12 cable to the desired length to fit under your standing desk, then u
 | PIN 5 | Yellow| GPIO13 (labelled 13 in image) |
 | PIN 6 | Blue  | Unused |
 
-_Note: I chose GPIO12 & GPIO13 purley for their location on the board, most other pins would be suitable._
+_Note: I chose GPIO12 & GPIO13 purley for their location on the board to help with routing the cable out the back, but most other pins would be suitable. You can override the pins to be yours in the yaml by adding substitutions to the device in ESPHome builder (see "Let’s set up the ESP32 with the desk controller software" section below):_
+
 
 ![](images/esp32-s3-zero-pinlayout.png)
-
-Place a very small amount of solder onto each of the 4 wires and let it cooldown.  It makes it so much easier to thread the wires through the holes in the board this way.
 
 Push each wire through the correct pin hole so it comes out the bottom and solder it on the back of the board.
 
@@ -104,6 +107,13 @@ Edit that file and remove or comment out the packages section as you wont need t
 ```
 packages:
   device_base: !include deployment-config.yaml
+```
+
+If you used different pins for tx or rx add the substitutions block as follows using your GPIO pin numbers (these are the default values shown below):
+```
+substitutions:
+  tx_pin: "GPIO13"
+  rx_pin: "GPIO12"
 ```
 
 Save, Validate and then click install to flash the code onto the device.

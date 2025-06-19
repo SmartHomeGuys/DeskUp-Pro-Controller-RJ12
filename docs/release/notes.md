@@ -17,6 +17,7 @@
 - Once development is complete update the base.yaml with a new version number.
 - Install again onto the development device and check the new version number is there.
 - Copy the changed files from Home Assistant's local folder into the Git folder (locally on a laptop).
+- Update CHANGELOG.md
 - Commit and push to GitHub.
 
 - Copy / Paste the contents of the 'config-to-flash.yaml' over the top of the development DeskUp Pro device in ESPHome.  Keep a copy though as you need to put this back later.

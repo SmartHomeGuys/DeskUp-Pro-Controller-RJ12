@@ -35,7 +35,7 @@ views:
             label: |
               [[[
                 var value = states["sensor.deskup_pro_controller_desk_height"].state;
-                return value;
+                return parseFloat(value).toFixed(1);
               ]]]
             grid_options:
               columns: 6

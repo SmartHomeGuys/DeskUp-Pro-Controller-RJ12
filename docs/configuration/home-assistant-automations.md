@@ -5,6 +5,7 @@
 2. [Reset Desk Controller Idle Timer if Presence is Detected](#Reset-Desk-Controller-Idle-Timer-if-Presence-is-Detected)
 3. [Hey Google Raise the Desk](#Hey-Google-Raise-the-Desk)
 4. [Alexa Raise the Desk](#Alexa-Raise-the-Desk)
+5. [Use Home Assistant's Assist to Raise the Desk](#Use-Assist-to-Raise-the-Desk)
 
 
 ## Announce on Alexa if sat down for 30 mins and nag me at 35
@@ -133,3 +134,51 @@ The DeskUp Pro has a Cover entity. Exposing this entity to Alexa allows it to be
 
 One option is to use the Home Assistant Matter Hub addon to expose the device to Alexa.  Then just configure a routine in the Alexa app.
 <img src="images/Automation-Alexa-Cover2.jpg" height="700px" />
+
+
+## Use Assist to Raise the Desk
+Use Homeassistant's conversation Assistant "Assist" to control the desk.
+
+```
+alias: "Assist: Move Office Desk Up or Down"
+description: ""
+triggers:
+  - trigger: conversation
+    command:
+      - Desk up
+      - Raise the [office ]desk
+    id: Desk up
+  - trigger: conversation
+    command:
+      - Desk down
+      - Lower the [office ]desk
+    id: Desk down
+conditions: []
+actions:
+  - choose:
+      - conditions:
+          - condition: trigger
+            id:
+              - Desk up
+        sequence:
+          - action: button.press
+            metadata: {}
+            data: {}
+            target:
+              entity_id: button.office_deskup_pro_desk_m4
+          - set_conversation_response: Raising the desk
+      - conditions:
+          - condition: trigger
+            id:
+              - Desk down
+        sequence:
+          - action: button.press
+            metadata: {}
+            data: {}
+            target:
+              entity_id: button.office_deskup_pro_desk_m1
+          - set_conversation_response: Lowering the desk
+mode: single
+```
+
+

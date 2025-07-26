@@ -139,6 +139,8 @@ One option is to use the Home Assistant Matter Hub addon to expose the device to
 ## Use Assist to Raise the Desk
 Use Homeassistant's conversation Assistant "Assist" to control the desk.
 
+This automation uses the 'conversation' trigger and simply presses the appropriate desk's memory button.
+
 ```
 alias: "Assist: Move Office Desk Up or Down"
 description: ""

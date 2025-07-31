@@ -1,5 +1,10 @@
+# 2025.7.0
+- Changed to use esp-idf framework now due to ESPHome 2025.7.x causing out of flash storage space when using arduino.
+- Updated the LED version to one supported by arduino.
+- Changed the onboot priority from 800 down to 200 as the previous setting was resulting in the memory preset sensors M1 to M4 not being read at all or only partially on boot of the device.
+
+
 # 2025.6.3
-- Release of the DeskUp Pro Controller as a product
 - Added the ability to send a wake up desk command prior to it sending the command requested. Can be toggled on with the 'Send Wake Up Cmd' switch in the configuration section.
 
 

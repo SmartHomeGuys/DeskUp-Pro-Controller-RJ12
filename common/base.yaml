@@ -24,10 +24,10 @@ esphome:
   friendly_name: ${friendly_name}
   project:
     name: SmartHomeGuys.DeskUp Pro Controller (RJ12)
-    version: "2025.6.3"
+    version: "2025.7.0"
   name_add_mac_suffix: true
   on_boot:
-    priority: 800
+    priority: 200
     then:
       #- uart.write: [0xf1, 0xf1, 0x07,0x00,0x07,0x7e,0xf1, 0xf1, 0x08,0x00,0x08,0x7e,0xf1, 0xf1, 0x09,0x00,0x09,0x7e,0xf1, 0xf1, 0x0c,0x00,0x0c,0x7e,0xf1, 0xf1, 0x0e,0x00,0x0e,0x7e]
       - script.execute: script_run_on_boot 
@@ -35,7 +35,7 @@ esphome:
 esp32:
   board: esp32-s3-devkitc-1
   framework:
-    type: arduino
+    type: esp-idf
 
 logger:
   #loglevel:  e.g. NONE, ERROR, WARN, INFO, DEBUG, VERBOSE, VERY_VERBOSE
@@ -85,7 +85,7 @@ uart:
               {
                 if (bytes[0] == 0xF2 && bytes[1] == 0xF2 && bytes[7] == 0x7E)
                 {
-                  byte command = bytes[2];
+                  uint8_t command = bytes[2];
                   double height = ((bytes[4] * 256) + bytes[5]) /10.0;    // Default to cm
                   
                   // Check that it is a preset height message (byte 2 should be one of: 0x25, 0x26, 0x27, 0x28)
@@ -779,10 +779,10 @@ switch:
 
 
 light:
-  - platform: neopixelbus
+  - platform: esp32_rmt_led_strip
     id: "light_esp32led"
-    variant: WS2812
-    type: ${esp32_led_order}
+    chipset: WS2812
+    rgb_order: ${esp32_led_order}
     pin: GPIO21
     num_leds: 1
     name: "ESP32 LED"

@@ -43,6 +43,10 @@
 
 - Copy the ESPHome contents of the development DeskUp Pro device you saved (somewhere safe) back into ESPHome and save it.
 
+- Draft then publish a new Release version in Github using the changelog notes as its content, making sure to add a tag and setting this as the latest version.
+https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/releases
+
+
 ![](images/HomeAssistant-Showing-Update-Available.png)
 
 - Users Home Assistant clients should now start saying an updated version is available to install.

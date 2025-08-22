@@ -9,7 +9,11 @@ DeskUp Pro has full integration with Home Assistant but any smart home hub that 
 All the existing functionality of the desk's controller is retained, the DeskUp Pro just lets you control it from your smart home system.
 
 <p align="center">
-  <b>ADD PRODUCT IMAGE AND EBAY LINK HERE</b>
+  <img src="images/DeskUpPro-Top.jpg" height="250px" />
+  <img src="images/DeskUpPro-UnderDesk.jpg" height="250px" />
+
+  
+  <b>ADD EBAY LINK HERE</b>
 </p>
 
 
@@ -63,7 +67,6 @@ If you need help to determine if your desk might be compatible the community sit
 ### What's in the box if I bought one?
 - DeskUp Pro device with attached RJ12 cable flashed with the latest firmware
 - Housed in a 3D printed case
-- Velcro adhesive
 - Getting started guide
 
 Plus in this repository you will find:
@@ -86,7 +89,17 @@ Plus in this repository you will find:
 - Wi-Fi protocol used is 2.4ghz.
 - Initial setup of the device to connect it to Wi-Fi can be done using a USB C cable (not supplied), Bluetooth (if you use Home Assistant and have a Bluetooth proxy) or a Captive Portal (Wi-Fi hotspot).
 
-### TODO ADD DIMENSIONS 
+### More Product Images and Dimensions
+<p align="center">
+  <img src="images/DeskUpPro-Front.jpg" height="250px" />
+  <img src="images/DeskUpPro-Bottom.JPG" height="250px" />
+  <img src="images/DeskUpPro-Rear.JPG" height="250px" />
+</p>
+<p align="center">
+  <img src="images/DeskUpPro-WireFrame.png" height="350px" />
+</p>
+
+### TODO ADD EBAY LINK
 
 
 ## Prefer to build one yourself 
@@ -103,9 +116,8 @@ However if you would prefer to avoid:
 - 3d printing a case
 - Downloading & flashing the firmware
 
-And would simply like to get a device pre-built, in a box that you can plug in to your desk and be automating it in 10 minutes then you can purchase one from our eBay shop.
+And would simply like to get a device pre-built, in a box that you can plug in to your desk and be automating it in 10 minutes then you can purchase one from our 
 
-### TODO ADD EBAY LINK
 
 ## Documentation
 [Setup a purchased device](docs/setup/README.md)

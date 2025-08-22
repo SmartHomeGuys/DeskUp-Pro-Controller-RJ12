@@ -11,9 +11,9 @@ All the existing functionality of the desk's controller is retained, the DeskUp 
 <p align="center">
   <img src="images/DeskUpPro-Top.jpg" height="250px" />
   <img src="images/DeskUpPro-UnderDesk.jpg" height="250px" />
-
-  
-  <b>ADD EBAY LINK HERE</b>
+</p>
+<p align="center">
+  <b>TODO ADD EBAY LINK HERE</b>
 </p>
 
 
@@ -64,23 +64,6 @@ You should understand the risks before purchasing, it's your responsibility to d
 _This is a product of reverse engineered code where each of the desks functions were extracted by the community, not us [and can be found here](/docs/diy/desk-hex-codes.md). 
 If you need help to determine if your desk might be compatible the community sites in the [need help section](#need-help) are a great place to go for advice._
 
-### What's in the box if I bought one?
-- DeskUp Pro device with attached RJ12 cable flashed with the latest firmware
-- Housed in a 3D printed case
-- Getting started guide
-
-Plus in this repository you will find:
-- Example Home Assistant [dashboard cards](docs/configuration/home-assistant-dashboard.md).
-- Example Home Assistant [automations](docs/configuration/home-assistant-automations.md).
-- For other smart home systems use our [api documentation](docs/configuration/rest-api.md).
-
-
-### We test every device before we ship it
-- After building a device we flash it with the latest firmware.
-- We plug it into one of our desks and connect it to Home Assistant where we check the device reads the sensor values from the desk and the controls move the desk.
-- We unplug and plug the device back in multiple times to check the cable and components are connected securely.
-- Finally we reflash the firmware and package it up in bubble wrap for shipping.
-
 
 ### Specs
 - The firmware of the DeskUp Pro is based on ESPHome
@@ -99,7 +82,26 @@ Plus in this repository you will find:
   <img src="images/DeskUpPro-WireFrame.png" height="350px" />
 </p>
 
-### TODO ADD EBAY LINK
+<p align="center">
+  <b>TODO ADD EBAY LINK HERE</b>
+</p>
+
+### What's in the box if I bought one?
+- DeskUp Pro device with attached RJ12 cable flashed with the latest firmware
+- Housed in a 3D printed case
+- Getting started guide
+
+Plus in this repository you will find:
+- Example Home Assistant [dashboard cards](docs/configuration/home-assistant-dashboard.md).
+- Example Home Assistant [automations](docs/configuration/home-assistant-automations.md).
+- For other smart home systems use our [api documentation](docs/configuration/rest-api.md).
+
+
+### We test every device before we ship it
+- After building a device we flash it with the latest firmware.
+- We plug it into one of our desks and connect it to Home Assistant where we check the device reads the sensor values from the desk and the controls move the desk.
+- We unplug and plug the device back in multiple times to check the cable and components are connected securely.
+- Finally we reflash the firmware and package it up in bubble wrap for shipping.
 
 
 ## Prefer to build one yourself 
@@ -138,7 +140,7 @@ If it's not a compatibility question, and prehaps you have an idea for a new fea
 
 
 ## Why did I start this project?
-I was finding I sat down at my desk too much so I wanted to integrate it into my Smart Home System and have Alexa nag me to stand up more!
+I was finding I sat down at my desk too much and this was causing Sciatica so I wanted to integrate the desk into my Smart Home System and have Alexa nag me to stand up more!
 
 I ended up combining code from a few different sources written by the community and then kept adding more features. I then realised that RJ12 devices were only available to people who could build their own device and had Home Assistant. 
 

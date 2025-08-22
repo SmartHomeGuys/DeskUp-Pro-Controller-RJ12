@@ -116,7 +116,7 @@ However if you would prefer to avoid:
 - 3d printing a case
 - Downloading & flashing the firmware
 
-And would simply like to get a device pre-built, in a box that you can plug in to your desk and be automating it in 10 minutes then you can purchase one from our 
+And would simply like to get a device pre-built, in a box that you can plug in to your desk and be automating it in 10 minutes then you can purchase one from our eBay store.
 
 
 ## Documentation

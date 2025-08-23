@@ -82,9 +82,6 @@ If you need help to determine if your desk might be compatible the community sit
   <img src="images/DeskUpPro-WireFrame.png" height="350px" />
 </p>
 
-<p align="center">
-  <b>TODO ADD EBAY LINK HERE</b>
-</p>
 
 ### What's in the box if I bought one?
 - DeskUp Pro device with attached RJ12 cable flashed with the latest firmware
@@ -119,6 +116,10 @@ However if you would prefer to avoid:
 - Downloading & flashing the firmware
 
 And would simply like to get a device pre-built, in a box that you can plug in to your desk and be automating it in 10 minutes then you can purchase one from our eBay store.
+
+<p align="center">
+  <b>TODO ADD EBAY LINK HERE</b>
+</p>
 
 
 ## Documentation

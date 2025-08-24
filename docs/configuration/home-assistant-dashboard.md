@@ -13,6 +13,10 @@ After 30 minutes with the desk at sitting height the background changes colour o
 
 ![](images/Desk-Dashboard-Idle-Warning.jpg)
 
+This uses these HACS addons:
+- https://github.com/custom-cards/button-card
+- https://github.com/piitaya/lovelace-mushroom
+
 Yaml for this:
 ```
 views:

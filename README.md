@@ -9,9 +9,9 @@ DeskUp Pro has full integration with Home Assistant but any smart home hub that 
 All the existing functionality of the desk's controller is retained.  Connect the DeskUp Pro to Wi-Fi, plug it into your desk controller and control your desk from your smart home system.
 
 <p align="center">
-  <img src="images/DeskUpPro-Top.jpg" height="200px" />
-  <img src="images/DeskUpPro-UnderDesk.jpg" height="200px" />
-  <img src="images/DeskUpPro-Top-White2.jpg" height="200px" />
+  <img src="images/DeskUpPro-Top.jpg" height="180px" />
+  <img src="images/DeskUpPro-UnderDesk.jpg" height="180px" />
+  <img src="images/DeskUpPro-Top-White2.jpg" height="180px" />
 </p>
 <p align="center">
   <b>TODO ADD EBAY LINK HERE</b>

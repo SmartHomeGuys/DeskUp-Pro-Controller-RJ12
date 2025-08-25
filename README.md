@@ -1,6 +1,4 @@
-# DeskUp Pro - Control your standing desk (Maidesite, Ikea, etc) from a smart home automation system
-
-## ⚠️ Note this project is a work in-progress right now, expect to be completed by end August 2025. 
+# DeskUp Pro - Control your standing desk (Maidesite, Ikea, etc) from a smart home automation system 
 
 If your standing desk controller has an RJ11 / RJ12 port use DeskUp Pro to integrate your desk with your smart home automation system to control your standing desk from your phone, dashboards, automations or voice.
 
@@ -14,7 +12,7 @@ All the existing functionality of the desk's controller is retained.  Connect th
   <img src="images/DeskUpPro-Top-White4.jpg" height="180px" />
 </p>
 <p align="center">
-  <b>TODO ADD EBAY LINK HERE</b>
+  <a href="https://www.ebay.co.uk/itm/226940304988" target="_new"><img src="images/WeSellOnEbay-Long.png" height="65px" /></a>
 </p>
 
 
@@ -119,7 +117,7 @@ However if you would prefer to avoid:
 And would simply like to get a device pre-built, in a box that you can plug in to your desk and be automating it in 10 minutes then you can purchase one from our eBay store.
 
 <p align="center">
-  <b>TODO ADD EBAY LINK HERE</b>
+  <a href="https://www.ebay.co.uk/itm/226940304988" target="_new"><img src="images/WeSellOnEbay-Long.png" height="65px" /></a>
 </p>
 
 

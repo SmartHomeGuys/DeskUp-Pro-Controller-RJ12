@@ -11,7 +11,7 @@ All the existing functionality of the desk's controller is retained.  Connect th
 <p align="center">
   <img src="images/DeskUpPro-Top.jpg" height="180px" />
   <img src="images/DeskUpPro-UnderDesk.jpg" height="180px" />
-  <img src="images/DeskUpPro-Top-White2.jpg" height="180px" />
+  <img src="images/DeskUpPro-Top-White4.jpg" height="180px" />
 </p>
 <p align="center">
   <b>TODO ADD EBAY LINK HERE</b>

@@ -12,7 +12,7 @@ All the existing functionality of the desk's controller is retained.  Connect th
   <img src="images/DeskUpPro-Top-White4.jpg" height="180px" />
 </p>
 <p align="center">
-  <a href="https://www.ebay.co.uk/itm/226940304988" target="_new"><img src="images/WeSellOnEbay-Long.png" height="65px" /></a>
+  <a href="https://www.ebay.co.uk/itm/226940304988" target="_blank"><img src="images/WeSellOnEbay-Long.png" height="65px" /></a>
 </p>
 
 
@@ -117,7 +117,7 @@ However if you would prefer to avoid:
 And would simply like to get a device pre-built, in a box that you can plug in to your desk and be automating it in 10 minutes then you can purchase one from our eBay store.
 
 <p align="center">
-  <a href="https://www.ebay.co.uk/itm/226940304988" target="_new"><img src="images/WeSellOnEbay-Long.png" height="65px" /></a>
+  <a href="https://www.ebay.co.uk/itm/226940304988" target="_blank"><img src="images/WeSellOnEbay-Long.png" height="65px" /></a>
 </p>
 
 

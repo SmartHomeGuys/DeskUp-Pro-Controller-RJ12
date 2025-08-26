@@ -1,6 +1,4 @@
-# DeskUp Pro - Control your standing desk (Maidesite, Ikea, etc) from a smart home automation system
-
-## ⚠️ Note this project is a work in-progress right now, expect to be completed by end August 2025. 
+# DeskUp Pro - Control your standing desk (Maidesite, Ikea, etc) from a smart home automation system 
 
 If your standing desk controller has an RJ11 / RJ12 port use DeskUp Pro to integrate your desk with your smart home automation system to control your standing desk from your phone, dashboards, automations or voice.
 
@@ -11,10 +9,10 @@ All the existing functionality of the desk's controller is retained.  Connect th
 <p align="center">
   <img src="images/DeskUpPro-Top.jpg" height="180px" />
   <img src="images/DeskUpPro-UnderDesk.jpg" height="180px" />
-  <img src="images/DeskUpPro-Top-White2.jpg" height="180px" />
+  <img src="images/DeskUpPro-Top-White4.jpg" height="180px" />
 </p>
 <p align="center">
-  <b>TODO ADD EBAY LINK HERE</b>
+  <a href="https://www.ebay.co.uk/itm/226942026649" target="_blank"><img src="images/PurchaseOnEbay-Long3.jpeg" height="90px" /></a>
 </p>
 
 
@@ -39,7 +37,7 @@ Every function of the DeskUp pro can be controlled using its [Api](docs/configur
 ## Automations you could create for your desk
 - If you're sitting down for too long, then automatically raise the desk to standing height.
   - Or announce on a smart speaker that you have been sat down too long.
-  - Or maybe flash a light
+  - Or maybe flash a light.
 - If you ignore it then 5 mins later have it nag you to stand up until you do!
 - Use voice e.g. Hey Google/Alexa raise my desk!
 - After lunchtime raise the desk so you start the afternoon standing up (maybe trigger this as you walk into the room if you have a motion sensor).
@@ -119,7 +117,7 @@ However if you would prefer to avoid:
 And would simply like to get a device pre-built, in a box that you can plug in to your desk and be automating it in 10 minutes then you can purchase one from our eBay store.
 
 <p align="center">
-  <b>TODO ADD EBAY LINK HERE</b>
+  <a href="https://www.ebay.co.uk/itm/226942026649" target="_blank"><img src="images/PurchaseOnEbay-Long3.jpeg" height="90px" /></a>
 </p>
 
 

@@ -37,7 +37,7 @@ Every function of the DeskUp pro can be controlled using its [Api](docs/configur
 ## Automations you could create for your desk
 - If you're sitting down for too long, then automatically raise the desk to standing height.
   - Or announce on a smart speaker that you have been sat down too long.
-  - Or maybe flash a light
+  - Or maybe flash a light.
 - If you ignore it then 5 mins later have it nag you to stand up until you do!
 - Use voice e.g. Hey Google/Alexa raise my desk!
 - After lunchtime raise the desk so you start the afternoon standing up (maybe trigger this as you walk into the room if you have a motion sensor).

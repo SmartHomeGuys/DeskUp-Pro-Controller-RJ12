@@ -78,7 +78,7 @@ If you need help to determine if your desk might be compatible the community sit
   <img src="images/DeskUpPro-Rear.JPG" height="250px" />
 </p>
 <p align="center">
-  <img src="images/DeskUpPro-WireFrame.png" height="350px" />
+  <img src="images/DeskUpPro-WireFrame2.png" height="350px" />
 </p>
 
 

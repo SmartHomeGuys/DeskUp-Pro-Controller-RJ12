@@ -1,6 +1,6 @@
 # Everything you need to know to build a DeskUp Pro device yourself
 
-To automate your desk, what we are going to make is the cable below with an RJ12 port at one end and wire it up to an ESP32 at the other.  But before you buy anything check the likely compatibility of your [desk here](/docs/compatibility.md).
+To automate your desk, what we are going to make is the cable below with an RJ12 port at one end and wire it up to an ESP32 at the other.  But before you buy anything check the likely compatibility of your [desk here](../compatibility.md).
 
 
 ![](images/diy-board-and-cable-nocase.JPG)
@@ -118,5 +118,5 @@ substitutions:
 
 Save, Validate and then click install to flash the code onto the device.
 
-The device should then be detected by Home Assistant and you can follow the [steps here to add it to Home Assistant](/docs/setup/add-to-home-assistant.md).
+The device should then be detected by Home Assistant and you can follow the [steps here to add it to Home Assistant](../setup/add-to-home-assistant.md).
 

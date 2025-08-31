@@ -3,18 +3,18 @@
 This is a list of the community sites that contained the reverse engineered hex codes used within this project, which started from a combination of the Maidesite project & Mahko_Mahko's yaml version and then evolved when we found the other projects.
 
 ### Pimp my Desk
-https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering
+<a href="https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering">https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering</a>
 
 Most of these hex codes did not work on a Maidesite Desk, they are very close to matching but contain an extra 0x00.  
 
 ### Rocka84
-https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_desk_controller
+<a href="https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_desk_controller">https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_desk_controller</a>
 
 ### Mahko_Mahko original yaml only version
-https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293/17
+<a href="https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293/17">https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293/17</a>
 
 ### Maidesite project 
-https://github.com/shades66/Maidesite-standing-desk/tree/main
+<a href="https://github.com/shades66/Maidesite-standing-desk/tree/main">https://github.com/shades66/Maidesite-standing-desk/tree/main</a>
 
 ---
 
@@ -222,10 +222,7 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
   </tbody>
 </table>
 
-<br />
-
 _Note: Blanks in the above table means that function was not implemented in that codebase._
-
 
 ## Not used in DeskUp Pro
 

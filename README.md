@@ -28,8 +28,8 @@ All the existing functionality of the desk's controller is retained.  Connect th
 
 ## Other smart home systems can use the built in Web Interface and its Rest API
 <p align="center">
-  <img src="images/WebServer-screen1-black.jpg" height="350px" width=320px" />
-  <img src="images/WebServer-screen2-black.jpg" height="250px" width=320px" />
+  <img src="images/WebServer-screen1-black.jpg" height="350px" width="320px" />
+  <img src="images/WebServer-screen2-black.jpg" height="250px" width="320px" />
 </p>
 
 Every function of the DeskUp pro can be controlled using its [Api](docs/configuration/rest-api.md).

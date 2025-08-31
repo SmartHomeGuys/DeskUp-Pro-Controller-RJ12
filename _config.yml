@@ -7,3 +7,6 @@ plugins:
 - jekyll-remote-theme
 
 #url: https://smarthomeguys.github.io
+
+sidebar:
+  - home

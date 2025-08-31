@@ -83,9 +83,9 @@ https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-des
 ### Jiecang JCB35M11C
   
 Confirmed as device used at top of this post
-https://github.com/Rocka84/esphome_components/blob/a083c17882361c58071b85d45587c410582cda75/components/jiecang_desk_controller/
+<a href="https://github.com/Rocka84/esphome_components/blob/a083c17882361c58071b85d45587c410582cda75/components/jiecang_desk_controller">https://github.com/Rocka84/esphome_components/blob/a083c17882361c58071b85d45587c410582cda75/components/jiecang_desk_controller</a>
 
-https://www.jiecang.com/product/jcb35m11c.html
+<a href="https://www.jiecang.com/product/jcb35m11c.html">https://www.jiecang.com/product/jcb35m11c.html</a>
 
 <br />
 

@@ -21,13 +21,18 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
 ### Comparison List
 
 <table>
-  <th>Function</th>
-  <th>Hex Code Used in DeskUp Pro</th>
-  <th>Pimp my Desk</th>
-  <th>Rocka84</th>
-  <th>Mahko_Mahko</th>
-  <th>Maidesite Project</th>
+  <thead>
+  <tr>
+    <th>Function</th>
+    <th>Hex Code Used in DeskUp Pro</th>
+    <th>Pimp my Desk</th>
+    <th>Rocka84</th>
+    <th>Mahko_Mahko</th>
+    <th>Maidesite Project</th>
+  </tr>
+  </thead>
 
+  <tbody>
   <tr>
     <td>Nudge Up</td>
     <td>0xf1, 0xf1, 0x01, 0x00, 0x01, 0x7e</td>
@@ -124,13 +129,11 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
     <td>
       Message size = 9 bytes.
       <ul>
-  <li>bytes[0] == 0xF2
-  <li>bytes[1] == 0xF2
-  <li>bytes[2] == 0x01
-
-  <li>height data in mm: ((bytes[4] * 256) + bytes[5])
-    
-  <li>bytes[8] == 0x7E
+        <li>bytes[0] == 0xF2</li>
+        <li>bytes[1] == 0xF2</li>
+        <li>bytes[2] == 0x01</li>
+        <li>height data in mm: ((bytes[4] * 256) + bytes[5])</li>
+        <li>bytes[8] == 0x7E</li>
     </ul>
   </td>
   <td></td>
@@ -144,14 +147,14 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
     <td>
       Message size = 8 bytes.
       <ul>
-      <li>bytes[0] == 0xF2
-      <li>bytes[1] == 0xF2
-      <li>Preset 1: bytes[2] == 0x25
-      <li>Preset 2: bytes[2] == 0x26
-      <li>Preset 3: bytes[2] == 0x27
-      <li>Preset 4: bytes[2] == 0x28
-      <li>height data in mm: ((bytes[4] * 256) + bytes[5])
-      <li>bytes[7] == 0x7E
+        <li>bytes[0] == 0xF2</li>
+        <li>bytes[1] == 0xF2</li>
+        <li>Preset 1: bytes[2] == 0x25</li>
+        <li>Preset 2: bytes[2] == 0x26</li>
+        <li>Preset 3: bytes[2] == 0x27</li>
+        <li>Preset 4: bytes[2] == 0x28</li>
+        <li>height data in mm: ((bytes[4] * 256) + bytes[5])</li>
+        <li>bytes[7] == 0x7E</li>
       </ul>
     </td>
     <td></td>
@@ -164,14 +167,14 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
     <td>Move Desk to position</td>
     <td>
       <ul>
-      <li>byte[0] = 0xF1;
-      <li>byte[1] = 0xF1;
-      <li>byte[2] = 0x1B;
-      <li>byte[3] = 0x02; 
-      <li>byte[4] = height_mm / 256
-      <li>byte[5] = height_mm % 256
-      <li>byte[6] = ((byte[2] + byte[3] + byte[4] + byte[5]) % 256);   // checksum 
-      <li>byte[7] = 0x7E
+        <li>byte[0] = 0xF1;</li>
+        <li>byte[1] = 0xF1;</li>
+        <li>byte[2] = 0x1B;</li>
+        <li>byte[3] = 0x02; </li>
+        <li>byte[4] = height_mm / 256</li>
+        <li>byte[5] = height_mm % 256</li>
+        <li>byte[6] = ((byte[2] + byte[3] + byte[4] + byte[5]) % 256);   // checksum</li> 
+        <li>byte[7] = 0x7E</li>
       </ul>
     </td>
     <td>
@@ -216,6 +219,7 @@ https://github.com/shades66/Maidesite-standing-desk/tree/main
     <td>Match</td>
     <td></td>
   </tr>
+  </tbody>
 </table>
 
 <br />
@@ -251,13 +255,13 @@ _Note: Blanks in the above table means that function was not implemented in that
   See 3 examples at bottom of this page: https://gitlab.com/pimp-my-desk/desk-control/jiecang-reverse-engineering
   
   <ul>
-    <li>0xF1
-    <li>0xF1
-    <li>0xAD
-    <li>0x03
-    <li>0x01-0x03 & Height in mm in base 10 to base 16 in 2 Bytes
-    <li>VARIABLE
-    <li>0x7E
+    <li>0xF1</li>
+    <li>0xF1</li>
+    <li>0xAD</li>
+    <li>0x03</li>
+    <li>0x01-0x03 & Height in mm in base 10 to base 16 in 2 Bytes</li>
+    <li>VARIABLE</li>
+    <li>0x7E</li>
   </ul>
 
 

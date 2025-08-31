@@ -69,9 +69,7 @@ https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-des
 
 ### IKEA MITTZON
 
-Confirmed working in post 3: 
-
-https://github.com/phord/Jarvis/issues/33
+Confirmed working in <a href="https://github.com/phord/Jarvis/issues/33">in post 3</a>
 
 
 ### Ikea Uppspel
@@ -85,7 +83,7 @@ https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-des
 Confirmed as device used at top of 
 <a href="https://github.com/Rocka84/esphome_components/blob/a083c17882361c58071b85d45587c410582cda75/components/jiecang_desk_controller">this post</a>
 
-<a href="https://www.jiecang.com/product/jcb35m11c.html">https://www.jiecang.com/product/jcb35m11c.html</a>
+<a href="https://www.jiecang.com/product/jcb35m11c.html">Image of device</a>
 
 <br />
 
@@ -93,11 +91,10 @@ Confirmed as device used at top of
 
 
 ## Omnidesk
-Confirmed working in this post, but you may need to toggle on the 'Send wake up command' as the desk controller may go to sleep, this will wake the desk controller up then send the button command you asked for.
+Confirmed working <a href="https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/449">in this post</a>
 
-https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/449
+But you may need to toggle on the 'Send wake up command' as the desk controller may go to sleep, this will wake the desk controller up then send the button command you asked for.
 
-<br />
 
 ## Links to other community info used when compiling this list
 https://www.maidesite.co.uk/pages/buyer-guide

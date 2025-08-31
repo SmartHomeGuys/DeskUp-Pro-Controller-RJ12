@@ -1,12 +1,13 @@
 title: DeskUp Pro Standing Desk Controller
 description: by SmartHomeGuys
 
-remote_theme: pages-themes/slate@v0.2.0
+#remote_theme: pages-themes/slate@v0.2.0
+remote_theme: just-the-docs/just-the-docs
 #remote_theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme
 
 #url: https://smarthomeguys.github.io
 
-sidebar:
-  - home
+aux_links:
+  Template Repository: https://github.com/just-the-docs/just-the-docs-template

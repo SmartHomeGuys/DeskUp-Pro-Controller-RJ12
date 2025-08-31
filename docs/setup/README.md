@@ -22,4 +22,4 @@ If you missed it in the previous guides, you can add the device so it appears in
 ## Step 4: Configure the device
 The last thing you need to do is specify your desk's physical minimum and maximum height limits.
 
-[Configure the DeskUp Pro](~/docs/configuration/README.md)
+[Configure the DeskUp Pro](/DeskUp-Pro-Controller-RJ12/docs/configuration/README.md)

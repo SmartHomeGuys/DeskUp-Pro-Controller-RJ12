@@ -8,7 +8,7 @@ This is a list of the community sites that contained the reverse engineered hex 
 Most of these hex codes did not work on a Maidesite Desk, they are very close to matching but contain an extra 0x00.  
 
 ### Rocka84
-<a href="https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_desk_controller">https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_desk_controller</a>
+<a href="https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_desk_controller">Read GitHub page</a>
 
 ### Mahko_Mahko original yaml only version
 <a href="https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293/17">https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293/17</a>

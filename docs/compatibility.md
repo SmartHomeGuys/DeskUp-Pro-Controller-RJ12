@@ -62,9 +62,7 @@ Members of the community have tested these desks or controllers on other similar
 
 
 ### Desktopia Pro X
-Confirmed working once the correct pins were specified in config (mentioned here if you read the entire chain)
-
-https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/420
+Confirmed working once the correct pins were specified in config (<a href="https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/420">mentioned here if you read the entire chain</a>)
 
 
 ### IKEA MITTZON
@@ -75,7 +73,7 @@ Confirmed working in <a href="https://github.com/phord/Jarvis/issues/33">in post
 ### Ikea Uppspel
 Confirmed working using RJ11 cable (4 pins which is fine as RJ12 has 6 but only uses 4)
 
-https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/443
+<a href="https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/443">Read article here</a>
 
 
 ### Jiecang JCB35M11C
@@ -97,11 +95,11 @@ But you may need to toggle on the 'Send wake up command' as the desk controller 
 
 
 ## Links to other community info used when compiling this list
-https://www.maidesite.co.uk/pages/buyer-guide
+<a href="https://www.maidesite.co.uk/pages/buyer-guide">https://www.maidesite.co.uk/pages/buyer-guide</a>
 
-https://github.com/phord/Jarvis#physical-interface-rj-12
+<a href="https://github.com/phord/Jarvis#physical-interface-rj-12">https://github.com/phord/Jarvis#physical-interface-rj-12</a>
 
-https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790?u=mahko_mahko
+<a href="https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790?u=mahko_mahko">https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790?u=mahko_mahko</a>
 
 A comparison of the different community projects and reverse engineered desk hex codes [can be found here](/docs/diy/desk-hex-codes.md).
 

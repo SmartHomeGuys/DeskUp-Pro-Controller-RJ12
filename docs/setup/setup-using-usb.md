@@ -5,7 +5,7 @@ _Note: When you first power on the DeskUp Pro it's Led will be solid Red, this j
 
 To setup via USB, Open a Chrome browser to this page:
 
-https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/Setup.html
+<a href="https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/Setup.html">https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/Setup.html</a>
 
 Connect the device to a USB C cable and a USB A or C port on your laptop (the cable must support data not just be one for charging).
 

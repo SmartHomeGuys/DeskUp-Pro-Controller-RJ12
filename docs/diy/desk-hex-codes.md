@@ -226,6 +226,7 @@ _Note: Blanks in the above table means that function was not implemented in that
 ## Not used in DeskUp Pro
 
 ### Pimp my desk
+
 - Fetch Height range
   
   0xF1, 0xF1, 0x0C, 0x00, 0x00, 0x0C, 0x7E
@@ -266,6 +267,7 @@ _Note: Blanks in the above table means that function was not implemented in that
   
 
 ### Rocka84
+
 - Request Physical Limits
   
   0xF1, 0xF1, 0x0C, 0x00, 0x0C, 0x7E

@@ -132,9 +132,9 @@ And would simply like to get a device pre-built, in a box that you can plug in t
 ## Need Help
 The community sites are a great place to ask for advice, especially if it's to do with desk compatibility:
 
-https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293
+<a href="https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293">Maidesite desk forum</a>
 
-https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790?u=mahko_mahko
+<a href="https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790?u=mahko_mahko">Forum for other desks</a>
 
 If it's not a compatibility question, and prehaps you have an idea for a new feature to add, or find out there are other desk hex codes and know what they are and do, then log an issue to this Git Repo and we will try to help, or even better submit a pull request with the change.
 

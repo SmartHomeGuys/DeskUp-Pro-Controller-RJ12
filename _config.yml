@@ -1,5 +1,5 @@
-title: DeskUp Pro - Automate your Standing Desk with your Smart Home System
-description: Making desks with an RJ12 port smart and automating it from a smart home system (like Home Assistant) with the DeskUp Pro
+title: DeskUp Pro - Controls a Standing Desk from your Smart Home System
+description: Use a DeskUp Pro on a standing desk with an RJ12 port to automate it from a smart home system (like Home Assistant and others)
 
 remote_theme: pages-themes/slate@v0.2.0
 #remote_theme: just-the-docs/just-the-docs

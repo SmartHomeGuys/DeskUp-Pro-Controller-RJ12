@@ -69,7 +69,7 @@ Confirmed working once the correct pins were specified in config (<a href="https
 
 Confirmed working in <a href="https://github.com/phord/Jarvis/issues/33">in post 3</a>
 
-_Note: That article says they used the same desk hex codes and got it working on an RJ12 cable so the yaml code will be fine. However it does not say what the cable to pin mappings used were so cannot be sure this will be compatible if the order is different, if anyone tries and it is please let me know so i can update this._
+_Note: That article says they used the same desk hex codes and got it working on an RJ12 cable so the yaml code should be fine. However it does not say what the cable to pin mappings used were so cannot be sure this will be compatible if the order is different, if anyone tries and it is please let me know so i can update this._
 
 
 ### Ikea Uppspel

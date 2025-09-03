@@ -62,7 +62,13 @@ Members of the community have tested these desks or controllers on other similar
 
 
 ### Desktopia Pro X
-Confirmed working once the correct pins were specified in config (<a href="https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/420">mentioned here if you read the entire chain</a>)
+Confirmed working once the correct pins were specified in config. 
+
+<a href="https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/430">Mentioned here in the last post in this chain</a>.
+
+<a href="https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/420">Start of the chain</a>
+
+They used the Rocka84 repo which confirms the cable pins do match the ones used in this project. And desk hex codes also <a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/blob/main/docs/diy/desk-hex-codes.md">match</a>.
 
 
 ### IKEA MITTZON

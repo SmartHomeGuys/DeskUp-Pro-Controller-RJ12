@@ -70,6 +70,8 @@ Confirmed working once the correct pins were specified in config.
 
 They used the Rocka84 repo which confirms the cable pins do match the ones used in this project. And desk hex codes also <a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/blob/main/docs/diy/desk-hex-codes.md">match</a>.
 
+That post also suggests the desk can go to sleep so you may need to enable the 'Send wake up command'.
+
 
 ### IKEA MITTZON
 

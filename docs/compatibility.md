@@ -32,7 +32,7 @@ _If your desk works but is not in the list please let us know by logging an issu
 ## Desks in more Detail
 
 ### Maidesite desks using the Premium controller 
-These desks should be compatible as they come with this controller and members of the community have used some of these.
+These desks should be compatible as they come with this controller. The TH2 Plus Art desk was the desk used when creating this project which was originally on the <a href="https://www.maidesite.co.uk/pages/buyer-guide">Maidesite forum</a>. Members of this community have used some of these desks.
 
 - TH2 Plus Art
 - T2 Pro

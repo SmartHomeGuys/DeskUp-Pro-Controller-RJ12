@@ -75,13 +75,15 @@ They used the Rocka84 repo which confirms the cable pins do match the ones used 
 
 Confirmed working in <a href="https://github.com/phord/Jarvis/issues/33">in post 3</a>
 
-_Note: That article says they used the same desk hex codes and got it working on an RJ12 cable so the yaml code should be fine. However it does not say what the cable to pin mappings used were so cannot be sure this will be compatible if the order is different, if anyone tries and it is please let me know so i can update this._
+_Note: That article shows they used the same desk hex codes and got it working on an RJ12 cable so the yaml code should be fine. However it does not say what the cable to pin mappings used were so cannot be sure this will be compatible if the order is different, if anyone tries and it is please let me know so i can update this._
 
 
 ### Ikea Uppspel
 Confirmed working using RJ11 cable (4 pins which is fine as RJ12 has 6 but only uses 4)
 
 <a href="https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/443">Read article here</a>
+
+They used the Rocka84 repo which confirms the cable pins do match the ones used in this project. And desk hex codes also <a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/blob/main/docs/diy/desk-hex-codes.md">match</a>.
 
 
 ### Jiecang JCB35M11C
@@ -91,7 +93,7 @@ Confirmed as device used at top of
 
 <a href="https://www.jiecang.com/product/jcb35m11c.html">Image of device</a>
 
-<br />
+This is the controller used by Rocka84 on his repo so this confirms the cable pins do match the ones used in this project. And desk hex codes also <a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/blob/main/docs/diy/desk-hex-codes.md">match</a>.
 
 **It's very likely that other Jiecang controllers are supported too which are used on Fully Jarvis and Desky desks.**
 

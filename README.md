@@ -1,7 +1,7 @@
 # DeskUp Pro - Standing Desk Controller (RJ12)
 <table border="0">
   <tr>
-    <td><a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/edit/main/README.md#%EF%B8%8F-check-compatibility">Compatibility</a></td>
+    <td><a href="#%EF%B8%8F-check-compatibility">Compatibility</a></td>
     <td><a href="docs/setup/README.md">Setup</a></td>
     <td><a href="docs/configuration/README.md">Configure</a></td>
     <td><a href="docs/configuration/rest-api.md">API</a></td>

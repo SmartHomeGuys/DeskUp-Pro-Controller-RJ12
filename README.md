@@ -4,7 +4,6 @@
     <td><a href="#%EF%B8%8F-check-compatibility">Compatibility</a></td>
     <td><a href="docs/setup">Setup</a></td>
     <td><a href="docs/configuration">Configure</a></td>
-    <td><a href="docs/configuration/rest-api">API</a></td>
     <td><a href="docs/diy">DIY</a></td>
   </tr>
 </table>

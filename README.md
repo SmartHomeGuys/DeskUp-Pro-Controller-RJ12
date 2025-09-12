@@ -1,4 +1,13 @@
 # DeskUp Pro - Standing Desk Controller (RJ12)
+<table border="0">
+  <tr>
+    <td><a href="#%EF%B8%8F-check-compatibility">Check compatibility</a></td>
+    <td><a href="docs/setup">Setup</a></td>
+    <td><a href="docs/configuration">Configure</a></td>
+    <td><a href="docs/diy">DIY</a></td>
+  </tr>
+</table>
+
 
 If your standing desk controller has an RJ11 / RJ12 port use DeskUp Pro to integrate your desk with your smart home automation system to control your standing desk from your phone, dashboards, automations or voice.
 

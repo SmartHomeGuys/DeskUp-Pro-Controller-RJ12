@@ -22,7 +22,6 @@ Below is a list of desks we know should be compatible since they send the same d
 - Maidesite EL2 Plus Art
 - Maidesite S2B Pro
 - Desktopia Pro X
-- IKEA MITTZON (maybe, see note)
 - IKEA Uppspel
 - Jiecang JCB35M11C (so probably any Jiecang might work)
 - Omnidesk
@@ -71,13 +70,6 @@ Confirmed working once the correct pins were specified in config.
 They used the Rocka84 repo which confirms the cable pins do match the ones used in this project. And desk hex codes also <a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/blob/main/docs/diy/desk-hex-codes.md">match</a>.
 
 That post also suggests the desk can go to sleep so you may need to enable the 'Send wake up command'.
-
-
-### IKEA MITTZON
-
-Confirmed working in <a href="https://github.com/phord/Jarvis/issues/33">in post 3</a>
-
-_Note: That article shows they used the same desk hex codes and got it working on an RJ12 cable so the yaml code should be fine. However it does not say what the cable to pin mappings used were so cannot be sure this will be compatible if the order is different, if anyone tries and it is please let me know so i can update this._
 
 
 ### Ikea Uppspel

@@ -72,14 +72,6 @@ They used the Rocka84 repo which confirms the cable pins do match the ones used 
 That post also suggests the desk can go to sleep so you may need to enable the 'Send wake up command'.
 
 
-### IKEA MITTZON
-
-Confirmed working in <a href="https://github.com/phord/Jarvis/issues/33">in post 3</a>
-
-_Note: That article shows they used the same desk hex codes and got it working on an RJ12 cable so the yaml code should be fine. However it does not say what the cable to pin mappings used were so cannot be sure this will be compatible if the order is different.
-Assuming he used the <a href="https://github.com/phord/Jarvis?tab=readme-ov-file#physical-interface-rj-12">pin layout from the homepage</a> then these do match the DeskUp Pro, if anyone tries and it works please let me know so i can update this._
-
-
 ### Ikea Uppspel
 Confirmed working using RJ11 cable (4 pins which is fine as RJ12 has 6 but only uses 4)
 

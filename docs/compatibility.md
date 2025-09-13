@@ -107,5 +107,5 @@ But you may need to toggle on the 'Send wake up command' as the desk controller 
 
 <a href="https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790?u=mahko_mahko">https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790?u=mahko_mahko</a>
 
-A comparison of the different community projects and reverse engineered desk hex codes [can be found here](/docs/diy/desk-hex-codes.md).
+A comparison of the different community projects and reverse engineered desk hex codes [can be found here](diy/desk-hex-codes.md).
 

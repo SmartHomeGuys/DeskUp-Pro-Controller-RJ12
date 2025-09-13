@@ -1,0 +1,16 @@
+https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12
+https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/docs/compatibility.html
+https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/docs/diy/desk-hex-codes.html
+https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/docs/setup
+https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/docs/setup/setup-using-bluetooth.html
+https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/docs/setup/setup-using-usb.html
+https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/docs/setup/setup-using-captive-portal.html
+https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/docs/setup/add-to-home-assistant.html
+https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/docs/setup/adopting-in-home-assistant.html
+https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/docs/configuration
+https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/docs/configuration/home-assistant-screen-layout.html
+https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/docs/configuration/firmware-updates.html
+https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/docs/configuration/home-assistant-dashboard.html
+https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/docs/configuration/home-assistant-automations.html
+https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/docs/configuration/rest-api.html
+https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/docs/diy

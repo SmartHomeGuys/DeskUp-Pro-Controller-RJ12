@@ -11,7 +11,9 @@ Your desk must also have a free RJ12 port on the controller (6 pins):
 
 ![](images/MaidsiteDeskControlBox-Back.jpg)
 
-Below is a list of desks we know should be compatible since they send the same desk hex codes. This is not a complete list as any desk with an RJ11 / RJ12 port could work.
+Below is a list of desks we know should be compatible since they send the same desk hex codes. The DeskUp Pro code was written for Maidesite controllers and has been used by people in that community.  The other desks have been used on a similar open source project which uses exactly the same desk control code as ours, full details are below. 
+
+This is not a complete list as any desk with an RJ11 / RJ12 port could work.
 
 ## Summary of Compatible Desks or Controllers
 - Maidesite TH2 Plus Art

@@ -25,7 +25,7 @@ This is not a complete list as any desk with an RJ11 / RJ12 port could work.
 - Maidesite S2B Pro
 - Desktopia Pro X
 - IKEA Uppspel
-- Jiecang JCB35M11C (so probably any Jiecang might work)
+- Jiecang JCB35M11C, Jiecang JCHT35K72C (so probably any Jiecang might work)
 - Omnidesk
  
 _If your desk works but is not in the list please let us know by logging an issue for us to update this page so we can help other people._

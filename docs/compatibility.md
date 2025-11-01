@@ -91,6 +91,13 @@ Confirmed as device used at top of
 
 This is the controller used by Rocka84 on his repo so this confirms the cable pins do match the ones used in this project. And desk hex codes also <a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/blob/main/docs/diy/desk-hex-codes.md">match</a>.
 
+
+### Jiecang JCHT35K72C
+Confirmed working in <a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/issues/2">issue 2 here</a>
+
+Except for the slider control.
+
+
 **It's very likely that other Jiecang controllers are supported too which are used on Fully Jarvis and Desky desks.**
 
 

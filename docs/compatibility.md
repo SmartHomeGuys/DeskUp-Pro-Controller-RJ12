@@ -95,7 +95,7 @@ This is the controller used by Rocka84 on his repo so this confirms the cable pi
 ### Jiecang JCHT35K72C
 Confirmed working in <a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/issues/2">issue 2 here</a>
 
-Except for the slider control.
+Except for setting height using the slider control. Options to get it working have been provided but no confirmation received from the user yet.
 
 
 **It's very likely that other Jiecang controllers are supported too which are used on Fully Jarvis and Desky desks.**

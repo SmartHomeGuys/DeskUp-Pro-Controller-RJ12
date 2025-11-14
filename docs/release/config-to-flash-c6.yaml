@@ -1,0 +1,25 @@
+substitutions:
+  name: "deskup-pro"
+  friendly_name: "DeskUp Pro Controller"
+
+packages:
+  device_base:
+    url: https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12
+    files: [common/c6-chip-config.yaml]
+    ref: main
+    refresh: 1min    #forces getting Latest code from github so we flash the latest and not what Homeassistant caches locally
+
+logger:
+  level: DEBUG   #VERBOSE
+
+update:
+  - platform: http_request
+    id: update_http_request
+    name: Desk Firmware
+    source: https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/manifest-c6.json
+    disabled_by_default: false
+    update_interval: 6h  #1min
+
+dashboard_import:
+  package_import_url: github://SmartHomeGuys/DeskUp-Pro-Controller-RJ12/deskup-pro-controller-c6.yaml@main
+  import_full_config: false

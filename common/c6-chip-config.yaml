@@ -1,0 +1,64 @@
+# This yaml overrides some parts of the base.yaml (which was for the S3 chip) so a SeeedStudio XIAO C6 chip can be used instead
+# Noteable differences are the TX & RX GPIO pin numbers are different.  The C6 does not support an RGB Led just a Yellow on/off
+# Led, which was only used to show if Wi-Fi was connected or not.  Captive Portal setup has been removed to reduce Flash size used.
+
+packages:
+  device_base: !include base.yaml
+
+substitutions:
+  tx_pin: "GPIO01"
+  rx_pin: "GPIO00"
+
+esp32:
+  board: seeed_xiao_esp32c6
+  variant: esp32c6
+
+esphome:
+  #project:
+  #  version: "2025.7.0"
+  on_boot:
+    - priority: 200
+      then:
+        - script.execute: script_run_on_boot 
+
+    - priority: 800
+      then:
+        - output.turn_off: GPIO03   # enable setting the antenna to internal or external. This activates the RF switch control
+
+wifi:
+  power_save_mode: NONE
+
+# Remove captive portal to save on flash usage
+captive_portal: !remove
+
+
+# Changes to the Desk Code functionality is for the LED only
+light:
+  - platform: esp32_rmt_led_strip
+    id: !remove "light_esp32led"
+
+  # C6 chip does not have an RGB Led just yellow on/off 
+  - platform: binary
+    id: "light_esp32led"
+    name: "ESP32 LED"
+    output: onboard_led
+
+output:
+  - platform: gpio
+    id: onboard_led
+    pin:
+      number: GPIO15
+      inverted: true
+
+  # Enables setting the antenna to external or internal. This activates the RF switch control.
+  - platform: gpio
+    id: "GPIO03"
+    pin: GPIO03
+
+# switch:
+#   # Off = use internal/ceramic antenna, On = use external antenna
+#   - platform: gpio
+#     pin: GPIO14
+#     restore_mode: RESTORE_DEFAULT_OFF #ALWAYS_OFF
+#     name: Internal Wifi Antenna On/Off
+#     id: "GPIO14"

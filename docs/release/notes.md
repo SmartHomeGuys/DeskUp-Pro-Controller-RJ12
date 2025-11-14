@@ -27,7 +27,7 @@
 - Click 'Install' (DO NOT Install onto the device over Wi-Fi) we just need to download the bin files:
   - Install -> Choose manual download (download both options when prompted, Factory Format and OTA Format). You need to click the 'download' button for the 2nd file.
 
-  - Copy both files from 'downloads' into C:\GitHub\smarthomeguys.github.io\DeskUp-Pro-Controller-RJ12\firmware
+  - Copy both files from 'downloads' into C:\GitHub\DeskUp-Pro-Controller-RJ12\firmware
 
   - Open Powershell and go to that fireware folder.
   - We need to create an MD5 Hash for the ota file, run this in Powershell:
@@ -42,6 +42,8 @@
   - Now check these 4 updated files into Git
 
 - Copy the ESPHome contents of the development DeskUp Pro device you saved (somewhere safe) back into ESPHome and save it.
+
+- REPEAT the above for the C6 chip using the c6 folders instead
 
 - Draft then publish a new Release version in Github using the changelog notes as its content, making sure to add a tag and setting this as the latest version.
 https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/releases

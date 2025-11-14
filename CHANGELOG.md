@@ -1,3 +1,6 @@
+# C6 Chip (using desk code 2025.7.0)
+- No code changed for the S3 chip or any desk functionality, just added support for the use of a SeeedStudio C6 chip
+
 # 2025.7.0
 - Changed to use esp-idf framework now due to ESPHome 2025.7.x causing out of flash storage space when using arduino.
 - Updated the LED version to one supported by arduino.

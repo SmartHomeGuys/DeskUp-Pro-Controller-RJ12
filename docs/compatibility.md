@@ -27,6 +27,7 @@ This is not a complete list as any desk with an RJ11 / RJ12 port could work.
 - IKEA Uppspel
 - Jiecang JCB35M11C, Jiecang JCHT35K72C (so probably any Jiecang might work)
 - Omnidesk
+- Desktronic Home One
  
 _If your desk works but is not in the list please let us know by logging an issue for us to update this page so we can help other people._
 
@@ -118,3 +119,14 @@ But you may need to toggle on the 'Send wake up command' as the desk controller 
 
 A comparison of the different community projects and reverse engineered desk hex codes [can be found here](diy/desk-hex-codes.md).
 
+## Desktronic Home One
+
+Confirmed working by GitHub user <a href="https://github.com/nurtext">nurtext</a>.
+
+Uses a whitelabeled Jiecang JCB36NE2 control box.
+
+<a href="https://www.jiecang.com/product/jcb36ne2.html">Image of device</a>
+
+But you may need to toggle on the 'Send wake up command' as the desk controller may go to sleep, this will wake the desk controller up then send the button command you asked for.
+
+**It's very likely that the Desktronic Home Pro is also using a Jiecang controller and therefore may work.**

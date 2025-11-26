@@ -110,15 +110,6 @@ They used the Rocka84 repo which confirms the cable pins do match the ones used 
 But you may need to toggle on the 'Send wake up command' as the desk controller may go to sleep, this will wake the desk controller up then send the button command you asked for.
 
 
-## Links to other community info used when compiling this list
-<a href="https://www.maidesite.co.uk/pages/buyer-guide">https://www.maidesite.co.uk/pages/buyer-guide</a>
-
-<a href="https://github.com/phord/Jarvis#physical-interface-rj-12">https://github.com/phord/Jarvis#physical-interface-rj-12</a>
-
-<a href="https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790?u=mahko_mahko">https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790?u=mahko_mahko</a>
-
-A comparison of the different community projects and reverse engineered desk hex codes [can be found here](diy/desk-hex-codes.md).
-
 ## Desktronic Home One
 
 Confirmed working by GitHub user <a href="https://github.com/nurtext">nurtext</a>.
@@ -130,3 +121,13 @@ Uses a whitelabeled Jiecang JCB36NE2 control box.
 But you may need to toggle on the 'Send wake up command' as the desk controller may go to sleep, this will wake the desk controller up then send the button command you asked for.
 
 **It's very likely that the Desktronic Home Pro is also using a Jiecang controller and therefore may work.**
+
+
+## Links to other community info used when compiling this list
+<a href="https://www.maidesite.co.uk/pages/buyer-guide">https://www.maidesite.co.uk/pages/buyer-guide</a>
+
+<a href="https://github.com/phord/Jarvis#physical-interface-rj-12">https://github.com/phord/Jarvis#physical-interface-rj-12</a>
+
+<a href="https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790?u=mahko_mahko">https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790?u=mahko_mahko</a>
+
+A comparison of the different community projects and reverse engineered desk hex codes [can be found here](diy/desk-hex-codes.md).

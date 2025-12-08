@@ -71,5 +71,10 @@
 
 #ESP32 LED
 #GET http://192.168.68.73/light/esp32_led
-#POST http://192.168.68.73/light/esp32_led/turn_on?r=25&g=25&b=125
 #POST http://192.168.68.73/light/esp32_led/turn_off
+
+# SeeedStudio XIAO C6 chip only has a yellow LED so can only turn on/off
+#POST http://192.168.68.73/light/esp32_led/turn_on
+
+# S3 chip has RGB LED
+#POST http://192.168.68.73/light/esp32_led/turn_on?r=25&g=25&b=125

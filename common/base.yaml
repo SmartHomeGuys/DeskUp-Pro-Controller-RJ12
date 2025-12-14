@@ -24,7 +24,7 @@ esphome:
   friendly_name: ${friendly_name}
   project:
     name: SmartHomeGuys.DeskUp Pro Controller (RJ12)
-    version: "2025.7.0"
+    version: "2025.12.0"
   name_add_mac_suffix: true
   on_boot:
     priority: 200
@@ -239,10 +239,12 @@ script:
             - uart.write: [0xF1, 0xF1, 0x2B, 0x00, 0x2B, 0x7E]  # Use Stop command
             - delay: 100ms
 
+      # Set specific height by calculating hex codes to send to the desk controller
       - uart.write: 
           data: !lambda |-
             auto height_mm = static_cast<int>(newHeight_cm * 10);      // Convert cm to mm
           
+            // Adjust height by any configured offset
             if (id(number_deskHeight).has_state() && !std::isnan(id(number_deskHeight).state) && 
                 id(number_deskOffsetGoUp).has_state() && !std::isnan(id(number_deskOffsetGoUp).state) && 
                 id(number_deskOffsetGoDown).has_state() && !std::isnan(id(number_deskOffsetGoDown).state))
@@ -262,17 +264,37 @@ script:
               }
             }
           
-            //auto height_mm = static_cast<int>(newHeight_cm * 10);      // Convert cm to mm
-            std::vector<uint8_t> bArr(8);
-            bArr[0] = 0xF1;
-            bArr[1] = 0xF1;
-            bArr[2] = 0x1B;
-            bArr[3] = 0x02; 
-            bArr[4] = static_cast<uint8_t>(height_mm / 256);
-            bArr[5] = static_cast<uint8_t>(height_mm % 256);
-            bArr[6] = static_cast<uint8_t>((bArr[2] + bArr[3] + bArr[4] + bArr[5]) % 256);   // Calculate checksum 
-            bArr[7] = 0x7E;
-            return bArr;
+            auto deskControlCodeVariant = "Default";
+            if(id(select_desk_control_code_variant).has_state() )
+            {
+              // Check which desk control code variant is configured 
+              deskControlCodeVariant = id(select_desk_control_code_variant).current_option();
+              ESP_LOGD("custom", "Using desk control code variant: %s", deskControlCodeVariant);
+            }
+
+            // Send the command to the desk controller
+            if(deskControlCodeVariant == "Rocka")
+            {
+              unsigned char high_byte = height_mm >> 8;
+              unsigned char low_byte = height_mm & 0xFF;
+              unsigned char checksum = 0x1b + 2 + high_byte + low_byte;
+
+              return {0xf1, 0xf1, 0x1b, 0x02, high_byte, low_byte, checksum, 0x7e};
+            }
+            else
+            {
+              // Use Default desk control code (Maidesite)
+              std::vector<uint8_t> bArr(8);
+              bArr[0] = 0xF1;
+              bArr[1] = 0xF1;
+              bArr[2] = 0x1B;
+              bArr[3] = 0x02; 
+              bArr[4] = static_cast<uint8_t>(height_mm / 256);
+              bArr[5] = static_cast<uint8_t>(height_mm % 256);
+              bArr[6] = static_cast<uint8_t>((bArr[2] + bArr[3] + bArr[4] + bArr[5]) % 256);   // Calculate checksum 
+              bArr[7] = 0x7E;
+              return bArr;
+            }
 
       - logger.log: "Set desk height method finished"
 
@@ -777,6 +799,21 @@ switch:
     icon: "mdi:sleep"
     entity_category: config
 
+select:
+  # Desk controllers send hex code commands to control the desk.
+  # This dropdown lets the DeskUp Pro switch to a different
+  # variant that sends different hex codes to the desk controller
+  # which allows this yaml to support more types of desk.
+  - platform: template
+    name: "Desk Control Code Variant"
+    id: select_desk_control_code_variant
+    optimistic: true
+    options:
+      - "Default"   # Original Maidesite desk code
+      - "Rocka"     # Rocka's Git repo is almost identical to Maidesite except for the set height control calculation 
+    initial_option: "Default"
+    restore_value: true
+    entity_category: config
 
 light:
   - platform: esp32_rmt_led_strip

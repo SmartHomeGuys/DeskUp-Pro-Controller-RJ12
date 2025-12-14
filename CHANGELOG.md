@@ -1,3 +1,8 @@
+# 2025.12.0
+- Added a dropdown in the config section to allow different desk control code to be chosen.  This allows different hex codes to then be sent to the desk controller.  The Default is the original DeskUp Pro code, but we've added a Rocka option because whilst Rocka's Git Repo uses exactly the same hex codes as our default one it had 1 difference with the calculation to set the height on the Height Control. So adding this as an option in case anyone has issues with the Default, it also means we maybe able to expand this functionality later to support more desk types.
+- Bump ESPHome version to 2025.11.4 which has a couple of notable enhancements to reduce the flash memory used and improve Wi-Fi reliability
+https://esphome.io/changelog/2025.11.0/#enhanced-wifi-security-and-reliability
+
 # C6 Chip (using desk code 2025.7.0)
 - No code changed for the S3 chip or any desk functionality, just added support for the use of a SeeedStudio C6 chip
 

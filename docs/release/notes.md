@@ -28,6 +28,7 @@
   - Install -> Choose manual download (download both options when prompted, Factory Format and OTA Format). You need to click the 'download' button for the 2nd file.
 
   - Copy both files from 'downloads' into C:\GitHub\DeskUp-Pro-Controller-RJ12\firmware
+  or C:\GitHub\DeskUp-Pro-Controller-RJ12\firmware-c6
 
   - Open Powershell and go to that fireware folder.
   - We need to create an MD5 Hash for the ota file, run this in Powershell:

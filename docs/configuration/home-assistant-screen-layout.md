@@ -3,6 +3,16 @@
 ## Configuration 
 Before using your DeskUp Pro you need to configure the min & max height values for your desk:
   
+### Desk Control Code Variant
+
+This dropdown allows different desk control code to be chosen.  This then allows different hex codes to be sent to the standing desk controller.  
+
+The Default is the original DeskUp Pro code.
+
+But we've added a Rocka option too because whilst Rocka's Git Repo uses exactly the same hex codes as our default one it had 1 difference with the calculation to set the height on the Height Control. So we have added this as an option in case anyone has issues with the Default. 
+
+It also means we could expand this functionality later to support more desk controller types.
+
 ### Max Height (defaults to cm)
 
 By default we set this to the highest allowed physical height of the Maidesite range of standing desks (126cm).
@@ -35,7 +45,7 @@ On some desks the desk controller goes to sleep after afew seconds. Enabling thi
 ### Set Desk M1, M2, M3, M4 buttons
 Pressing these will set the current desk's height in to the corresponding memory number preset on the desk's controller.
 
-![](images/DeskUpPro-Configuration-black.jpg)
+![](images/DeskUpPro-Configuration-black2.jpg)
 
 
 ## Sensors

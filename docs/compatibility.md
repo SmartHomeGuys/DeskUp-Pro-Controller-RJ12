@@ -92,14 +92,15 @@ Confirmed as device used at top of
 
 This is the controller used by Rocka84 on his repo so this confirms the cable pins do match the ones used in this project. And desk hex codes also <a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/blob/main/docs/diy/desk-hex-codes.md">match</a>.
 
+**It's very likely that other Jiecang controllers are supported too which are used on Fully Jarvis and Desky desks.**
+
 
 ### Jiecang JCHT35K72C
-Confirmed working in <a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/issues/2">issue 2 here</a>
+Confirmed partially working in <a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/issues/2">issue 2 here</a>
 
-Except for setting height using the slider control. Options to get it working have been provided but no confirmation received from the user yet.
+Preset buttons & sensors on this controller are confirmed as working, but using the height control slider to set the height to a specific value doesn't work. Its possible that controller doesn't support this capability. 
 
-
-**It's very likely that other Jiecang controllers are supported too which are used on Fully Jarvis and Desky desks.**
+But most of the automations you can do would use the buttons and sensors. However since the cover control also uses the slider's set height capability and Google Assistant or Alexa both use the cover control (if you expose it to these) you wont be able to control the desk from these Assistant's.
 
 
 ## Omnidesk

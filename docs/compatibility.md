@@ -103,7 +103,7 @@ They used the Rocka84 repo which confirms the cable pins do match the ones used 
 ### Jiecang JCHT35K72C
 Confirmed partially working in <a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/issues/2">issue 2 here</a>
 
-Preset buttons & sensors on this controller are confirmed as working, but using the height control slider to set the height to a specific value doesn't work. Its possible that controller doesn't support this capability. 
+Preset buttons & sensors on this controller are confirmed as working, but using the height control slider to set the height to a specific value doesn't work. Its likely this controller doesn't support this capability. 
 
 But most of the automations you can do would use the buttons and sensors. However since the cover control also uses the slider's set height capability and Google Assistant or Alexa both use the cover control (if you expose it to these) you wont be able to control the desk from these Assistant's.
 

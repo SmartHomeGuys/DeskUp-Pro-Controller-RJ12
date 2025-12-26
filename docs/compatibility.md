@@ -49,12 +49,12 @@ These desks should be compatible as they come with this controller. The TH2 Plus
 
 
 ### Maidesite desks using the Standard controller
-This has a very similar design to the Premium one above but as of now no one in the community has tested it. 
+This has a very similar design to the Premium one above. 
 
-It has the same 4 presets and nudge up/down as the Premium controller above does, it just has a slightly different screen layout. It does have an RJ12 port. There is a good chance these might be compatible.
+It has the same 4 presets and nudge up/down as the Premium controller above does, it just has a slightly different screen layout. It does have an RJ12 port.
 
 - T1 Pro
-- SN1
+- SN1 - is confirmed to work <a href="https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293/3?">in this post</a>.  Therefore other Maidesite desks using the Standard controller should be compatible.
 
 ![](images/MaidesiteDeskControlBox-standard.png)
 
@@ -92,7 +92,12 @@ Confirmed as device used at top of
 
 This is the controller used by Rocka84 on his repo so this confirms the cable pins do match the ones used in this project. And desk hex codes also <a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/blob/main/docs/diy/desk-hex-codes.md">match</a>.
 
-**It's very likely that other Jiecang controllers are supported too which are used on Fully Jarvis and Desky desks.**
+
+### Jiecang JCHT35K9-003-v4 used on a Desky Duel Sit Stand Frame
+
+Desk used <a href="https://desky.com.au/products/dual-sit-stand-desk-frame">is this one</a> and confirmed working on the Rocka code <a href="https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293/17">in this post</a>
+
+They used the Rocka84 repo which confirms the cable pins do match the ones used in this project. And desk hex codes also <a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/blob/main/docs/diy/desk-hex-codes.md">match</a>.
 
 
 ### Jiecang JCHT35K72C
@@ -101,6 +106,9 @@ Confirmed partially working in <a href="https://github.com/SmartHomeGuys/DeskUp-
 Preset buttons & sensors on this controller are confirmed as working, but using the height control slider to set the height to a specific value doesn't work. Its possible that controller doesn't support this capability. 
 
 But most of the automations you can do would use the buttons and sensors. However since the cover control also uses the slider's set height capability and Google Assistant or Alexa both use the cover control (if you expose it to these) you wont be able to control the desk from these Assistant's.
+
+
+**It's very likely that other Jiecang controllers are supported too which are used on Fully Jarvis and Desky desks.**
 
 
 ## Omnidesk

@@ -49,12 +49,12 @@ These desks should be compatible as they come with this controller. The TH2 Plus
 
 
 ### Maidesite desks using the Standard controller
-This has a very similar design to the Premium one above. 
-
-It has the same 4 presets and nudge up/down as the Premium controller above does, it just has a slightly different screen layout. It does have an RJ12 port.
+These desks should be compatible as they come with this controller:
 
 - T1 Pro
-- SN1 - is confirmed to work <a href="https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293/3?">in this post</a>.  Therefore other Maidesite desks using the Standard controller should be compatible.
+- SN1
+
+A member of the community confirmed the SN1 works <a href="https://community.home-assistant.io/t/maidesite-standing-desk-with-esphome/602293/3?">in this post</a>.  Therefore the other Maidesite desks using the Standard controller should also be compatible.
 
 ![](images/MaidesiteDeskControlBox-standard.png)
 

@@ -23,3 +23,12 @@ If you missed it in the previous guides, you can add the device so it appears in
 The last thing you need to do is specify your desk's physical minimum and maximum height limits.
 
 [Configure the DeskUp Pro](../configuration/README.md)
+
+
+## Troubleshooting
+If the device won't connect to Wi-Fi then:
+- Ensure the device is close to Wi-Fi to rule out a poor signal.
+- Rebooting your Wi-Fi routers can sometimes help especially with Unifi systems.
+- Ensure the Wi-Fi your connecting to is 2.4 Ghz
+
+If if still doesn't work then you can modify the Wi-Fi configuration yourself on the device, see [this guide](troubleshooting/troubleshooting-wifi-by-taking-control.md).

@@ -1,0 +1,30 @@
+substitutions:
+  name: deskup-pro-test
+  friendly_name: DeskUp Pro Controller TEST
+packages:
+  # Use this for the original S3 chips (no sticker on the back of the device)
+  #SmartHomeGuys.DeskUp Pro Controller (RJ12): github://SmartHomeGuys/DeskUp-Pro-Controller-RJ12/deskup-pro-controller.yaml@main
+
+  # Use this for the C6 chips (these devices have a sticker on the back of the device)
+  #SmartHomeGuys.DeskUp Pro Controller (RJ12): github://SmartHomeGuys/DeskUp-Pro-Controller-RJ12/deskup-pro-controller-c6.yaml@main
+  
+esphome:
+  name: ${name}
+  name_add_mac_suffix: false
+  friendly_name: ${friendly_name}
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "<YOUR KEY HERE>"
+
+ota:
+  - platform: esphome
+    password: "<YOUR PASSWORD HERE>"
+
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  output_power: 8.5dB
+  

@@ -268,7 +268,7 @@ script:
             if(id(select_desk_control_code_variant).has_state() )
             {
               // Check which desk control code variant is configured 
-              deskControlCodeVariant = id(select_desk_control_code_variant).current_option();
+              deskControlCodeVariant = id(select_desk_control_code_variant).current_option().c_str();
               ESP_LOGD("custom", "Using desk control code variant: %s", deskControlCodeVariant);
             }
 

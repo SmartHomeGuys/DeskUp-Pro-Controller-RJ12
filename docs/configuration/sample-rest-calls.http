@@ -1,80 +1,79 @@
-
 #Useful guide for commands
 #https://esphome.io/web-api/index.html
 
-
 # Get current desk height
-#GET http://192.168.68.73/sensor/desk_height
-#GET http://192.168.68.73/number/desk_height
-#GET http://192.168.68.73/sensor/desk_height_percent
+#GET http://192.168.71.232/sensor/Desk Height
+#GET http://192.168.71.232/sensor/Desk Height Percent
 
 # Get preset button M1,2,3,4 height value from the desk
-#GET http://192.168.68.73/sensor/desk_m1_height
-#GET http://192.168.68.73/sensor/desk_m2_height
-#GET http://192.168.68.73/sensor/desk_m3_height
-#GET http://192.168.68.73/sensor/desk_m4_height
+#GET http://192.168.71.232/sensor/Desk M1 Height
+#GET http://192.168.71.232/sensor/Desk M2 Height
+#GET http://192.168.71.232/sensor/Desk M3 Height
+#GET http://192.168.71.232/sensor/Desk M4 Height
 
 # Get desk idle time in secconds
-#GET http://192.168.68.73/sensor/idle_time
+#GET http://192.168.71.232/sensor/Idle Time
 
 # Get desk idle timestanp
-#GET http://192.168.68.73/text_sensor/idle_timestamp
+#GET http://192.168.71.232/text_sensor/Idle Timestamp
 
 # Get desk Status
-#GET http://192.168.68.73/text_sensor/desk_status
+#GET http://192.168.71.232/text_sensor/Desk Status
 
-#GET http://192.168.68.73/sensor/esp32_uptime
+#GET http://192.168.71.232/sensor/ESP32 Uptime
 
 
 # Move the desk to the specified height
-#POST http://192.168.68.73/number/desk_height/set?value=80 HTTP/1.1
+#POST http://192.168.71.232/number/Desk Height/set?value=80 HTTP/1.1
 
+# Get desk height
+#GET http://192.168.71.232/number/Desk Height
 
 # Press preset button M1,2,3,4 on the desk
-#POST http://192.168.68.73/button/desk_m1/press
-#POST http://192.168.68.73/button/desk_m2/press
-#POST http://192.168.68.73/button/desk_m3/press
-#POST http://192.168.68.73/button/desk_m4/press
+#POST http://192.168.71.232/button/Desk M1/press
+#POST http://192.168.71.232/button/Desk M2/press
+#POST http://192.168.71.232/button/Desk M3/press
+#POST http://192.168.71.232/button/Desk M4/press
 
-#POST http://192.168.68.73/button/desk_nudge_down/press
-#POST http://192.168.68.73/button/desk_nudge_up/press
-#POST http://192.168.68.73/button/desk_stop/press
+#POST http://192.168.71.232/button/Desk Nudge Down/press
+#POST http://192.168.71.232/button/Desk Nudge Up/press
+#POST http://192.168.71.232/button/Desk Stop/press
 
 # Press Memory Preset Buttons 1,2,3,4
-#POST http://192.168.68.73/button/set_desk_m1/press
-#POST http://192.168.68.73/button/set_desk_m2/press
-#POST http://192.168.68.73/button/set_desk_m3/press
-#POST http://192.168.68.73/button/set_desk_m4/press
+#POST http://192.168.71.232/button/Set Desk M1/press
+#POST http://192.168.71.232/button/Set Desk M2/press
+#POST http://192.168.71.232/button/Set Desk M3/press
+#POST http://192.168.71.232/button/Set Desk M4/press
 
 #Restart the ESP32 device
-#POST http://192.168.68.73/button/esp32_restart/press
+#POST http://192.168.71.232/button/ESP32 Restart/press
 
 
 # Get / Set Min & Max Heights
-#GET http://192.168.68.73/number/max_height
-#GET http://192.168.68.73/number/min_height
+#GET http://192.168.71.232/number/Max Height
+#GET http://192.168.71.232/number/Min Height
 
-#POST http://192.168.68.73/number/max_height/set?value=102
-#POST http://192.168.68.73/number/min_height/set?value=74
+#POST http://192.168.71.232/number/Max Height/set?value=102
+#POST http://192.168.71.232/number/Min Height/set?value=74
 
 # Get / Set Up & Down Offset values
-#GET http://192.168.68.73/number/offset_down_by
-#GET http://192.168.68.73/number/offset_up_by
-#POST http://192.168.68.73/number/offset_down_by/set?value=0
-#POST http://192.168.68.73/number/offset_up_by/set?value=1
+#GET http://192.168.71.232/number/Offset Down by
+#GET http://192.168.71.232/number/Offset Up by
+#POST http://192.168.71.232/number/Offset Down by/set?value=0
+#POST http://192.168.71.232/number/Offset Up by/set?value=1
 
 
 #Cover / Slider 
-#GET http://192.168.68.73/cover/height_slider
-#POST http://192.168.68.73/cover/height_slider/set?position=0.1
+#GET http://192.168.71.232/cover/Height Slider
+#POST http://192.168.71.232/cover/Height Slider/set?position=0.1
 
 
 #ESP32 LED
-#GET http://192.168.68.73/light/esp32_led
-#POST http://192.168.68.73/light/esp32_led/turn_off
+#GET http://192.168.71.232/light/ESP32 LED
+#POST http://192.168.71.232/light/ESP32 LED/turn_off
 
 # SeeedStudio XIAO C6 chip only has a yellow LED so can only turn on/off
-#POST http://192.168.68.73/light/esp32_led/turn_on
+#POST http://192.168.71.232/light/ESP32 LED/turn_on
 
 # S3 chip has RGB LED
-#POST http://192.168.68.73/light/esp32_led/turn_on?r=25&g=25&b=125
+#POST http://192.168.71.232/light/ESP32 LED/turn_on?r=25&g=25&b=125

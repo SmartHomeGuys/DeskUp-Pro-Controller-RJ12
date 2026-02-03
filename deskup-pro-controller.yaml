@@ -21,7 +21,7 @@ packages:
   device_base: !include common/base.yaml
 
 logger:
-  level: DEBUG   #VERBOSE
+  level: NONE  #DEBUG   #VERBOSE
 
 update:
   - platform: http_request

@@ -1,3 +1,13 @@
+# 2026.2.0
+- Updated ESPHome version to 2026.1.3 which introduced Wi-Fi roaming support.
+https://esphome.io/changelog/2026.1.0/#wifi-roaming-support
+- Base yaml added id's to the interval timers, and set the logger to default to none.
+- Breaking change coming to the DeskUp Pro API in ESPHome 2026.8.0. The names in the URL now use Entity ID (name) instead of Object ID's e.g. /number/desk_height is now /number/desk height.  DeskUp Pro will support both until that version of ESPHome is released.
+- C6 chip only changes: 
+  - Removed the Led light and now uses the built in status_led method instead which saves on flash space.
+  - Set the Wi-Fi output_power to 9.5dB as a default which is low but should avoid any Wi-Fi setup issues and can improve stability, reduce power use, etc. Anyone who needs it to be a higher value can simply adopt the device in ESPHome and adjust it.
+  - Removed captive portal to save on flash space.
+
 # 2025.12.0
 - Added a dropdown in the config section to allow different desk control code to be chosen.  This allows different hex codes to then be sent to the desk controller.  The Default is the original DeskUp Pro code, but we've added a Rocka option because whilst Rocka's Git Repo uses exactly the same hex codes as our default one it had 1 difference with the calculation to set the height on the Height Control. So adding this as an option in case anyone has issues with the Default, it also means we maybe able to expand this functionality later to support more desk types.
 - Bump ESPHome version to 2025.11.4 which has a couple of notable enhancements to reduce the flash memory used and improve Wi-Fi reliability

@@ -24,7 +24,7 @@ esphome:
   friendly_name: ${friendly_name}
   project:
     name: SmartHomeGuys.DeskUp Pro Controller (RJ12)
-    version: "2025.12.0"
+    version: "2026.2.0"
   name_add_mac_suffix: true
   on_boot:
     priority: 200
@@ -38,7 +38,7 @@ esp32:
     type: esp-idf
 
 logger:
-  #loglevel:  e.g. NONE, ERROR, WARN, INFO, DEBUG, VERBOSE, VERY_VERBOSE
+  level: NONE #e.g. NONE, ERROR, WARN, INFO, DEBUG, VERBOSE, VERY_VERBOSE
 
 wifi:
 
@@ -829,6 +829,7 @@ light:
 interval:
   # Update idle time sensors
   - interval: 1s
+    id: "interval_sensors"
     then:
       lambda: |-
         id(seconds_idle_counter) += 1;
@@ -841,6 +842,7 @@ interval:
 
   # Check if WiFi is disconnected and if so set Led light to Red
   - interval: 5s
+    id: "interval_wifi_status"
     then:
       lambda: |-
         static bool has_wifi_connected_run_once = false;

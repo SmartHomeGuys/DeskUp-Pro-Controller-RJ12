@@ -27,33 +27,32 @@ esphome:
 
 wifi:
   power_save_mode: NONE
+  output_power: 9.5dB
+  ap: !remove
 
 # Remove captive portal to save on flash usage
 captive_portal: !remove
 
 
-# Changes to the Desk Code functionality is for the LED only
+# Changes to the Desk Code functionality are below
 light:
   - platform: esp32_rmt_led_strip
     id: !remove "light_esp32led"
 
-  # C6 chip does not have an RGB Led just yellow on/off 
-  - platform: binary
-    id: "light_esp32led"
-    name: "ESP32 LED"
-    output: onboard_led
-
 output:
-  - platform: gpio
-    id: onboard_led
-    pin:
-      number: GPIO15
-      inverted: true
-
   # Enables setting the antenna to external or internal. This activates the RF switch control.
   - platform: gpio
     id: "GPIO03"
     pin: GPIO03
+
+status_led:
+  pin:
+    number: GPIO15
+    inverted: true
+
+interval:
+  - interval: #5s
+    id: !remove "interval_wifi_status"
 
 # switch:
 #   # Off = use internal/ceramic antenna, On = use external antenna

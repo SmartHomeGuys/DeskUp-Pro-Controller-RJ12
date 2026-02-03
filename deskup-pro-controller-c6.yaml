@@ -17,7 +17,7 @@ packages:
   device_base: !include common/c6-chip-config.yaml
 
 logger:
-  level: DEBUG   #VERBOSE
+  level: NONE #DEBUG   #VERBOSE
 
 update:
   - platform: http_request

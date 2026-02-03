@@ -10,7 +10,7 @@ packages:
     refresh: 1min    #forces getting Latest code from github so we flash the latest and not what Homeassistant caches locally
 
 logger:
-  level: DEBUG   #VERBOSE
+  level: NONE  #DEBUG   #VERBOSE
 
 update:
   - platform: http_request

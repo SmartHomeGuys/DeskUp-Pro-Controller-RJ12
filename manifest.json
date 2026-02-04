@@ -1,6 +1,6 @@
 {
   "name": "DeskUp Pro Controller",
-  "version": "2025.12.0",
+  "version": "2026.2.0",
   "home_assistant_domain": "esphome",
   "new_install_skip_erase": false,
   "builds": [
@@ -14,7 +14,7 @@
       ],
       "ota": 
         {
-          "md5": "49afead7b8b47f0aa4bc53f3478a3964",
+          "md5": "5c7ebf0c95af94b595dcd306adde7751",
           "path": "firmware/deskup-pro.ota.bin",
           "release_url": "https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/blob/main/CHANGELOG.md",
           "summary": ""

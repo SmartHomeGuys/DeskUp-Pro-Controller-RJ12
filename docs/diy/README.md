@@ -96,7 +96,7 @@ wifi:
   password: !secret wifi_password
 ```
 
-The above yaml assumes you want to take full control of the yaml and not have us push any updates to you automatically in which case you also need to download the base.yaml from this Git Repository and copy it onto your Home Assistant's drive in folder: 
+The above yaml assumes you want to take full control of the yaml and not have us push any updates to you automatically in which case you also need to download the base.yaml from this Git Repository (its in the common folder) and copy it onto your Home Assistant into folder: 
 
 ```
 \\homeassistant.local\config\esphome\common\standingdesk"
@@ -109,7 +109,7 @@ packages:
   device_base: !include deployment-config.yaml
 ```
 
-If you used different pins for tx or rx add the substitutions block as follows using your GPIO pin numbers (these are the default values shown below):
+If you used different pins for tx or rx add the substitutions block to your main yaml file as follows using your GPIO pin numbers (these are the default values shown below):
 ```
 substitutions:
   tx_pin: "GPIO13"

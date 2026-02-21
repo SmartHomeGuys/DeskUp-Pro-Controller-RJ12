@@ -18,7 +18,6 @@ All the existing functionality of the desk's controller is retained.  Connect th
 <p align="center">
   <img src="images/DeskUpPro-Top.jpg" height="180px" />
   <img src="images/DeskUpPro-UnderDesk.jpg" height="180px" />
-  <img src="images/DeskUpPro-Top-White4.jpg" height="180px" />
 </p>
 <p align="center">
   <a href="https://www.ebay.co.uk/itm/226942026649" target="_blank"><img src="images/PurchaseOnEbay-Long3.jpeg" height="90px" /></a>
@@ -27,7 +26,7 @@ All the existing functionality of the desk's controller is retained.  Connect th
 
 ## What is shown in Home Assistant
 <p align="center">
-  <img src="images/DeskUpPro-Controls-black.jpg" height="350px" />
+  <img src="images/DeskUpPro-C6-Controls-HomeAssistant.png" height="350px" />
   <img src="images/DeskUp-Pro-Cover-Slider-black.jpg" height="350px" />
   <img src="images/DeskUpPro-Sensors-black.jpg" height="350px" />
   <img src="images/DeskUpPro-Configuration-black.jpg" height="350px" />
@@ -37,7 +36,7 @@ All the existing functionality of the desk's controller is retained.  Connect th
 
 ## Other smart home systems can use the built in Web Interface and its Rest API
 <p align="center">
-  <img src="images/WebServer-screen1-black.jpg" height="350px" width="320px" />
+  <img src="images/DeskUpPro-C6-Controls-Web.png" height="350px" width="320px" />
   <img src="images/WebServer-screen2-black.jpg" height="250px" width="320px" />
 </p>
 
@@ -54,7 +53,6 @@ Every function of the DeskUp pro can be controlled using its [Api](docs/configur
 - At the end of the working day lower the desk when you turn off the office light or leave the room.
 - Setup a dashboard on your smart home hub so you can have an unlimited number of preset height buttons e.g. maybe each family member prefers a different sit & stand desk height.
 - Want to control your desk from something else then as long as it can either integrate with Home Assistant or call a Rest Api you can.
-- The DeskUp Pro device even has an RGB Led on it so you can use it in automations.
 - etc, there are many possibilities.
 
 
@@ -75,7 +73,7 @@ If you need help to determine if your desk might be compatible the community sit
 
 ### Specs
 - The firmware of the DeskUp Pro is based on ESPHome
-- The device itself uses an ESP32-S3 chip that is powered by the desk's controller over the RJ12 Cable, so no USB cable is needed to power it.
+- The device itself uses an ESP32-S3 or the newer ESP32-C6 chip that is powered by the desk's controller over the RJ12 Cable, so no USB cable is needed to power it.
 - Has a USB-C port for setup.
 - Wi-Fi protocol used is 2.4ghz.
 - Initial setup of the device to connect it to Wi-Fi can be done using a USB C cable (not supplied), Bluetooth (if you use Home Assistant and have a Bluetooth proxy) or a Captive Portal (Wi-Fi hotspot).
@@ -87,7 +85,7 @@ If you need help to determine if your desk might be compatible the community sit
   <img src="images/DeskUpPro-Rear.JPG" height="250px" />
 </p>
 <p align="center">
-  <img src="images/DeskUpPro-WireFrame2.png" height="350px" />
+  <img src="images/DeskUpPro-C6-WireFrame.png" height="350px" />
 </p>
 
 

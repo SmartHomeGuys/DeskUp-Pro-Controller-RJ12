@@ -23,7 +23,7 @@ http://device-ip-number
 ```
 
 <p align="center">
-  <img src="../../images/WebServer-screen1-black.jpg" height="350px" width="320px" />
+  <img src="../../images/DeskUpPro-C6-Controls-Web.png" height="350px" width="320px" />
   <img src="../../images/WebServer-screen2-black.jpg" height="250px" width="320px" />
 </p>
 

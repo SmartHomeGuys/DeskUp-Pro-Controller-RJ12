@@ -63,6 +63,7 @@ A member of the community confirmed the SN1 works <a href="https://community.hom
 
 ![](images/MaidesiteDeskControlBox-standard.png)
 
+Note: Maidesite have changed the Standard controller in a version manufacturered in July 2025 and removed the RJ12 port, so check the back of the controller.
 
 ## Other manufacturer desks or controllers that should be compatible
 Members of the community have tested these desks or controllers on other similar projects to this one, which send the same commands so there is a good chance these are compatible.

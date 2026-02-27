@@ -28,6 +28,7 @@ This is not a complete list as any desk with an RJ11 / RJ12 port could work.
 - Jiecang JCB35M11C, Jiecang JCHT35K72C (so probably any Jiecang might work)
 - Omnidesk
 - Desktronic Home One
+- Boho Office Basic Line
  
 _If your desk works but is not in the list please let us know by logging an issue for us to update this page so we can help other people._
 
@@ -137,6 +138,16 @@ But you may need to toggle on the 'Send wake up command' as the desk controller 
 
 **It's very likely that the Desktronic Home Pro is also using a Jiecang controller and therefore may work.**
 
+
+## Boho Office Basic Line 
+Desk: <a href="https://www.boho-moebel.de/">Boho möbelwerkstatt GmbH</a>
+
+Controller: Jiecang JCB36N2HAG-230
+
+Confirmed working by user prbit1:
+
+*"This seems very similar to the already-listed Jiecang-based setups like the Desktronic Home One.
+I had to enable/toggle “send wake-up command” because the controller goes to sleep after a few seconds; with wake-up enabled it works perfectly."*
 
 ## Links to other community info used when compiling this list
 <a href="https://www.maidesite.co.uk/pages/buyer-guide">https://www.maidesite.co.uk/pages/buyer-guide</a>

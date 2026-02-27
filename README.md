@@ -76,13 +76,13 @@ If you need help to determine if your desk might be compatible the community sit
 - The device itself uses an ESP32-S3 or the newer ESP32-C6 chip that is powered by the desk's controller over the RJ12 Cable, so no USB cable is needed to power it.
 - Has a USB-C port for setup.
 - Wi-Fi protocol used is 2.4ghz.
-- Initial setup of the device to connect it to Wi-Fi can be done using a USB C cable (not supplied), Bluetooth (if you use Home Assistant and have a Bluetooth proxy) or a Captive Portal (Wi-Fi hotspot).
+- Initial setup of the device to connect it to Wi-Fi can be done using a USB-C cable, Bluetooth (if you use Home Assistant and have a Bluetooth proxy).
 
 ### More Product Images and Dimensions
 <p align="center">
-  <img src="images/DeskUpPro-Front.jpg" height="250px" />
-  <img src="images/DeskUpPro-Bottom.JPG" height="250px" />
-  <img src="images/DeskUpPro-Rear.JPG" height="250px" />
+  <img src="images/DeskUpPro-C6-Front.jpg" height="150px" />
+  <img src="images/DeskUpPro-Rear.JPG" height="150px" />
+  <img src="images/DeskUpPro-C6-Bottom.jpg" height="150px" />
 </p>
 <p align="center">
   <img src="images/DeskUpPro-C6-WireFrame.png" height="350px" />

@@ -28,6 +28,7 @@ This is not a complete list as any desk with an RJ11 / RJ12 port could work.
 - Jiecang JCB35M11C, Jiecang JCHT35K72C (so probably any Jiecang might work)
 - Omnidesk
 - Desktronic Home One
+- Desktronic Pro
 - Boho Office Basic Line
  
 _If your desk works but is not in the list please let us know by logging an issue for us to update this page so we can help other people._
@@ -127,7 +128,6 @@ But you may need to toggle on the 'Send wake up command' as the desk controller 
 
 
 ## Desktronic Home One
-
 Confirmed working by GitHub user <a href="https://github.com/nurtext">nurtext</a>.
 
 Uses a whitelabeled Jiecang JCB36NE2 control box.
@@ -136,7 +136,11 @@ Uses a whitelabeled Jiecang JCB36NE2 control box.
 
 But you may need to toggle on the 'Send wake up command' as the desk controller may go to sleep, this will wake the desk controller up then send the button command you asked for.
 
-**It's very likely that the Desktronic Home Pro is also using a Jiecang controller and therefore may work.**
+
+## Desktronic Pro
+Confirmed working <a href="https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/503">in this post</a>
+
+But you may need t9 consult the desk manual as the user had to change the desk controller to be single touch and not constant touch (which it ships with)
 
 
 ## Boho Office Basic Line 

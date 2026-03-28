@@ -140,7 +140,7 @@ But you may need to toggle on the 'Send wake up command' as the desk controller 
 ## Desktronic Pro
 Confirmed working <a href="https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/503">in this post</a>
 
-But you may need t9 consult the desk manual as the user had to change the desk controller to be single touch and not constant touch (which it ships with)
+But you may need to consult the desk manual as the user had to change the desk controller to be single touch and not constant touch (which it ships with)
 
 
 ## Boho Office Basic Line 

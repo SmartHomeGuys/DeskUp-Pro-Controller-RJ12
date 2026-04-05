@@ -36,6 +36,7 @@ _If your desk works but is not in the list please let us know by logging an issu
 ## Incompatible Desks or Controllers
 - IKEA Mittzon
 - Vonhaus Desk with controller model: M200-23-CH
+- Eureka Ergonomics standing desk with control box: erk-cb-2m-bca84a
 
 
 ## Working Desks in more Detail

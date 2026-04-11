@@ -7,7 +7,7 @@ To automate your desk, what we are going to make is the cable below with an RJ12
 
 
 ## Materials needed
-- An ESP32, we used an ESP32-S3 Zero/Mini:
+- An ESP32, we used an ESP32-S3 Zero/Mini for initial versions of the product (which are what the instructions below use), but in devices we sell we now use the ESP32-C6. We don't have instructions for making a device using this chip but the yaml is available on github.
 
 - An RJ12 to RJ12 Cable (6P6C)
 
@@ -47,8 +47,7 @@ Thats the board and cable all done.  If anything doesn't work later in Home Assi
 
 
 ## 3D Print a Box
-### TODO ADD LINK
-
+Design your own enclosure.
 
 ## Home Assistant Configuration
 You first need to setup the ESP32 in Home Assistant which can be done within Home Assistant using ESPHome Builder.

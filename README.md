@@ -20,7 +20,8 @@ All the existing functionality of the desk's controller is retained.  Connect th
   <img src="images/DeskUpPro-UnderDesk.jpg" height="180px" />
 </p>
 <p align="center">
-  <a href="https://www.ebay.co.uk/itm/226942026649" target="_blank"><img src="images/PurchaseOnEbay-Long3.jpeg" height="90px" /></a>
+  <a href="https://www.tindie.com/products/smarthomeguys/deskup-pro/?ref=offsite_badges&utm_source=sellers_smarthomeguys&utm_medium=badges&utm_campaign=badge_large"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-larges.png" alt="I sell on Tindie" width="160" height="85"></a>
+  <a href="https://www.ebay.co.uk/itm/226942026649" target="_blank"><img src="images/PurchaseOnEbay-Long-transparent.png" height="90px" /></a>
 </p>
 
 
@@ -124,7 +125,8 @@ However if you would prefer to avoid:
 And would simply like to get a device pre-built, in a box that you can plug in to your desk and be automating it in 10 minutes then you can purchase one from our eBay store.
 
 <p align="center">
-  <a href="https://www.ebay.co.uk/itm/226942026649" target="_blank"><img src="images/PurchaseOnEbay-Long3.jpeg" height="90px" /></a>
+  <a href="https://www.tindie.com/products/smarthomeguys/deskup-pro/?ref=offsite_badges&utm_source=sellers_smarthomeguys&utm_medium=badges&utm_campaign=badge_large"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-larges.png" alt="I sell on Tindie" width="160" height="85"></a>
+  <a href="https://www.ebay.co.uk/itm/226942026649" target="_blank"><img src="images/PurchaseOnEbay-Long-transparent.png" height="90px" /></a>
 </p>
 
 

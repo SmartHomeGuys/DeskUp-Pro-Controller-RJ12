@@ -30,6 +30,7 @@ This is not a complete list as any desk with an RJ11 / RJ12 port could work.
 - Desktronic Home One
 - Desktronic Pro
 - Boho Office Basic Line
+- Fully Jarvis
  
 _If your desk works but is not in the list please let us know by logging an issue for us to update this page so we can help other people._
 
@@ -153,6 +154,11 @@ Confirmed working by user prbit1:
 
 *"This seems very similar to the already-listed Jiecang-based setups like the Desktronic Home One.
 I had to enable/toggle “send wake-up command” because the controller goes to sleep after a few seconds; with wake-up enabled it works perfectly."*
+
+## Fully Jarvis
+Confirmed working on controller:
+- Jiecang JCB36N2CA-230 - confirmed working by user PedroTorresM with 1 rendering issue reported with the memory preset sensors displaying in mm instead of cms, but fixable see details in <a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/issues/11">issue 11</a>.
+
 
 ## Links to other community info used when compiling this list
 <a href="https://www.maidesite.co.uk/pages/buyer-guide">https://www.maidesite.co.uk/pages/buyer-guide</a>

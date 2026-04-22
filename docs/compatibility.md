@@ -157,7 +157,7 @@ I had to enable/toggle “send wake-up command” because the controller goes to
 
 ## Fully Jarvis
 Confirmed working on controller:
-- Jiecang JCB36N2CA-230 - confirmed working by user PedroTorresM with 1 rendering issue reported with the memory preset sensors displaying in mm instead of cms, but fixable see details in <a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/issues/11">issue 11</a>.
+- Jiecang JCB36N2CA-230 - confirmed working by user PedroTorresM with 1 rendering issue reported with the memory preset sensors displaying in mm instead of cms, see details in <a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/issues/11">issue 11</a>.
 
 
 ## Links to other community info used when compiling this list

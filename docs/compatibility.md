@@ -1,5 +1,9 @@
 # ⚠️ Check if your desk is compatible
-There is **no guarantee** that the DeskUp Pro device will work with your desk as desk manufacturers can change their specifications at anytime even on the same model number.
+There is **no guarantee** that the DeskUp Pro device will work with your desk as desk manufacturers could change their internal electronics and software at any time, even on the same model number.  However so far we've only seen Maidsite remove the RJ12 port on one controller model and have had no reports of anything else on the list not working.
+
+Where we know of limitations we have mentioned them. Every desk known to us that works or doesn't is in the lists below.  
+
+If your desk is not on the list we cannot advise on its compatibility until someone tries it.  Which is why we ask that if you do try the DeskUp Pro and your desk is not on our list please let us know so we can add it here to help others.
 
 This is a product of reverse engineering, so until you try it on your desk there is no way to be 100% certain that it will or won't work.
 
@@ -11,9 +15,7 @@ Your desk must also have a free RJ12 port on the controller (6 pins):
 
 ![](images/MaidsiteDeskControlBox-Back.jpg)
 
-Below is a list of desks we know should be compatible since they send the same desk hex codes. The DeskUp Pro code was written for Maidesite controllers and has been used by people in that community.  The other desks have been used on a similar open source project which uses exactly the same desk control code as ours, full details are below. 
-
-This is not a complete list as any desk with an RJ11 / RJ12 port could work.
+Below is a list of desks we know should be compatible but any desk with an RJ11 / RJ12 port could work.
 
 ## Summary of Compatible Desks or Controllers
 - Maidesite TH2 Plus Art

@@ -38,7 +38,7 @@ esp32:
     type: esp-idf
 
 logger:
-  level: NONE #e.g. NONE, ERROR, WARN, INFO, DEBUG, VERBOSE, VERY_VERBOSE
+  level: INFO #e.g. NONE, ERROR, WARN, INFO, DEBUG, VERBOSE, VERY_VERBOSE
 
 wifi:
 
@@ -86,8 +86,45 @@ uart:
                 if (bytes[0] == 0xF2 && bytes[1] == 0xF2 && bytes[7] == 0x7E)
                 {
                   uint8_t command = bytes[2];
-                  double height = ((bytes[4] * 256) + bytes[5]) /10.0;    // Default to cm
                   
+                  double rawHeight = ((bytes[4] * 256) + bytes[5]);
+                  double height = rawHeight / 10.0;                   // Default to cm
+                  
+
+                  // Overrides for other desks starts here
+                  std::string deskControlCodeVariant = "Default";
+
+                  if(id(select_desk_control_code_variant).has_state() ) {
+                    deskControlCodeVariant = id(select_desk_control_code_variant).current_option().c_str();
+
+                    // Fully Jarvis (Jiecang) conversion from motor steps to cm for Memory Preset Heights
+                    if (deskControlCodeVariant == "Fully Jarvis") {
+                      //Formula is:
+                      //  (rawHeight - minimum height motor steps) / counts per cm) + min height
+                      //  Where counts per cm = (maximum height motor steps - minimum height motor steps) / (max height - min height)
+
+                      if(id(bool_desk_calibration_started) == true) {
+                        // Store the min & max motor counts into variables that persit after a reboot
+
+                        if(command == 0x25) {       // M1 must be set to physical minimum height
+                          ESP_LOGD("custom", "Get Motor Steps from M1, RawHeight is: %f", rawHeight); 
+                          id(min_motor_steps) = rawHeight;    // Read Motor Steps from raw value
+                        }
+                        else if(command == 0x28) {  // M4 must be set to physical maximum height
+                          ESP_LOGD("custom", "Get Motor Steps from M4, RawHeight is: %f", rawHeight);
+                          id(max_motor_steps) = rawHeight;    // Read Motor Steps from raw value
+                        }
+                      }
+
+                      // Not in calibration mode so do the calculation
+                      double countsPerCM = (id(max_motor_steps) - id(min_motor_steps)) / (id(sensor_deskPhysicalMaxHeight).state - id(sensor_deskPhysicalMinHeight).state);
+                      ESP_LOGD("custom", "Fully Jarvis Calculation countsPerCM: %f, min motor steps: %f, max motor steps: %f", countsPerCM, id(min_motor_steps), id(max_motor_steps));
+                      height = ((rawHeight - id(min_motor_steps)) / countsPerCM) + id(sensor_deskPhysicalMinHeight).state;
+                    
+                      ESP_LOGD("custom", "Fully Jarvis Calculation Height is: %f", height);
+                    }
+                  }
+
                   // Check that it is a preset height message (byte 2 should be one of: 0x25, 0x26, 0x27, 0x28)
                   if(command == 0x25)
                     id(sensor_deskm1).publish_state(height);
@@ -99,6 +136,16 @@ uart:
                     id(sensor_deskm4).publish_state(height);
                 }
               }
+              else if (bytes.size() == 10)       // Only parse messages with 10 bytes
+              {
+                ESP_LOGD("custom", "Max / Min Height Message Received");
+
+                double maxHeight = ((bytes[4] * 256) + bytes[5]) /10.0;     // Default to cm
+                id(sensor_deskPhysicalMaxHeight).publish_state(maxHeight);
+
+                double minHeight = ((bytes[6] * 256) + bytes[7]) /10.0;     // Default to cm
+                id(sensor_deskPhysicalMinHeight).publish_state(minHeight);
+              }
             }
 
 globals:
@@ -106,6 +153,24 @@ globals:
     type: long
     restore_value: no
     initial_value: "0"
+
+  # The next 3 variables are for use with Fully Jarvis Desks only to store motor steps
+  # for the min and max physical height of the desk.
+  - id: bool_desk_calibration_started
+    type: bool
+    restore_value: no
+    initial_value: ""
+
+  - id: min_motor_steps
+    type: double
+    restore_value: yes
+    initial_value: "0"
+
+  - id: max_motor_steps
+    type: double
+    restore_value: yes
+    initial_value: "0"
+
 
 script:
   - id: script_run_on_boot
@@ -115,6 +180,10 @@ script:
       - logger.log: "Get desk height"
       - uart.write:
           data: [0xf1, 0xf1, 0x07,0x00,0x07,0x7e]
+
+      - logger.log: "Get Desk Physical Min/Max Height Limits"
+      - uart.write:
+          data: [0xF1, 0xF1, 0x0C, 0x00, 0x0C, 0x7E]
 
 
   # Reset idle counter value to 0
@@ -155,7 +224,7 @@ script:
     mode: single
     then:
       - lambda: |-
-          ESP_LOGD("custom", "Move desk command: %s", cmd.c_str());
+          ESP_LOGD("custom", "Send desk command: %s", cmd.c_str());
 
       - if:
           condition: 
@@ -210,10 +279,14 @@ script:
             else if(cmd == "getheight")
               return { 0xf1, 0xf1, 0x07,0x00,0x07,0x7e };
 
+            // Gets all Preset Height Memory settings & Height which also triggers sensors to update
+            else if(cmd == "getAllHeightSettings")
+              return { 0xF1, 0xF1, 0x07, 0x00, 0x07, 0x7E };   
+
             else
               return {};
             
-      - logger.log: "Move desk command finished"
+      - logger.log: "Send desk command finished"
 
 
   # Move the desk to the specified height (in cm, also allows decimal point numbers)
@@ -409,6 +482,21 @@ sensor:
     type: timestamp
     name: "ESP32 Uptime"
     id: "sensor_deviceuptime"
+
+
+  - platform: template
+    name: "Desk Physical Max Height"
+    id: "sensor_deskPhysicalMaxHeight"
+    unit_of_measurement: "cm"
+    accuracy_decimals: 1
+    icon: mdi:human-male-height-variant
+
+  - platform: template
+    name: "Desk Physical Min Height"
+    id: "sensor_deskPhysicalMinHeight"
+    unit_of_measurement: "cm"
+    accuracy_decimals: 1
+    icon: mdi:human-male-height-variant
 
 
 text_sensor:
@@ -635,7 +723,29 @@ button:
     entity_category: diagnostic
     disabled_by_default: false
     device_class: restart
-    
+
+  # For Fully Jarvis Desks Get and Save Min Phyisical Height 
+  - platform: template
+    name: "Calibrate Fully Jarvis Desk"
+    id: "button_calibrate_desk"
+    #icon: #mdi:progress-clock
+    entity_category: config
+    disabled_by_default: False
+    on_press: 
+      then:
+        - logger.log: Calibrate Desk Pressed
+        - lambda: |-
+            id(bool_desk_calibration_started) = true;
+            id(min_motor_steps) = 0;
+            id(max_motor_steps) = 0;
+
+        # By executing this all the height and height preset sensors will be read from the desk
+        # The uart height code at the top will know we are in calibration mode and save the values.
+        # M1 and M4 Preset Buttons on the desk must be set at the physical min (on M1) & max (on M4) before pressing this button.
+        - script.execute: 
+            id: script_send_desk_command
+            cmd: "getAllHeightSettings"
+
 
 cover:
   - platform: template
@@ -811,6 +921,7 @@ select:
     options:
       - "Default"   # Original Maidesite desk code
       - "Rocka"     # Rocka's Git repo is almost identical to Maidesite except for the set height control calculation 
+      - "Fully Jarvis"
     initial_option: "Default"
     restore_value: true
     entity_category: config

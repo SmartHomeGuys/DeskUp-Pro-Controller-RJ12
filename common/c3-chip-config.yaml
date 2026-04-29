@@ -1,46 +1,47 @@
 # This yaml overrides some parts of the base.yaml (which was for the S3 chip) so a C3 Super Mini chip can be used instead
 # Noteable differences are the TX & RX GPIO pin numbers are different. The C3 does not support an RGB Led just a Blue on/off
 # Led, which was only used to show if Wi-Fi was connected or not. Captive Portal setup has been removed to reduce Flash size used.
+substitutions:
+  tx_pin: "GPIO5"
+  rx_pin: "GPIO6"
 
 packages:
   device_base: !include base.yaml
-
-substitutions:
-  tx_pin: "GPIO05"
-  rx_pin: "GPIO06"
 
 esp32:
   board: esp32-c3-devkitm-1
   framework:
     type: esp-idf
 
-esphome:
-  #project:
-  #  version: "2025.7.0"
-  on_boot:
-    - priority: 200
-      then:
-        - script.execute: script_run_on_boot 
+# Remove BLE configuration to save flash space as we are not using it for Wi-Fi setup on this C3 version
+improv_serial: !remove
+esp32_improv: !remove
 
-wifi:
-  power_save_mode: NONE
-  output_power: 9.5dB
-  ap: !remove
-
-# Remove captive portal to save on flash usage
-captive_portal: !remove
-
-# Changes to the Desk Code functionality are below
+# Replace the RGB led from base.yaml with the C3's single blue status led, keeping the same ID
+# so existing references to light_esp32led continue to work.
 light:
-  - platform: status_led
+  - platform: esp32_rmt_led_strip
     id: !remove "light_esp32led"
+  - platform: status_led
+    id: "light_esp32led"
+    name: ESP32 LED
+    pin:
+      number: GPIO8
+      inverted: true
+      ignore_strapping_warning: true
+    internal: true
+    restore_mode: ALWAYS_OFF
 
-status_led:
-  pin:
-    number: GPIO8
-    inverted: true
-    ignore_strapping_warning: true
-
+# Replace the wifi status interval from base.yaml with one that uses status_led-compatible actions
 interval:
   - interval: #5s
     id: !remove "interval_wifi_status"
+  - interval: 5s
+    then:
+      - if:
+          condition:
+            wifi.connected:
+          then:
+            - light.turn_off: light_esp32led
+          else:
+            - light.turn_on: light_esp32led

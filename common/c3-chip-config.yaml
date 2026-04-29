@@ -1,0 +1,46 @@
+# This yaml overrides some parts of the base.yaml (which was for the S3 chip) so a C3 Super Mini chip can be used instead
+# Noteable differences are the TX & RX GPIO pin numbers are different. The C3 does not support an RGB Led just a Blue on/off
+# Led, which was only used to show if Wi-Fi was connected or not. Captive Portal setup has been removed to reduce Flash size used.
+
+packages:
+  device_base: !include base.yaml
+
+substitutions:
+  tx_pin: "GPIO05"
+  rx_pin: "GPIO06"
+
+esp32:
+  board: esp32-c3-devkitm-1
+  framework:
+    type: esp-idf
+
+esphome:
+  #project:
+  #  version: "2025.7.0"
+  on_boot:
+    - priority: 200
+      then:
+        - script.execute: script_run_on_boot 
+
+wifi:
+  power_save_mode: NONE
+  output_power: 9.5dB
+  ap: !remove
+
+# Remove captive portal to save on flash usage
+captive_portal: !remove
+
+# Changes to the Desk Code functionality are below
+light:
+  - platform: status_led
+    id: !remove "light_esp32led"
+
+status_led:
+  pin:
+    number: GPIO8
+    inverted: true
+    ignore_strapping_warning: true
+
+interval:
+  - interval: #5s
+    id: !remove "interval_wifi_status"

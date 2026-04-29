@@ -714,8 +714,8 @@ number:
     name: "Min Height"
     id: "number_deskMinHeight"
     unit_of_measurement: "cm"
-    min_value: 62
-    max_value: 126
+    min_value: ${desk_min_height}
+    max_value: ${desk_max_height}
     step: 0.01
     initial_value: ${desk_min_height}
     mode: box
@@ -736,8 +736,8 @@ number:
     name: "Max Height"
     id: "number_deskMaxHeight"
     unit_of_measurement: "cm"
-    min_value: 62
-    max_value: 126
+    min_value: ${desk_min_height}
+    max_value: ${desk_max_height}
     step: 0.01
     initial_value: ${desk_max_height}
     mode: box

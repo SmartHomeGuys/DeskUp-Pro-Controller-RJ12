@@ -1,6 +1,6 @@
 # This yaml overrides some parts of the base.yaml (which was for the S3 chip) so a C3 Super Mini chip can be used instead
 # Noteable differences are the TX & RX GPIO pin numbers are different. The C3 does not support an RGB Led just a Blue on/off
-# Led, which was only used to show if Wi-Fi was connected or not. Captive Portal setup has been removed to reduce Flash size used.
+# Led, which was only used to show if Wi-Fi was connected or not.
 substitutions:
   tx_pin: "GPIO5"
   rx_pin: "GPIO6"

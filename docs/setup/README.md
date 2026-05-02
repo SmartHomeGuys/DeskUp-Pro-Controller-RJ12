@@ -26,9 +26,14 @@ The last thing you need to do is specify your desk's physical minimum and maximu
 
 
 ## Troubleshooting
-If the device won't connect to Wi-Fi then:
+
+### 1. If the device won't connect to Wi-Fi
 - Ensure the device is close to Wi-Fi to rule out a poor signal.
 - Rebooting your Wi-Fi routers can sometimes help especially with Unifi systems.
 - Ensure the Wi-Fi your connecting to is 2.4 Ghz
 
 If if still doesn't work then you can modify the Wi-Fi configuration yourself on the device, see [this guide](troubleshooting/troubleshooting-wifi-by-taking-control.md).
+
+### 2. Fully Jarvis Desk Memory Height Sensors are showing the wrong value
+
+This is a known issue where these desks do not use cm for these sensors but motor steps.  But you can calibrate the Jarvis Desk by following [this guide](troubleshooting/calibrate-fully-jarvis-desk.md)

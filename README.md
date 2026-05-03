@@ -33,7 +33,7 @@ All the existing functionality of the desk's controller is retained.  Connect th
   <img src="images/DeskUpPro-Configuration-black.jpg" height="350px" />
 </p>
 
-32 entities are exposed in Home Assistant that let you control every function of the DeskUp pro.
+34 entities are exposed in Home Assistant that let you control every function of the DeskUp pro.
 
 ## Other smart home systems can use the built in Web Interface and its Rest API
 <p align="center">

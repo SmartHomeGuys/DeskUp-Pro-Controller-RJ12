@@ -10,8 +10,8 @@ substitutions:
   #Which should either match your desk physical min/max height limit or just be set to the min/max desk height you will use.
   #The cover/slider control will then be constrained to these min/max values.
   #Desk presets and nudge buttons are not constrained to these.
-  desk_min_height: "60"
-  desk_max_height: "130"
+  desk_min_height: "58"
+  desk_max_height: "131"
 
 packages:
   # Package needed when flashing devices to let users configure Wi-Fi on their device when 1st powered up.

@@ -2,16 +2,21 @@
 
 ## Configuration 
 Before using your DeskUp Pro you need to configure the min & max height values for your desk:
-  
+
+### Calibrate Fully Jarvis Desk Button
+
+Fully Jarvis desks need to use a different calculation for the 4 Preset Memory Sensors (M1, M2, M3, M4) to display the correct cm values.  This button lets you 'calibrate' your desk so it can use that calculation, see [this page for calibration instructions](../setup/troubleshooting/calibrate-fully-jarvis-desk.md).
+
 ### Desk Control Code Variant
 
 This dropdown allows different desk control code to be chosen.  This then allows different hex codes to be sent to the standing desk controller.  
 
-The Default is the original DeskUp Pro code.
+- Default - is the original DeskUp Pro code.
 
-But we've added a Rocka option too because whilst Rocka's Git Repo uses exactly the same hex codes as our default one it had 1 difference with the calculation to set the height on the Height Control. So we have added this as an option in case anyone has issues with the Default. 
+- Rocka - Whilst Rocka's Git Repo uses exactly the same hex codes as our default one it had 1 difference with the calculation to set the height on the Height Control. So we have added this as an option in case anyone has issues with the Default.
 
-It also means we could expand this functionality later to support more desk controller types.
+- Fully Jarvis - Use this option in conjunction with the 'Calibrate Fully Jarvis Desk' button mentioned above so the correct calculation is used for the 4 Preset Memory Sensors (M1, M2, M3, M4).
+
 
 ### Max Height (defaults to cm)
 
@@ -45,7 +50,7 @@ On some desks the desk controller goes to sleep after afew seconds. Enabling thi
 ### Set Desk M1, M2, M3, M4 buttons
 Pressing these will set the current desk's height in to the corresponding memory number preset on the desk's controller.
 
-![](images/DeskUpPro-Configuration-black2.jpg)
+![](images/DeskUp-Pro-Configuration-black4.jpg)
 
 
 ## Sensors
@@ -133,7 +138,11 @@ Pressing this will reboot the device.
 ### ESP32 Uptime
 Shows how long the device has been online for.
 
+### Send Heights to Log
+This is used to output the min & max physical heights of your desk into the ESPHome Log or the Web UI. You can access the Web UI from a web browser using devicename.local in the browser URL. 
 
-![](images/DeskUpPro-Diagnostics-black.jpg)
+Use this button if you don't know your desks limits when filling in the 2 Min/Max Height text boxes in the configuration section.
+
+![](images/DeskUp-Pro-Diagnostics-black4.jpg)
 
 

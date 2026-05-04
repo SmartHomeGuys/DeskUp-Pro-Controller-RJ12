@@ -1,3 +1,15 @@
+# 2026.5.0
+- Updated ESPHome version from 2026.1.3 to 2026.4.3, main benefits to the DeskUp Pro are:
+1. ESPHome 2026.4.0 changed the CPU frequency default which could mean ~33% faster API operations.
+2. Knock on benefit of that is WiFi and UART would benefit from performance and stability improvements too.
+
+- Increased the min/max range for the desk height validation defaults as some desks were outside of these bounds and the min/max height text boxes in the configuration section didn't allow the value for those desks.
+
+- Added new button in the diagnostics section 'Send Heights to Log' which outputs the Desks Physical Min/Max height limits into the ESPHome Log & Web Server UI.  Useful if you don't know the desks limits when populating the min/max height text boxes.
+
+- Fixed a Fully Jarvis Desk issue where the memory preset height sensors (M1 to M4) were not showing the correct cm's value.  The fix involves 'Calibrating' your desk first, full details are here: https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/docs/setup/troubleshooting/calibrate-fully-jarvis-desk.md
+
+
 # 2026.2.0
 - Updated ESPHome version to 2026.1.3 which introduced Wi-Fi roaming support.
 https://esphome.io/changelog/2026.1.0/#wifi-roaming-support

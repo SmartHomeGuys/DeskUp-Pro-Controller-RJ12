@@ -23,7 +23,7 @@ esphome:
   friendly_name: ${friendly_name}
   project:
     name: SmartHomeGuys.DeskUp Pro Controller (RJ12)
-    version: "2026.2.0"
+    version: "2026.5.0"
   name_add_mac_suffix: true
   on_boot:
     priority: 200

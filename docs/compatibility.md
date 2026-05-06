@@ -159,8 +159,7 @@ Confirmed working by user prbit1:
 I had to enable/toggle “send wake-up command” because the controller goes to sleep after a few seconds; with wake-up enabled it works perfectly."*
 
 ## Fully Jarvis
-Confirmed working on controller:
-- Jiecang JCB36N2CA-230 - confirmed working by user PedroTorresM with 1 rendering issue reported with the memory preset sensors displaying incorrect cms values, see details in <a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/issues/11">issue 11</a>.
+Confirmed working on controller Jiecang JCB36N2CA-230
 
 
 ## Links to other community info used when compiling this list

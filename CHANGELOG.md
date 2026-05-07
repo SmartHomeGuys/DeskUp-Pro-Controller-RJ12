@@ -7,7 +7,8 @@
 
 - Added new button in the diagnostics section 'Send Heights to Log' which outputs the Desks Physical Min/Max height limits into the ESPHome Log & Web Server UI.  Useful if you don't know the desks limits when populating the min/max height text boxes.
 
-- Fixed a Fully Jarvis Desk issue where the memory preset height sensors (M1 to M4) were not showing the correct cm's value.  The fix involves 'Calibrating' your desk first, full details are here: https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/docs/setup/troubleshooting/calibrate-fully-jarvis-desk.md
+- Fixed a Fully Jarvis Desk issue where the memory preset height sensors (M1 to M4) were not showing the correct cm's value.  The fix involves 'Calibrating' your desk first, full details are here: 
+https://smarthomeguys.github.io/DeskUp-Pro-Controller-RJ12/docs/setup/troubleshooting/calibrate-fully-jarvis-desk.html
 
 
 # 2026.2.0

@@ -145,7 +145,7 @@ But you may need to toggle on the 'Send wake up command' as the desk controller 
 ## Desktronic Pro
 Confirmed working <a href="https://community.home-assistant.io/t/desky-standing-desk-esphome-works-with-desky-uplift-jiecang-assmann-others/383790/503">in this post</a>
 
-But you may need to consult the desk manual as the user had to change the desk controller to be single touch and not constant touch (which it ships with)
+But you may need to consult the desk manual as the user had to change the desk controller to be single touch and not constant touch (which it ships with, which sounds like the same issue with the Boho Office below)
 
 
 ## Boho Office Basic Line 
@@ -157,6 +157,10 @@ Confirmed working by user prbit1:
 
 *"This seems very similar to the already-listed Jiecang-based setups like the Desktronic Home One.
 I had to enable/toggle “send wake-up command” because the controller goes to sleep after a few seconds; with wake-up enabled it works perfectly."*
+
+User Raykor reported:
+
+_I had to activate the "automatic mode" on the controller / desk first – after that, the desk moves with a single press of the buttons on the desk or in the GUI / in Home Assistant without this the desk kept stopping.  This is documented for the Boho Basic Line desk starting from page 26 in the PDF here: https://www.boho-moebel.de/media/ef/35/a3/1727164715/boho-BASIC-de_en.pdf_
 
 ## Fully Jarvis
 Confirmed working on controller Jiecang JCB36N2CA-230

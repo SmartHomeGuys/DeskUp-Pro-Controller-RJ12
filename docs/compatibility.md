@@ -33,6 +33,7 @@ Below is a list of desks we know should be compatible but any desk with an RJ11 
 - Desktronic Pro
 - Boho Office Basic Line
 - Fully Jarvis
+- Vari Desk Essential
  
 _If your desk works but is not in the list please let us know by logging an issue for us to update this page so we can help other people._
 
@@ -164,6 +165,9 @@ _I had to activate the "automatic mode" on the controller / desk first – after
 
 ## Fully Jarvis
 Confirmed working on controller Jiecang JCB36N2CA-230
+
+## Vari Desk Essential
+Vari Desk Essential confirmed working by user RCG-RCorrales on <a href="https://www.vari.com/essential-electric-standing-desk-split-top-48x24/FD-ESTSTESD4824.html?dwvar_FD-ESTSTESD4824_color=hazel-wood">this desk</a>
 
 
 ## Links to other community info used when compiling this list

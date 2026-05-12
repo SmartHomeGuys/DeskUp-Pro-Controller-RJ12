@@ -164,7 +164,9 @@ User Raykor reported:
 _I had to activate the "automatic mode" on the controller / desk first – after that, the desk moves with a single press of the buttons on the desk or in the GUI / in Home Assistant without this the desk kept stopping.  This is documented for the Boho Basic Line desk starting from page 26 in the PDF here: https://www.boho-moebel.de/media/ef/35/a3/1727164715/boho-BASIC-de_en.pdf_
 
 ## Fully Jarvis
-Confirmed working on controller Jiecang JCB36N2CA-230
+Confirmed working on controller Jiecang JCB36N2CA-230.
+
+Preset buttons & sensors on this controller are confirmed as working, but one user of 4 that we know use this controller has reported that using the height control slider to set the height to a specific value doesn't work.
 
 ## Vari Desk Essential
 Vari Desk Essential confirmed working by user RCG-RCorrales on <a href="https://www.vari.com/essential-electric-standing-desk-split-top-48x24/FD-ESTSTESD4824.html?dwvar_FD-ESTSTESD4824_color=hazel-wood">this desk</a>

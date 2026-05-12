@@ -1,5 +1,7 @@
 # Setup using Captive Portal (Wi-Fi Hotspot)
 
+_Note: These instructions are not applicable to devices using the newer C6 chip / devices purchased from eBay/Tindie._
+
 The device already comes with the firmware flashed, but needs to be connected to Wi-Fi.
 
 _Note: When you first power on the DeskUp Pro it's Led will be solid Red, this just means it is not connected to your Wi-Fi, once it is the Led will be off._

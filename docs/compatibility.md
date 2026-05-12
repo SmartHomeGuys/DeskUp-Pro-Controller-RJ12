@@ -166,7 +166,7 @@ _I had to activate the "automatic mode" on the controller / desk first – after
 ## Fully Jarvis
 Confirmed working on controller Jiecang JCB36N2CA-230.
 
-Preset buttons & sensors on this controller are confirmed as working, but one user of 4 that we know use this controller has reported that using the height control slider to set the height to a specific value doesn't work.
+Preset buttons & sensors on this controller are confirmed as working, but 1 of the 4 users that we know who use this controller have reported that using the height control slider to set the height to a specific value didn't work for them.
 
 ## Vari Desk Essential
 Vari Desk Essential confirmed working by user RCG-RCorrales on <a href="https://www.vari.com/essential-electric-standing-desk-split-top-48x24/FD-ESTSTESD4824.html?dwvar_FD-ESTSTESD4824_color=hazel-wood">this desk</a>

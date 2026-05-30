@@ -27,13 +27,14 @@ Below is a list of desks we know should be compatible but any desk with an RJ11 
 - Maidesite S2B Pro
 - Desktopia Pro X
 - IKEA Uppspel
-- Jiecang JCB35M11C, Jiecang JCHT35K72C (so probably any Jiecang might work)
+- Jiecang JCB35M11C, JCHT35K72C, JCB36N2CA-230, JCB36N2HAG-230, JCHT35K9-003-v4, JCB36NE2 (so probably any Jiecang might work)
 - Omnidesk
 - Desktronic Home One
 - Desktronic Pro
 - Boho Office Basic Line
 - Fully Jarvis
 - Vari Desk Essential
+- Hibitaro Komfort M708
  
 _If your desk works but is not in the list please let us know by logging an issue for us to update this page so we can help other people._
 
@@ -170,6 +171,11 @@ Preset buttons & sensors on this controller are confirmed as working, but 1 of t
 
 ## Vari Desk Essential
 Vari Desk Essential confirmed working by user RCG-RCorrales on <a href="https://www.vari.com/essential-electric-standing-desk-split-top-48x24/FD-ESTSTESD4824.html?dwvar_FD-ESTSTESD4824_color=hazel-wood">this desk</a>
+
+## Hibitaro Komfort M708
+Confirmed working on a <a href="https://hibitaro.de/p/7044/elektrisch-hoehenverstellbares-schreibtischgestell-komfort-gestell-oder-komplett-schreibtisch">Hibitaro Komfort M708</a> desk with controller Jiecang JCB36NE2A-230.
+
+You need to switch the desk from constant-touch-memory to one-touch-memory, details were provided <a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/issues/19">in issue 19</a> by user afaik4711.
 
 
 ## Links to other community info used when compiling this list

@@ -35,6 +35,7 @@ Buttons
 - [Press Nudge Up button on the desk](#press-nudge-up-button-on-the-desk)
 - [Stop the desk moving](#stop-the-desk-moving)
 - [Press Desk Memory Preset Buttons M1, M2, M3, M4](#press-desk-memory-preset-buttons-m1-m2-m3-m4)
+- [Reset Idle Timer](#Reset the Idle Timer)
 - [Restart the ESP32 device](#restart-the-esp32-device)
 
 Number Controls
@@ -63,8 +64,7 @@ Light Controls
 
 ### Get Desk Height 
 ```
-Old Format: GET http://<ipnumberhere>/sensor/desk_height
-New Format: GET http://<ipnumberhere>/sensor/Desk Height
+GET http://<ipnumberhere>/sensor/Desk Height
 ```
 Response
 ```
@@ -79,8 +79,7 @@ Response
 
 ### Get Desk Height Percentage
 ```
-Old Format: GET http://<ipnumberhere>/sensor/desk_height_percent
-New Format: GET http://<ipnumberhere>/sensor/Desk Height Percent
+GET http://<ipnumberhere>/sensor/Desk Height Percent
 ```
 Response
 ```
@@ -94,8 +93,7 @@ Response
 
 ### Get preset button M1, M2, M3, M4 height value from the desk
 ```
-Old Format: GET http://<ipnumberhere>/sensor/desk_m1_height
-New Format: GET http://<ipnumberhere>/sensor/Desk M1 Height
+GET http://<ipnumberhere>/sensor/Desk M1 Height
 
 Changing m1 to m2, m3 or m4 for the other memory presets.
 ```
@@ -112,8 +110,7 @@ Response
 
 ### Get desk idle time in secconds
 ```
-Old Format: GET http://<ipnumberhere>/sensor/idle_time
-New Format: GET http://<ipnumberhere>/sensor/Idle Time
+GET http://<ipnumberhere>/sensor/Idle Time
 ```
 Response
 ```
@@ -127,8 +124,7 @@ Response
 
 ### Get desk idle timestamp in days, hh:mm:ss
 ```
-Old Format: GET http://<ipnumberhere>/sensor/idle_timestamp
-New Format: GET http://<ipnumberhere>/sensor/Idle Timestamp
+GET http://<ipnumberhere>/sensor/Idle Timestamp
 ```
 Response
 ```
@@ -142,8 +138,7 @@ Response
 
 ### Get desk Status
 ```
-Old Format: GET http://<ipnumberhere>/text_sensor/desk_status
-New Format: GET http://<ipnumberhere>/text_sensor/Desk Status
+GET http://<ipnumberhere>/text_sensor/Desk Status
 ```
 Response
 ```
@@ -161,8 +156,7 @@ Response
 
 ### Move the desk to the specified height
 ```
-Old Format: POST http://<ipnumberhere>/number/desk_height/set?value=80
-New Format: POST http://<ipnumberhere>/number/Desk Height/set?value=80
+POST http://<ipnumberhere>/number/Desk Height/set?value=80
 ```
 Response
 ```
@@ -172,8 +166,7 @@ No data returned just a 200 OK status
 
 ### Press preset button M1, M2, M3, M4 on the desk
 ```
-Old Format: POST http://<ipnumberhere>/button/desk_m1/press
-New Format: POST http://<ipnumberhere>/button/Desk M1/press
+POST http://<ipnumberhere>/button/Desk M1/press
 
 Changing m1 to m2, m3 or m4 for the other memory presets.
 ```
@@ -184,8 +177,7 @@ No data returned just a 200 OK status
 
 ### Press Nudge Down button on the desk
 ```
-Old Format: POST http://<ipnumberhere>/button/desk_nudge_down/press
-New Format: POST http://<ipnumberhere>/button/Desk Nudge Down/press
+POST http://<ipnumberhere>/button/Desk Nudge Down/press
 ```
 Response
 ```
@@ -194,8 +186,7 @@ No data returned just a 200 OK status
 
 ### Press Nudge Up button on the desk
 ```
-Old Format: POST http://<ipnumberhere>/button/desk_nudge_up/press
-New Format: POST http://<ipnumberhere>/button/Desk Nudge Up/press
+POST http://<ipnumberhere>/button/Desk Nudge Up/press
 ```
 Response
 ```
@@ -204,8 +195,7 @@ No data returned just a 200 OK status
 
 ### Stop the desk moving
 ```
-Old Format: POST http://<ipnumberhere>/button/desk_stop/press
-New Format: POST http://<ipnumberhere>/button/Desk Stop/press
+POST http://<ipnumberhere>/button/Desk Stop/press
 ```
 Response
 ```
@@ -215,8 +205,7 @@ No data returned just a 200 OK status
 
 ### Press Desk Memory Preset Buttons M1, M2, M3, M4
 ```
-Old Format: POST http://<ipnumberhere>/button/set_desk_m1/press
-New Format: POST http://<ipnumberhere>/button/Set Desk M1/press
+POST http://<ipnumberhere>/button/Set Desk M1/press
 
 Changing m1 to m2, m3 or m4 for the other memory presets.
 ```
@@ -225,10 +214,18 @@ Response
 No data returned just a 200 OK status
 ```
 
+### Reset the Idle Timer
+```
+POST http://<ipnumberhere>/button/Reset Idle Timer/press
+```
+Response
+```
+No data returned just a 200 OK status
+```
+
 ### Restart the ESP32 device
 ```
-Old Format: POST http://<ipnumberhere>/button/esp32_restart/press
-New Format: POST http://<ipnumberhere>/button/ESP32 Restart/press
+POST http://<ipnumberhere>/button/ESP32 Restart/press
 ```
 Response
 ```
@@ -241,8 +238,7 @@ No data returned just a 200 OK status
 
 ### Get Desk Height
 ```
-Old Format: GET http://<ipnumberhere>/number/desk_height
-New Format: GET http://<ipnumberhere>/number/Desk Height
+GET http://<ipnumberhere>/number/Desk Height
 ```
 Response
 ```
@@ -256,8 +252,7 @@ Response
 
 ### Get Desk Min Height (as specified in configuration field)
 ```
-Old Format: GET http://<ipnumberhere>/number/min_height
-New Format: GET http://<ipnumberhere>/number/Min Height
+GET http://<ipnumberhere>/number/Min Height
 ```
 Response
 ```
@@ -271,8 +266,7 @@ Response
 
 ### Set Desk Min Height (in configuration field)
 ```
-Old Format: POST http://<ipnumberhere>/number/min_height/set?value=74
-New Format: POST http://<ipnumberhere>/number/Min Height/set?value=74
+POST http://<ipnumberhere>/number/Min Height/set?value=74
 ```
 Response
 ```
@@ -281,8 +275,7 @@ No data returned just a 200 OK status
 
 ### Get Desk Max Height (as specified in configuration field)
 ```
-Old Format: GET http://<ipnumberhere>/number/max_height
-New Format: GET http://<ipnumberhere>/number/Max Height
+GET http://<ipnumberhere>/number/Max Height
 ```
 Response
 ```
@@ -296,8 +289,7 @@ Response
 
 ### Set Desk Max Height (in configuration field)
 ```
-Old Format: POST http://<ipnumberhere>/number/max_height/set?value=126
-New Format: POST http://<ipnumberhere>/number/Max Height/set?value=126
+POST http://<ipnumberhere>/number/Max Height/set?value=126
 ```
 Response
 ```
@@ -306,8 +298,7 @@ No data returned just a 200 OK status
 
 ### Get Desk Down Offset by value (in mm)
 ```
-Old Format: GET http://<ipnumberhere>/number/offset_down_by
-New Format: GET http://<ipnumberhere>/number/Offset Down by
+GET http://<ipnumberhere>/number/Offset Down by
 ```
 Response
 ```
@@ -321,8 +312,7 @@ Response
 
 ### Set Desk Down Offset by value (in mm)
 ```
-Old Format: POST http://<ipnumberhere>/number/offset_down_by/set?value=0
-New Format: POST http://<ipnumberhere>/number/Offset Down by/set?value=0
+POST http://<ipnumberhere>/number/Offset Down by/set?value=0
 ```
 Response
 ```
@@ -331,8 +321,7 @@ No data returned just a 200 OK status
 
 ### Get Desk Up Offset by value (in mm)
 ```
-Old Format: GET http://<ipnumberhere>/number/offset_up_by
-New Format: GET http://<ipnumberhere>/number/Offset Up by
+GET http://<ipnumberhere>/number/Offset Up by
 ```
 Response
 ```
@@ -346,8 +335,7 @@ Response
 
 ### Set Desk Up Offset by value (in mm)
 ```
-Old Format: POST http://<ipnumberhere>/number/offset_up_by/set?value=1
-New Format: POST http://<ipnumberhere>/number/Offset Up by/set?value=1
+POST http://<ipnumberhere>/number/Offset Up by/set?value=1
 ```
 Response
 ```
@@ -360,8 +348,7 @@ No data returned just a 200 OK status
 
 ### Get Cover details
 ```
-Old Format: GET http://<ipnumberhere>/cover/height_slider
-New Format: GET http://<ipnumberhere>/cover/Height Slider
+GET http://<ipnumberhere>/cover/Height Slider
 ```
 Response
 ```
@@ -377,8 +364,7 @@ Response
 
 ### Set Cover Position
 ```
-Old Format: POST http://<ipnumberhere>/cover/height_slider/set?position=0.1
-New Format: POST http://<ipnumberhere>/cover/Height Slider/set?position=0.1
+POST http://<ipnumberhere>/cover/Height Slider/set?position=0.1
 
 Allowed values 0.0 to 1.0
 ```
@@ -393,8 +379,7 @@ No data returned just a 200 OK status
 
 ### Get ESP32 Led Details
 ```
-Old Format: GET http://<ipnumberhere>/light/esp32_led
-New Format: GET http://<ipnumberhere>/light/ESP32 LED
+GET http://<ipnumberhere>/light/ESP32 LED
 ```
 Response
 ```
@@ -414,8 +399,7 @@ Response
 
 ### Turn on the ESP32 Led and set the colour
 ```
-Old Format: POST http://<ipnumberhere>/light/esp32_led/turn_on?r=25&g=25&b=125
-New Format: POST http://<ipnumberhere>/light/ESP32 LED/turn_on?r=25&g=25&b=125
+POST http://<ipnumberhere>/light/ESP32 LED/turn_on?r=25&g=25&b=125
 ```
 For more info view [this page](https://esphome.io/web-api/#light).
 
@@ -426,8 +410,7 @@ No data returned just a 200 OK status
 
 ### Turn off the ESP32 Led
 ```
-Old Format: POST http://<ipnumberhere>/light/esp32_led/turn_off
-New Format: POST http://<ipnumberhere>/light/ESP32 LED/turn_off
+POST http://<ipnumberhere>/light/ESP32 LED/turn_off
 ```
 Response
 ```

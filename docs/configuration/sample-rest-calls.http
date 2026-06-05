@@ -17,6 +17,9 @@
 # Get desk idle timestanp
 #GET http://192.168.71.232/text_sensor/Idle Timestamp
 
+# Reset the Idle Timer
+#POST http://192.168.71.232/button/Reset Idle Timer/press
+
 # Get desk Status
 #GET http://192.168.71.232/text_sensor/Desk Status
 

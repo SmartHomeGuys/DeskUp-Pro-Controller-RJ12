@@ -35,7 +35,7 @@ Buttons
 - [Press Nudge Up button on the desk](#press-nudge-up-button-on-the-desk)
 - [Stop the desk moving](#stop-the-desk-moving)
 - [Press Desk Memory Preset Buttons M1, M2, M3, M4](#press-desk-memory-preset-buttons-m1-m2-m3-m4)
-- [Reset Idle Timer](#Reset the Idle Timer)
+- [Reset Idle Timer](#reset-the-idle-timer)
 - [Restart the ESP32 device](#restart-the-esp32-device)
 
 Number Controls

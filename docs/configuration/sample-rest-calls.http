@@ -66,6 +66,16 @@
 #POST http://192.168.71.232/number/Offset Up by/set?value=1
 
 
+#Switch
+#GET http://192.168.71.232/switch/Send Wake Up Cmd
+#POST http://192.168.71.232/switch/Send Wake Up Cmd/turn_on
+
+
+#Select
+#GET http://192.168.71.232/select/Desk Control Code Variant
+#POST http://192.168.71.232/select/Desk Control Code Variant/set?option=Fully Jarvis
+
+
 #Cover / Slider 
 #GET http://192.168.71.232/cover/Height Slider
 #POST http://192.168.71.232/cover/Height Slider/set?position=0.1

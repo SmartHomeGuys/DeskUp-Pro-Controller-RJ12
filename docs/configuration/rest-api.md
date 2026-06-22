@@ -49,6 +49,10 @@ Number Controls
 - [Get Desk Up Offset by value (in mm)](#get-desk-up-offset-by-value-in-mm)
 - [Set Desk Up Offset by value (in mm)](#set-desk-up-offset-by-value-in-mm)
 
+Switch
+- [Get Desk Send Wake Up Cmd](#get-desk-send-wake-up-cmd)
+- [Set Desk Send Wake Up Cmd](#Set-desk-send-wake-up-cmd)
+
 Cover Control
 - [Get Cover details](#get-cover-details)
 - [Set Cover Position](#set-cover-position)
@@ -341,6 +345,63 @@ Response
 ```
 No data returned just a 200 OK status
 ```
+
+---
+
+## Switch
+
+### Get Desk Send Wake Up Cmd
+```
+GET http://<ipnumberhere>/switch/Send Wake Up Cmd
+```
+Response
+```
+{
+  "name_id": "switch/Send Wake Up Cmd",
+  "id": "switch-send_wake_up_cmd",
+  "value": false,
+  "state": "OFF"
+}
+```
+
+### Set Desk Send Wake Up Cmd
+```
+POST http://<ipnumberhere>/switch/Send Wake Up Cmd/turn_on
+```
+Response
+```
+No data returned just a 200 OK status
+```
+
+---
+
+## Select
+
+### Get Desk Control Code Variant
+```
+GET http://<ipnumberhere>/select/Desk Control Code Variant
+```
+Response
+```
+{
+  "name_id": "select/Desk Control Code Variant",
+  "id": "select-desk_control_code_variant",
+  "value": "Default",
+  "state": "Default"
+}
+```
+
+### Set Desk Control Code Variant
+Allowed values are (case sensitive): Default, Rocka, Fully Jarvis
+
+```
+POST http://<ipnumberhere>/select/Desk Control Code Variant/set?option=Default
+```
+Response
+```
+No data returned just a 200 OK status
+```
+
 
 ---
 

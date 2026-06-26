@@ -51,6 +51,8 @@
 #Restart the ESP32 device
 #POST http://192.168.71.232/button/ESP32 Restart/press
 
+# Send Heights to Log
+#POST http://192.168.71.232/button/Send Heights to Log/press
 
 # Get / Set Min & Max Heights
 #GET http://192.168.71.232/number/Max Height

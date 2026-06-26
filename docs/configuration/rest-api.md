@@ -37,6 +37,7 @@ Buttons
 - [Press Desk Memory Preset Buttons M1, M2, M3, M4](#press-desk-memory-preset-buttons-m1-m2-m3-m4)
 - [Reset Idle Timer](#reset-the-idle-timer)
 - [Restart the ESP32 device](#restart-the-esp32-device)
+- [Send Heights to Log](#send-heights-to-log)
 
 Number Controls
 - [Get Desk Height](#get-desk-height-1)
@@ -234,6 +235,17 @@ POST http://<ipnumberhere>/button/ESP32 Restart/press
 Response
 ```
 No data returned just a 200 OK status
+```
+
+### Send Heights to Log
+```
+POST http://<ipnumberhere>/button/Send Heights to Log/press
+```
+Response
+```
+No data returned just a 200 OK status.
+
+View the DeskUp Pro's web server to view the heights sent or the ESPHome device log.
 ```
 
 ---

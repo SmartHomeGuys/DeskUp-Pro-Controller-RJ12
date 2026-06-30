@@ -34,6 +34,8 @@ Then strip off a small amount (lowest setting on the wire stripper) for the foll
 | PIN 5 | Yellow| GPIO13 (labelled 13 in image) |
 | PIN 6 | Blue  | Unused |
 
+_Note: The RJ12 clip faces upwards in the table above and in the wiring image below. So Pin 1 (white) is on the left side and pin 6 (blue) is on the right side. Dont rely on the colours with your cable unless they are identical as they can vary, use the order of the pins but ideally plug the RJ12 into the desk and test the wires to check 5V and GND before attaching an esp32 with a multimeter first._
+
 _Note: I chose GPIO12 & GPIO13 purley for their location on the board to help with routing the cable out the back, but most other pins would be suitable. You can override the pins to be yours in the yaml by adding substitutions to the device in ESPHome builder (see "Let’s set up the ESP32 with the desk controller software" section below):_
 
 

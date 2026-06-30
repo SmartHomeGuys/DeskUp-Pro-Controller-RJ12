@@ -27,6 +27,7 @@ Sensors
 - [Get desk idle time in secconds](#get-desk-idle-time-in-secconds)
 - [Get desk idle timestamp in days, hh:mm:ss](#get-desk-idle-timestamp-in-days-hhmmss)
 - [Get desk Status](#get-desk-status)
+- [Get desk Firmware](#get-desk-firmware)
 
 Buttons
 - [Move the desk to the specified height](#move-the-desk-to-the-specified-height)
@@ -153,6 +154,20 @@ Response
   "id": "text_sensor-desk_status",
   "value": "Idle",
   "state": "Idle"
+}
+```
+
+### Get desk Firmware
+```
+GET http://<ipnumberhere>/update/Desk Firmware
+```
+Response
+```
+{
+  "name_id": "update/Desk Firmware",
+  "id": "update-desk_firmware",
+  "value": "2026.5.0",
+  "state": "NO UPDATE"
 }
 ```
 

@@ -25,6 +25,8 @@
 
 #GET http://192.168.71.232/sensor/ESP32 Uptime
 
+#GET http://192.168.71.232/update/Desk Firmware
+
 
 # Move the desk to the specified height
 #POST http://192.168.71.232/number/Desk Height/set?value=80 HTTP/1.1

@@ -54,6 +54,10 @@
 # Send Heights to Log
 #POST http://192.168.71.232/button/Send Heights to Log/press
 
+# Calibrate Fully Jarvis Desk Button
+#POST http://192.168.71.232/button/Calibrate Fully Jarvis Desk/press
+
+
 # Get / Set Min & Max Heights
 #GET http://192.168.71.232/number/Max Height
 #GET http://192.168.71.232/number/Min Height

@@ -38,6 +38,7 @@ Buttons
 - [Reset Idle Timer](#reset-the-idle-timer)
 - [Restart the ESP32 device](#restart-the-esp32-device)
 - [Send Heights to Log](#send-heights-to-log)
+- [Calibrate Fully Jarvis Desk Button](#calibrate-fully-jarvis-desk)
 
 Number Controls
 - [Get Desk Height](#get-desk-height-1)
@@ -246,6 +247,17 @@ Response
 No data returned just a 200 OK status.
 
 View the DeskUp Pro's web server to view the heights sent or the ESPHome device log.
+```
+
+
+### Calibrate Fully Jarvis Desk
+```
+POST http://<ipnumberhere>/button/Calibrate Fully Jarvis Desk/press
+```
+Response
+```
+No data returned just a 200 OK status.
+
 ```
 
 ---

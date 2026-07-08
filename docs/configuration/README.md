@@ -2,7 +2,7 @@
 
 Before you use the DeskUp Pro make sure to specify your desks min / max physical limits and familiarise yourself with the screen layout here:
 
-[Screen Layout and what it all does](home-assistant-screen-layout.md)
+[Screen Layout and what it all does](home-assistant-screen-layout/README.md)
 
 [Firmware Updates](firmware-updates.md)
 

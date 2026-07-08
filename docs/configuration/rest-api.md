@@ -15,10 +15,6 @@ Then you can make a call to the api endpoints using http e.g.
 http://192.168.68.120/<api-endpoint>
 ```
 
-NOTE: As of ESPHome 2026.8.0 the api format is changing from using entity id to entity name, for example: from /sensor/desk_height to /sensor/Desk Height. Both formats will work until then. Also note the new format is case sensitive.  The old and new formats are listed below but it is advised to switch to the new format before 2026.8.0.
-See https://esphome.io/web-api/index.html
-
-
 ## List of Api endpoints
 Sensors
 - [Get Desk Height](#get-desk-height)

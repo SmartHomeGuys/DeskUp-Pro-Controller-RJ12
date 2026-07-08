@@ -1,6 +1,6 @@
 # Setup using Captive Portal (Wi-Fi Hotspot)
 
-_Note: These instructions are not applicable to devices using the newer C6 chip / devices purchased from eBay/Tindie._
+_Note: These instructions are not applicable to devices using the newer C6 chip / devices purchased from eBay/Tindie/Shopify._
 
 The device already comes with the firmware flashed, but needs to be connected to Wi-Fi.
 

@@ -102,11 +102,11 @@ mode: single
 ## Hey Google Raise the Desk
 The DeskUp Pro has a Cover entity. Exposing this entity to Google Home allows it to be controllable as a device in Google Home.
 
-One option is to use the Home Assistant Matter Hub addon to expose the device to Google Home.
+One option is to use the Home Assistant [Matter Bridge](https://github.com/Luligu/matterbridge-home-assistant-addon) addon to expose the device to Google Home.
 
 <img src="images/Automation-GoogleHome-Cover.jpg" height="500px" />
 
-Unfortunately the Google Home App does not allow you to choose the cover as a device to control in automations, but the preview web editor does.
+The Google Home App allows you to choose the cover as a device to control in automations, and so does the web editor:
 http://home.google.com
 
 ![](images/Automation-GoogleHome-WebEditor.jpg)
@@ -132,7 +132,7 @@ automations:
 ## Alexa Raise the Desk
 The DeskUp Pro has a Cover entity. Exposing this entity to Alexa allows it to be controllable as a device in Alexa.
 
-One option is to use the Home Assistant Matter Hub addon to expose the device to Alexa.  Then just configure a routine in the Alexa app.
+One option is to use the Home Assistant [Matter Bridge](https://github.com/Luligu/matterbridge-home-assistant-addon) addon to expose the device to Alexa.  Then just configure a routine in the Alexa app.
 <img src="images/Automation-Alexa-Cover2.jpg" height="700px" />
 
 

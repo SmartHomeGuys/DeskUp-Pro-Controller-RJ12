@@ -123,7 +123,7 @@ However if you would prefer to avoid:
 And would simply like to get a device pre-built, in a box that you can plug in to your desk and be automating it in 10 minutes then you can purchase one from our store.
 
 <p align="center">
-  <a href="https://smarthomeguys.uk/products/deskup-pro" target="_blank"><img src="images/SmartHomeGuys-BuyNowButton-Transparent3.png" height="180px" />
+  <a href="https://smarthomeguys.uk/products/deskup-pro" target="_blank"><img src="images/SmartHomeGuys-BuyNowButton-Transparent3.png" height="180px" /></a>
 </p>
 
 

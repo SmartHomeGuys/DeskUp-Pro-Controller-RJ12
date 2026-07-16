@@ -20,7 +20,7 @@ All the existing functionality of the desk's controller is retained.  Connect th
   <img src="images/DeskUpPro-UnderDesk.jpg" height="180px" />
 </p>
 <p align="center">
-  <a href="https://smarthomeguys.uk/products/deskup-pro" target="_blank"><img src="images/SmartHomeGuys-BuyNowButton.png" height="180px" /></a>
+  <a href="https://smarthomeguys.uk/products/deskup-pro" target="_blank"><img src="images/SmartHomeGuys-BuyNowButton-Transparent3.png" height="180px" /></a>
 </p>
 
 ## What is shown in Home Assistant
@@ -123,7 +123,7 @@ However if you would prefer to avoid:
 And would simply like to get a device pre-built, in a box that you can plug in to your desk and be automating it in 10 minutes then you can purchase one from our store.
 
 <p align="center">
-  <a href="https://smarthomeguys.uk/products/deskup-pro" target="_blank"><img src="images/SmartHomeGuys-BuyNowButton.png" height="180px" />
+  <a href="https://smarthomeguys.uk/products/deskup-pro" target="_blank"><img src="images/SmartHomeGuys-BuyNowButton-Transparent3.png" height="180px" />
 </p>
 
 

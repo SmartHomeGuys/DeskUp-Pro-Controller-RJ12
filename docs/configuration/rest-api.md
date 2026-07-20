@@ -26,7 +26,6 @@ Sensors
 - [Get desk Firmware](#get-desk-firmware)
 
 Buttons
-- [Move the desk to the specified height](#move-the-desk-to-the-specified-height)
 - [Press preset button M1, M2, M3, M4 on the desk](#press-preset-button-m1-m2-m3-m4-on-the-desk)
 - [Press Nudge Down button on the desk](#press-nudge-down-button-on-the-desk)
 - [Press Nudge Up button on the desk](#press-nudge-up-button-on-the-desk)
@@ -39,6 +38,7 @@ Buttons
 
 Number Controls
 - [Get Desk Height](#get-desk-height-1)
+- [Set Desk Height](#set-desk-height)
 - [Get Desk Min Height (as specified in configuration field)](#get-desk-min-height-as-specified-in-configuration-field)
 - [Set Desk Min Height (in configuration field)](#set-desk-min-height-in-configuration-field)
 - [Get Desk Max Height (as specified in configuration field)](#get-desk-max-height-as-specified-in-configuration-field)
@@ -171,16 +171,6 @@ Response
 
 ## Button Controls
 
-### Move the desk to the specified height
-```
-POST http://<ipnumberhere>/number/Desk Height/set?value=80
-```
-Response
-```
-No data returned just a 200 OK status
-```
-
-
 ### Press preset button M1, M2, M3, M4 on the desk
 ```
 POST http://<ipnumberhere>/button/Desk M1/press
@@ -287,6 +277,15 @@ Response
   "value": "102.0",
   "state": "102.0 cm"
 }
+```
+
+### Set Desk Height
+```
+POST http://<ipnumberhere>/number/Desk Height/set?value=80
+```
+Response
+```
+No data returned just a 200 OK status
 ```
 
 ### Get Desk Min Height (as specified in configuration field)

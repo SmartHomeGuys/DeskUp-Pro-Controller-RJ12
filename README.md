@@ -19,8 +19,8 @@ Images below show DeskUp Pro v2. The original v1 will always remain open source 
 
 
 <p align="center">
-  <img src="images/DeskUpProv2_ontable.png" height="180px" />
-  <img src="images/DeskUpProV2-UnderDesk.jpg" height="180px" />
+  <img src="images/DeskUpProv2_ontable.png" height="220px" />
+  <img src="images/DeskUpProV2-UnderDesk.jpg" height="220px" />
 </p>
 <p align="center">
   <a href="https://smarthomeguys.uk/products/deskup-pro" target="_blank"><img src="images/SmartHomeGuys-BuyNowButton-Transparent3.png" height="180px" /></a>

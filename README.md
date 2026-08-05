@@ -15,13 +15,18 @@ DeskUp Pro has full integration with Home Assistant but any smart home hub that 
 
 All the existing functionality of the desk's controller is retained.  Connect the DeskUp Pro to Wi-Fi, plug it into your desk controller and control your desk from your smart home system.
 
+Images below show DeskUp Pro v2. The original v1 will always remain open source to DIY (See the "Prefer to build one yourself" section below).
+
+
 <p align="center">
-  <img src="images/DeskUpPro-Top-with-madeforesphome.jpg" height="180px" />
-  <img src="images/DeskUpPro-UnderDesk.jpg" height="180px" />
+  <img src="images/DeskUpProv2_ontable.png" height="180px" />
+  <img src="images/DeskUpProV2-UnderDesk.jpg" height="180px" />
 </p>
 <p align="center">
   <a href="https://smarthomeguys.uk/products/deskup-pro" target="_blank"><img src="images/SmartHomeGuys-BuyNowButton-Transparent3.png" height="180px" /></a>
 </p>
+
+
 
 ## What is shown in Home Assistant
 <p align="center">
@@ -32,6 +37,11 @@ All the existing functionality of the desk's controller is retained.  Connect th
 </p>
 
 34 entities are exposed in Home Assistant that let you control every function of the DeskUp pro.
+
+## Homey Pro App (coming soon to the app store Aug/Sept 2026)
+<p align="center">
+  <img src="images/DeskUpPro-Homey.png" height="350px" />
+</p>
 
 ## Other smart home systems can use the built in Web Interface and its Rest API
 <p align="center">
@@ -72,24 +82,19 @@ If you need help to determine if your desk might be compatible the community sit
 
 ### Specs
 - The firmware of the DeskUp Pro is based on ESPHome
-- The device itself uses an ESP32-S3 or the newer ESP32-C6 chip that is powered by the desk's controller over the RJ12 Cable, so no USB cable is needed to power it.
+- The device itself can use an ESP32-S3 or the newer ESP32-C6 chip that is powered by the desk's controller over the RJ12 Cable, so no USB cable is needed to power it.
 - Has a USB-C port for setup.
 - Wi-Fi protocol used is 2.4ghz.
 - Initial setup of the device to connect it to Wi-Fi can be done using a USB-C cable, Bluetooth (if you use Home Assistant and have a Bluetooth proxy).
 
 ### More Product Images and Dimensions
 <p align="center">
-  <img src="images/DeskUpPro-C6-Front.jpg" height="150px" />
-  <img src="images/DeskUpPro-Rear.JPG" height="150px" />
-  <img src="images/DeskUpPro-C6-Bottom.jpg" height="150px" />
-</p>
-<p align="center">
-  <img src="images/DeskUpPro-C6-WireFrame.png" height="350px" />
+  <img src="images/DeskUpProV2-Wireframe3.JPG" height="200px" />
 </p>
 
 
 ### What's in the box if I bought one?
-- DeskUp Pro device with attached RJ12 cable flashed with the latest firmware
+- DeskUp Pro device with RJ12 cable flashed with the latest firmware
 - Housed in a 3D printed case
 - Getting started guide
 
@@ -107,7 +112,12 @@ Plus in this repository you will find:
 
 
 ## Prefer to build one yourself 
-In this Github repository you can find everything to do just that:
+<p align="center">
+  <img src="images/DeskUpPro-C6-Front.jpg" height="150px" />
+</p>
+
+DeskUp Pro v1 (shown above) will always remain open source and in this Github repository you can find:
+
 - Instructions on how to build/wire up the ESP32.
 - The full source code to control the desk wriiten using community reverse engineered desk logic (from multiple git repos) we pulled together what we thought were the best bits into this project.
 - We decided to make this a yaml only version of the code to make it easier for non c++ programmers to understand and change.
@@ -117,10 +127,10 @@ In this Github repository you can find everything to do just that:
 However if you would prefer to avoid:
 - Buying the parts
 - Soldering it all together
-- 3d printing a case
+- Designing or purchasing a 3d printed a case
 - Downloading & flashing the firmware
 
-And would simply like to get a device pre-built, in a box that you can plug in to your desk and be automating it in 10 minutes then you can purchase one from our store.
+And would simply like to get the latest v2 device pre-built, in a box that you can plug in to your desk and be automating it in 5 minutes then you can purchase one from our store.
 
 <p align="center">
   <a href="https://smarthomeguys.uk/products/deskup-pro" target="_blank"><img src="images/SmartHomeGuys-BuyNowButton-Transparent3.png" height="180px" /></a>

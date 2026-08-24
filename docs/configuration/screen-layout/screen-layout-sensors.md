@@ -3,10 +3,10 @@
 <table border="0">
   <tr><th>Home Assistant</th><th>Homey Pro</th></tr>
   <tr>
-    <td>
+    <td valign="top">
       <img src="images/DeskUpPro-Sensors-black.jpg" width="500px">
     </td>
-    <td>
+    <td valign="top">
       <img src="images/Homey-Sensors.jpg" width="400px">
     </td>
   </tr>

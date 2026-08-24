@@ -5,10 +5,10 @@ Before using your DeskUp Pro you need to configure the min & max height values f
 <table border="0">
   <tr><th>Home Assistant</th><th>Homey Pro</th></tr>
   <tr>
-    <td>
+    <td valign="top">
       <img src="images/DeskUp-Pro-Configuration-black4.jpg" width="500px">
     </td>
-    <td>
+    <td valign="top">
       <img src="images/Homey-DeskUp-Pro-Configuration.jpg" width="400px">
       <img src="images/Homey-Maintenance-Screen.jpg" width="400px">
     </td>

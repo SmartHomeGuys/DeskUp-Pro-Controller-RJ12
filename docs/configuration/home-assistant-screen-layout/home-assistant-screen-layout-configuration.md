@@ -1,4 +1,4 @@
-# Home Assistant Screen Layout - What it all does - Configuration 
+# Home Assistant & Homey Pro Screen Screen Layout - What it all does - Configuration 
 
 Before using your DeskUp Pro you need to configure the min & max height values for your desk:
 

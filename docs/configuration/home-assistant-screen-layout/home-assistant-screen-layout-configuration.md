@@ -39,7 +39,7 @@ You should change this to either:
     
   - Or set the desk to be the maximum height you will use on a day to day basis.
 
-    Doing this gives you a better experience when using the cover slider in Home Assistant as this has go up (100%) & go down (0%) buttons.
+    Doing this gives you a better experience when using the cover slider as this has go up (100%) & go down (0%) buttons.
 
     _Note: This does not prevent you using memory preset buttons or nudge up/down controls to move the desk outside of this range._
 

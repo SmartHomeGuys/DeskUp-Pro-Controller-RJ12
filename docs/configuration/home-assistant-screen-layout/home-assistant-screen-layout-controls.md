@@ -1,11 +1,21 @@
-# Home Assistant Screen Layout - What it all does - Controls
+# Home Assistant & Homey Pro Screen Layout - What it all does - Controls
 
-All these controls can be pressed in a Home Assistant automation.
+All these controls can be pressed in automations.
 
-![](images/DeskUpPro-Controls-black.jpg)
+<table border="0">
+  <tr><th>Home Assistant</th><th>Homey Pro</th></tr>
+  <tr>
+    <td>
+      <img src="images/DeskUpPro-Controls-black.jpg" width="400px">
+    </td>
+    <td>
+      <img src="images/Homey-Controls.jpg" width="400px">
+    </td>
+  </tr>
+</table>
 
 ### Desk Height (defaults to cm)
-Shows the height of the desk that is being returned from the desk's controller. But also let's you set the height of the desk using the slider or from a Home Assistant automation.
+Shows the height of the desk that is being returned from the desk's controller. But also let's you set the height of the desk using the slider or from an automation.
 
 
 ### Desk M1, M2, M3, M4 Buttons
@@ -26,16 +36,14 @@ This is used by the DeskUp Pro firmware only to detect if it is not connected to
 Is not exposed to Home Assistant as a control because C6 chips only support a single colour. It slowly flashes yellow when disconnected from Wi-Fi or disconnected from Home Assistant.  If everything is connected ok it turns off.
 
 ### Height Slider
-This is a Home Assistant Cover (currently there is no control in Home Assistant specifically for desks).
-
 It uses the desk height percent sensor to determine its value (0% to 100%).
 
 You can control the desk using the cover slider.
 
-An added benefit of having a Cover entity exposed to Home Assistant is it can also be integrated to Google Home where the desk can be controlled by voice. See the [example automations](home-assistant-automations.md) page for an example of this bring used.
+An added benefit of having a Cover entity exposed to Home Assistant and Homey Pro is it can also be integrated to Google Home where the desk can be controlled by voice. See the [example automations](home-assistant-automations.md) page for an example of this being used in Home Assistant.
 
 
 ### Reset Idle Time 
 When pressed sets the Idle Time sensor back to 0.
 
-See the [example automations](home-assistant-automations.md) page for an example of this bring used.
+See the [example automations](home-assistant-automations.md) page for an example of this being used in Home Assistant.

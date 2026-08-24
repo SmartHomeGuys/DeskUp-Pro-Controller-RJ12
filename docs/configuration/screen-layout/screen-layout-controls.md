@@ -5,10 +5,10 @@ All these controls can be pressed in automations.
 <table border="0">
   <tr><th>Home Assistant</th><th>Homey Pro</th></tr>
   <tr>
-    <td>
+    <td valign="top">
       <img src="images/DeskUpPro-Controls-black.jpg" width="400px">
     </td>
-    <td>
+    <td valign="top">
       <img src="images/Homey-Controls.jpg" width="400px">
     </td>
   </tr>

@@ -2,7 +2,7 @@
 
 Before you use the DeskUp Pro make sure to specify your desks min / max physical limits and familiarise yourself with the screen layout here:
 
-[Screen Layout and what it all does](home-assistant-screen-layout/README.md)
+[Screen Layout and what it all does](screen-layout/README.md)
 
 [Firmware Updates](firmware-updates.md)
 
@@ -16,7 +16,7 @@ Before you use the DeskUp Pro make sure to specify your desks min / max physical
 # Configure and use the DeskUp Pro with another Smart Home Hub
 
 Before you use the DeskUp Pro make sure to specify your desks min / max physical limits using the built in Web server.  
-[Read this page on why this is important](home-assistant-screen-layout/screen-layout-configuration.md#max-height-defaults-to-cm).
+[Read this page on why this is important](screen-layout/screen-layout-configuration.md#max-height-defaults-to-cm).
 You can also control every aspect of the DeskUp Pro with this interface.
 
 To open the DeskUp Pro web interface enter this in a web browser: 

@@ -1,9 +1,11 @@
-# Configure the DeskUp Pro in Home Assistant
+# Configure the DeskUp Pro in Home Assistant & Homey Pro
 
 Before you use the DeskUp Pro make sure to specify your desks min / max physical limits and familiarise yourself with the screen layout here:
 
 [Screen Layout and what it all does](home-assistant-screen-layout/README.md)
 
+
+# Home Assistant 
 [Firmware Updates](firmware-updates.md)
 
 [Example Dashboard](home-assistant-dashboard.md)

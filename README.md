@@ -38,7 +38,7 @@ Images below show DeskUp Pro v2. The original v1 will always remain open source 
 
 34 entities are exposed in Home Assistant that let you control every function of the DeskUp pro.
 
-## Homey Pro App (coming soon to the app store Aug/Sept 2026)
+## Homey Pro App (coming soon to the app store Sept 2026)
 <p align="center">
   <img src="images/DeskUpPro-Homey.png" height="350px" />
 </p>

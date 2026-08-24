@@ -2,7 +2,17 @@
 
 Before using your DeskUp Pro you need to configure the min & max height values for your desk:
 
-![](images/DeskUp-Pro-Configuration-black4.jpg)
+<table border="0">
+  <tr><th>Home Assistant</th><th>Homey Pro</th></tr>
+  <tr>
+    <td>
+      <img src="images/DeskUp-Pro-Configuration-black4.jpg">
+    </td>
+    <td>
+      <img src="images/Homey-DeskUp-Pro-Configuration.jpg">
+    </td>
+  </tr>
+</table>
 
 ### Calibrate Fully Jarvis Desk Button
 

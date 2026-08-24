@@ -37,3 +37,12 @@ If if still doesn't work then you can modify the Wi-Fi configuration yourself on
 ### 2. Fully Jarvis Desk Memory Height Sensors are showing the wrong value
 
 This is a known issue where these desks do not use cm for these sensors but motor steps.  But you can calibrate the Jarvis Desk by following [this guide](troubleshooting/calibrate-fully-jarvis-desk.md)
+
+### 3. Desk moves but stops after a very short distance
+Some desks respond to a command in Home Assistant but stop after moving a very short distance. 
+
+This is not a bug in the DeskUp Pro but a configuration change that is needed on your desks controller to switch it to one-touch mode. To do this you need to have a controller with a display and not an up/down rocker. See these links for more details:
+
+<a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/blob/main/docs/compatibility.md#boho-office-basic-line">Boho Office</a>
+<br />
+<a href="https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/blob/main/docs/compatibility.md#hibitaro-komfort-m708">Hibitaro Komfort</a>

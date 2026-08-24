@@ -1,6 +1,16 @@
-# Home Assistant Screen Layout - What it all does - Diagnostics
+# Home Assistant & Homey Pro Screen Layout - What it all does - Diagnostics
 
-![](images/DeskUp-Pro-Diagnostics-black4.jpg)
+<table border="0">
+  <tr><th>Home Assistant</th><th>Homey Pro</th></tr>
+  <tr>
+    <td>
+      <img src="images/DeskUp-Pro-Diagnostics-black4.jpg" width="500px">
+    </td>
+    <td>
+      <img src="images/Homey-Maintenance-Screen.jpg" width="400px">
+    </td>
+  </tr>
+</table>
 
 ### ESP32 Restart
 Pressing this will reboot the device.

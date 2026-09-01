@@ -30,7 +30,7 @@ Below is a list of desks we know should be compatible but any desk with an RJ11 
 - Desktronic Home One
 - Desktronic Pro
 - Boho Office Basic Line
-- Jiecang JCB35M11C, JCHT35K72C, JCB36N2CA-230, JCB36N2HAG-230, JCHT35K9-003-v4, JCB36NE2 (so probably any Jiecang might work)
+- Jiecang JCB35M11C, JCHT35K72C, JCB36N2CA-230, JCB36N2HAG-230, JCHT35K9-003-v4, JCB36NE2, JBC36M (so probably any Jiecang might work)
 - Desktopia Pro X
 - IKEA Uppspel
 - Omnidesk

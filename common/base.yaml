@@ -70,6 +70,30 @@ uart:
 
             if (direction == UART_DIRECTION_RX) 
             {
+              // Frames this parser does not handle, logged so replies to newly tried
+              // commands can be identified instead of being dropped silently.
+              {
+                uint8_t op = bytes.size() > 2 ? bytes[2] : 0x00;
+                bool known = (bytes.size() == 9  && op == 0x01) ||
+                             (bytes.size() == 8  && (op == 0x25 || op == 0x26 || op == 0x27 || op == 0x28)) ||
+                             (bytes.size() == 10 && op == 0x07);
+                if (!known)
+                {
+                  std::string hex;
+                  for (auto b : bytes) hex += str_sprintf("%02X ", b);
+                  ESP_LOGI("rx", "unhandled %d-byte frame: %s", (int) bytes.size(), hex.c_str());
+
+                  // Soft limit replies. Payload layout is unconfirmed, so show the two
+                  // encodings this controller is known to use and let the desk travel decide.
+                  if ((op == 0x20 || op == 0x21 || op == 0x22) && bytes.size() >= 8)
+                  {
+                    double raw = (bytes[4] * 256) + bytes[5];
+                    ESP_LOGI("rx", "  limit 0x%02X bytes[4..5] raw=%.0f -> %.2f cm as mm, %.2f cm as tenths-inch",
+                             op, raw, raw / 10.0, raw * 0.254);
+                  }
+                }
+              }
+
               // Converts a raw Jiecang height word to cm for the "Fully Jarvis" variant.
               // The live height message and the preset height messages carry the same
               // encoding, so both call this. See docs/diy/desk-hex-codes.md.
@@ -387,6 +411,23 @@ script:
             // Gets all Preset Height Memory settings & Height which also triggers sensors to update
             else if(cmd == "getAllHeightSettings")
               return { 0xF1, 0xF1, 0x07, 0x00, 0x07, 0x7E };   
+
+            // Soft limits are stored in the desk controller and constrain the handset too.
+            // 0x21 and 0x22 take no payload: the desk uses its current height.
+            else if(cmd == "readsoftlimits")
+              return { 0xF1, 0xF1, 0x20, 0x00, 0x20, 0x7E };
+
+            else if(cmd == "setsoftmax")
+              return { 0xF1, 0xF1, 0x21, 0x00, 0x21, 0x7E };
+
+            else if(cmd == "setsoftmin")
+              return { 0xF1, 0xF1, 0x22, 0x00, 0x22, 0x7E };
+
+            else if(cmd == "clearsoftmax")
+              return { 0xF1, 0xF1, 0x23, 0x01, 0x01, 0x25, 0x7E };
+
+            else if(cmd == "clearsoftmin")
+              return { 0xF1, 0xF1, 0x23, 0x01, 0x02, 0x26, 0x7E };
 
             else if(cmd == "getPhysicalDeskLimits")
               return { 0xF1, 0xF1, 0x0C, 0x00, 0x0C, 0x7E };
@@ -839,6 +880,92 @@ button:
         - script.execute: 
             id: script_send_desk_command
             cmd: "getAllHeightSettings"
+
+  - platform: template
+    name: "Read Soft Limits"
+    id: "button_read_soft_limits"
+    icon: mdi:arrow-expand-vertical
+    entity_category: config
+    disabled_by_default: False
+    on_press:
+      then:
+        - logger.log: "Read Soft Limits pressed"
+        - script.execute:
+            id: script_send_desk_command
+            cmd: "readsoftlimits"
+
+
+  - platform: template
+    name: "Set Soft Max To Current Height"
+    id: "button_set_soft_max"
+    icon: mdi:arrow-collapse-up
+    entity_category: config
+    disabled_by_default: False
+    on_press:
+      then:
+        - logger.log: "Set Soft Max To Current Height pressed"
+        - script.execute:
+            id: script_send_desk_command
+            cmd: "setsoftmax"
+        - delay: 400ms
+        - script.execute:
+            id: script_send_desk_command
+            cmd: "readsoftlimits"
+
+
+  - platform: template
+    name: "Set Soft Min To Current Height"
+    id: "button_set_soft_min"
+    icon: mdi:arrow-collapse-down
+    entity_category: config
+    disabled_by_default: False
+    on_press:
+      then:
+        - logger.log: "Set Soft Min To Current Height pressed"
+        - script.execute:
+            id: script_send_desk_command
+            cmd: "setsoftmin"
+        - delay: 400ms
+        - script.execute:
+            id: script_send_desk_command
+            cmd: "readsoftlimits"
+
+
+  - platform: template
+    name: "Clear Soft Max"
+    id: "button_clear_soft_max"
+    icon: mdi:arrow-expand-up
+    entity_category: config
+    disabled_by_default: False
+    on_press:
+      then:
+        - logger.log: "Clear Soft Max pressed"
+        - script.execute:
+            id: script_send_desk_command
+            cmd: "clearsoftmax"
+        - delay: 400ms
+        - script.execute:
+            id: script_send_desk_command
+            cmd: "readsoftlimits"
+
+
+  - platform: template
+    name: "Clear Soft Min"
+    id: "button_clear_soft_min"
+    icon: mdi:arrow-expand-down
+    entity_category: config
+    disabled_by_default: False
+    on_press:
+      then:
+        - logger.log: "Clear Soft Min pressed"
+        - script.execute:
+            id: script_send_desk_command
+            cmd: "clearsoftmin"
+        - delay: 400ms
+        - script.execute:
+            id: script_send_desk_command
+            cmd: "readsoftlimits"
+
 
   - platform: template
     name: "Send Heights to Log"

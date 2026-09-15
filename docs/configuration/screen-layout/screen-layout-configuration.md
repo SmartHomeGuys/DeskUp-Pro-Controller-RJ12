@@ -17,7 +17,7 @@ Before using your DeskUp Pro you need to configure the min & max height values f
 
 ### Calibrate Fully Jarvis Desk Button
 
-Fully Jarvis desks need to use a different calculation for the 4 Preset Memory Sensors (M1, M2, M3, M4) to display the correct cm values.  This button lets you 'calibrate' your desk so it can use that calculation, see [this page for calibration instructions](../setup/troubleshooting/calibrate-fully-jarvis-desk.md).
+Fully Jarvis desks need to use a different calculation for the 4 Preset Memory Sensors (M1, M2, M3, M4) to display the correct cm values.  This button lets you 'calibrate' your desk so it can use that calculation, see [this page for calibration instructions](../../setup/troubleshooting/calibrate-fully-jarvis-desk.md).
 
 ### Desk Control Code Variant
 

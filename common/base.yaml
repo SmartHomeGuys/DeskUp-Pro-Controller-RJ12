@@ -75,22 +75,15 @@ uart:
               {
                 uint8_t op = bytes.size() > 2 ? bytes[2] : 0x00;
                 bool known = (bytes.size() == 9  && op == 0x01) ||
-                             (bytes.size() == 8  && (op == 0x25 || op == 0x26 || op == 0x27 || op == 0x28)) ||
+                             (bytes.size() == 8  && (op >= 0x25 && op <= 0x28)) ||
+                             (bytes.size() == 8  && (op == 0x21 || op == 0x22)) ||
+                             (bytes.size() == 7  && op == 0x20) ||
                              (bytes.size() == 10 && op == 0x07);
                 if (!known)
                 {
                   std::string hex;
                   for (auto b : bytes) hex += str_sprintf("%02X ", b);
                   ESP_LOGI("rx", "unhandled %d-byte frame: %s", (int) bytes.size(), hex.c_str());
-
-                  // Soft limit replies. Payload layout is unconfirmed, so show the two
-                  // encodings this controller is known to use and let the desk travel decide.
-                  if ((op == 0x20 || op == 0x21 || op == 0x22) && bytes.size() >= 8)
-                  {
-                    double raw = (bytes[4] * 256) + bytes[5];
-                    ESP_LOGI("rx", "  limit 0x%02X bytes[4..5] raw=%.0f -> %.2f cm as mm, %.2f cm as tenths-inch",
-                             op, raw, raw / 10.0, raw * 0.254);
-                  }
                 }
               }
 
@@ -184,10 +177,12 @@ uart:
               }
               else if (bytes.size() == 8)    // Only parse messages with 8 bytes.
               {
-                if (bytes[0] == 0xF2 && bytes[1] == 0xF2 && bytes[7] == 0x7E)
+                uint8_t command  = bytes[2];
+                bool isPreset    = (command >= 0x25 && command <= 0x28);
+                bool isSoftLimit = (command == 0x21 || command == 0x22);
+
+                if (bytes[0] == 0xF2 && bytes[1] == 0xF2 && bytes[7] == 0x7E && (isPreset || isSoftLimit))
                 {
-                  uint8_t command = bytes[2];
-                  
                   double rawHeight = ((bytes[4] * 256) + bytes[5]);
                   double height = rawHeight / 10.0;                   // Default to cm
                   
@@ -221,7 +216,7 @@ uart:
                         }
                       }
 
-                      height = jarvisRawToCm(rawHeight, "preset height");
+                      height = jarvisRawToCm(rawHeight, isSoftLimit ? "soft limit" : "preset height");
                     }
                   }
 
@@ -234,6 +229,25 @@ uart:
                     id(sensor_deskm3).publish_state(height);
                   else if(command == 0x28)
                     id(sensor_deskm4).publish_state(height);
+                  else if(command == 0x21)
+                    id(sensor_desk_soft_max).publish_state(height);
+                  else if(command == 0x22)
+                    id(sensor_desk_soft_min).publish_state(height);
+                }
+              }
+              else if (bytes.size() == 7)        // Soft limit status, e.g. F2 F2 20 01 10 31 7E
+              {
+                if (bytes[0] == 0xF2 && bytes[1] == 0xF2 && bytes[2] == 0x20 && bytes[6] == 0x7E)
+                {
+                  // One status byte. Low bit means a max limit exists, high nibble a min limit.
+                  bool maxSet = (bytes[4] & 0x01) != 0;
+                  bool minSet = (bytes[4] >> 4) != 0;
+                  ESP_LOGI("custom", "Desk soft limits status 0x%02X: max %s, min %s", bytes[4],
+                           maxSet ? "set" : "not set", minSet ? "set" : "not set");
+
+                  // A value only follows for a limit that is set, so clear the other one.
+                  if (!maxSet) id(sensor_desk_soft_max).publish_state(NAN);
+                  if (!minSet) id(sensor_desk_soft_min).publish_state(NAN);
                 }
               }
               else if (bytes.size() == 10)       // Only parse messages with 10 bytes
@@ -615,6 +629,23 @@ sensor:
     unit_of_measurement: "cm"
     accuracy_decimals: 1
     icon: mdi:numeric-4-circle-outline
+
+  # Soft travel limits stored in the desk controller. Unknown when not set.
+  - platform: template
+    name: "Desk Soft Min Height"
+    id: "sensor_desk_soft_min"
+    unit_of_measurement: "cm"
+    accuracy_decimals: 1
+    icon: mdi:arrow-collapse-down
+    update_interval: never
+
+  - platform: template
+    name: "Desk Soft Max Height"
+    id: "sensor_desk_soft_max"
+    unit_of_measurement: "cm"
+    accuracy_decimals: 1
+    icon: mdi:arrow-collapse-up
+    update_interval: never
 
   # Display desk idle time (in seconds) which can then be used in homeassistant  automations
   # The value for this is populated when the 'Idle Timestamp' text_sensor's value changes

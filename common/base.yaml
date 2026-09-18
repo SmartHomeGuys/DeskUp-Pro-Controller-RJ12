@@ -222,7 +222,7 @@ script:
             daystr = to_string(days) + " days, ";
           }
 
-          std::string value = (std::string)str_sprintf("%s%02d:%02d:%02d", daystr.c_str(), hours, minutes, seconds);
+          std::string value = (std::string)str_sprintf("%s%02d:%02d:%02d", daystr.c_str(), hours, minutes, (int)seconds);
 
           id(sensor_desk_idle_timestamp).publish_state(value);
 
@@ -350,12 +350,12 @@ script:
               }
             }
           
-            auto deskControlCodeVariant = "Default";
+            std::string deskControlCodeVariant = "Default";
             if(id(select_desk_control_code_variant).has_state() )
             {
               // Check which desk control code variant is configured 
               deskControlCodeVariant = id(select_desk_control_code_variant).current_option().c_str();
-              ESP_LOGD("custom", "Using desk control code variant: %s", deskControlCodeVariant);
+              ESP_LOGD("custom", "Using desk control code variant: %s", deskControlCodeVariant.c_str());
             }
 
             // Send the command to the desk controller

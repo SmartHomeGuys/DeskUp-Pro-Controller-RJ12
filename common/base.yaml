@@ -70,13 +70,91 @@ uart:
 
             if (direction == UART_DIRECTION_RX) 
             {
+              // Converts a raw Jiecang height word to cm for the "Fully Jarvis" variant.
+              // The live height message and the preset height messages carry the same
+              // encoding, so both call this. See docs/diy/desk-hex-codes.md.
+              auto jarvisRawToCm = [&](double rawHeight, const char *source) -> double
+              {
+                double minSteps  = id(min_motor_steps);
+                double maxSteps  = id(max_motor_steps);
+                double minHeight = id(min_physical_height);
+                double maxHeight = id(max_physical_height);
+
+                // Travel the desk reported for itself, if the limits reply has been seen.
+                double physMin = id(desk_phys_min_cm);
+                double physMax = id(desk_phys_max_cm);
+                bool limitsKnown = (physMin > 0 && physMax > physMin);
+                auto fitsTravel = [&](double cm) {
+                  return cm >= physMin - 2.0 && cm <= physMax + 2.0;
+                };
+
+                // A usable calibration needs both ends captured, the raw count rising with
+                // height, and a scale matching one of the encodings this protocol uses:
+                // 10 counts per cm for mm, 3.94 for tenths of an inch. Anything else means a
+                // preset was not parked where the calibration procedure expects.
+                double countsPerCM = (maxSteps > minSteps && maxHeight > minHeight)
+                                       ? (maxSteps - minSteps) / (maxHeight - minHeight)
+                                       : 0.0;
+
+                if ((countsPerCM > 3.0 && countsPerCM < 4.9) ||
+                    (countsPerCM > 8.0 && countsPerCM < 12.0))
+                {
+                  double height = ((rawHeight - minSteps) / countsPerCM) + minHeight;
+                  if (!limitsKnown || fitsTravel(height))
+                  {
+                    ESP_LOGI("custom", "Fully Jarvis %s raw=%.0f, mode=calibrated, countsPerCM=%.4f, converted=%.2f cm", source, rawHeight, countsPerCM, height);
+                    return height;
+                  }
+                  ESP_LOGW("custom", "Fully Jarvis %s raw=%.0f calibrates to %.2f cm, outside the desk travel %.1f-%.1f cm. Ignoring the calibration.", source, rawHeight, height, physMin, physMax);
+                }
+
+                // The controller reports mm or tenths of an inch depending on its UNITS setting.
+                // When the desk has told us its travel, only one of the two readings can land
+                // inside it, so no threshold is needed and a UNITS change is followed on the
+                // next message.
+                double asInch = rawHeight * 0.254;
+                double asMm   = rawHeight / 10.0;
+
+                if (limitsKnown && fitsTravel(asInch) != fitsTravel(asMm))
+                {
+                  bool inch = fitsTravel(asInch);
+                  double height = inch ? asInch : asMm;
+                  ESP_LOGI("custom", "Fully Jarvis %s raw=%.0f, mode=%s (desk travel %.1f-%.1f cm), converted=%.2f cm", source, rawHeight, inch ? "tenths-inch" : "mm", physMin, physMax, height);
+                  return height;
+                }
+
+                // No limits reply yet, or both readings fit. Fall back to the documented
+                // ranges, which are 650..1290 for mm and 240..530 for tenths of an inch.
+                if (rawHeight > 0 && rawHeight < 600)
+                {
+                  double height = rawHeight * 0.254;
+                  ESP_LOGI("custom", "Fully Jarvis %s raw=%.0f, mode=tenths-inch, converted=%.2f cm (uncalibrated, min steps: %.0f, max steps: %.0f)", source, rawHeight, height, minSteps, maxSteps);
+                  return height;
+                }
+
+                double height = rawHeight / 10.0;
+                ESP_LOGI("custom", "Fully Jarvis %s raw=%.0f, mode=mm, converted=%.2f cm (uncalibrated, min steps: %.0f, max steps: %.0f)", source, rawHeight, height, minSteps, maxSteps);
+                return height;
+              };
+
               if (bytes.size() == 9)      // Only parse messages with 9 bytes.
               {
                 // Check that it is a height message (byte 2 should be 0x01)
                 if (bytes[0] == 0xF2 && bytes[1] == 0xF2 && bytes[2] == 0x01 && bytes[8] == 0x7E) 
                 {
                   // Desk changed height
-                  double height = ((bytes[4] * 256) + bytes[5]) /10.0;  // Default to cm
+                  double rawHeight = ((bytes[4] * 256) + bytes[5]);
+                  double height = rawHeight / 10.0;  // Default to cm
+
+                  std::string deskControlCodeVariant = "Default";
+                  if(id(select_desk_control_code_variant).has_state() ) {
+                    deskControlCodeVariant = id(select_desk_control_code_variant).current_option().c_str();
+
+                    if (deskControlCodeVariant == "Fully Jarvis") {
+                      height = jarvisRawToCm(rawHeight, "live height");
+                    }
+                  }
+
                   id(number_deskHeight).publish_state(height);
                 }
               }
@@ -119,12 +197,7 @@ uart:
                         }
                       }
 
-                      // Not in calibration mode so do the calculation
-                      double countsPerCM = (id(max_motor_steps) - id(min_motor_steps)) / (id(max_physical_height) - id(min_physical_height));
-                      height = ((rawHeight - id(min_motor_steps)) / countsPerCM) + id(min_physical_height);
-                    
-                      ESP_LOGI("custom", "Fully Jarvis Calculation countsPerCM: %f, min motor steps: %f, max motor steps: %f, min physical height: %f, max physical height: %f", countsPerCM, id(min_motor_steps), id(max_motor_steps), id(min_physical_height), id(max_physical_height));
-                      ESP_LOGI("custom", "Fully Jarvis Calculation Height is: %f", height);
+                      height = jarvisRawToCm(rawHeight, "preset height");
                     }
                   }
 
@@ -148,7 +221,17 @@ uart:
                   // Phyisical Min/Max Desk Height Message e.g. F2 F2 07 04 04 EF 02 6C 6C 7E
                   double minHeight = ((bytes[6] * 256) + bytes[7]) /10.0;     // Default to cm
                   double maxHeight = ((bytes[4] * 256) + bytes[5]) /10.0;     // Default to cm
-                  ESP_LOGI("custom", "Desk Physical Min / Max Height Message Received with values min:%f and max:%f", minHeight, maxHeight);
+                  double rawMin = ((bytes[6] * 256) + bytes[7]);
+                  double rawMax = ((bytes[4] * 256) + bytes[5]);
+                  ESP_LOGI("custom", "Desk Physical Min / Max Height Message Received with values min:%f and max:%f (raw min:%.0f, raw max:%.0f)", minHeight, maxHeight, rawMin, rawMax);
+
+                  // This reply is in mm on every controller seen so far, including one whose
+                  // live height is in tenths of an inch. Keep it only if it describes a desk.
+                  if (minHeight >= 30.0 && minHeight <= 100.0 && maxHeight >= 90.0 && maxHeight <= 200.0 && maxHeight > minHeight)
+                  {
+                    id(desk_phys_min_cm) = minHeight;
+                    id(desk_phys_max_cm) = maxHeight;
+                  }
                 }
               }
             }
@@ -165,6 +248,18 @@ globals:
     type: bool
     restore_value: no
     initial_value: ""
+
+  # Physical travel as reported by the desk (0x07). Used to tell the two live
+  # height encodings apart without guessing at a threshold.
+  - id: desk_phys_min_cm
+    type: double
+    restore_value: yes
+    initial_value: "0"
+
+  - id: desk_phys_max_cm
+    type: double
+    restore_value: yes
+    initial_value: "0"
 
   - id: min_motor_steps
     type: double

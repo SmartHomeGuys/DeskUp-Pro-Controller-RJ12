@@ -62,6 +62,7 @@ Every function of the DeskUp pro can be controlled using its [Api](docs/configur
 - At the end of the working day lower the desk when you turn off the office light or leave the room.
 - Setup a dashboard on your smart home hub so you can have an unlimited number of preset height buttons e.g. maybe each family member prefers a different sit & stand desk height.
 - Want to control your desk from something else then as long as it can either integrate with Home Assistant or call a Rest Api you can.
+- If you work at a company maybe you could automatically raise all the desks in the office to help the cleaners vacuum underneath easier.
 - etc, there are many possibilities.
 
 

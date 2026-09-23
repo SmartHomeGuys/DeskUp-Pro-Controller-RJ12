@@ -19,32 +19,16 @@
 - Copy the changed files from Home Assistant's local folder into the Git folder (locally on a laptop).
 - Update CHANGELOG.md
 - Commit and push to GitHub.
-
-- Copy / Paste the contents of the 'config-to-flash.yaml' over the top of the development DeskUp Pro device in ESPHome.  Keep a copy though as you need to put this back later.
-
-- Run valiate on the development DeskUp Pro device in ESPHome, it should show the new version number as it's pulled from GitHub (after 1 minute).
-
-- Click 'Install' (DO NOT Install onto the device over Wi-Fi) we just need to download the bin files:
-  - Install -> Choose manual download (download both options when prompted, Factory Format and OTA Format). You need to click the 'download' button for the 2nd file.
-
-  - Copy both files from 'downloads' into C:\GitHub\DeskUp-Pro-Controller-RJ12\firmware
-  or C:\GitHub\DeskUp-Pro-Controller-RJ12\firmware-c6
-
-  - Open Powershell and go to that fireware folder.
-  - We need to create an MD5 Hash for the ota file, run this in Powershell:
-
-    (Get-FileHash -Path deskup-pro.ota.bin -Algorithm md5).Hash.ToLower() | Out-File -FilePath firmware.md5 -Encoding ASCII
+- Wait 1 minute for any local GitHub cached files to expire from cache.
 
 
-  - Open VS Code for the Git repo: smarthomeguys.github.io
-  - The 2 bin files and a firmware.md5 file should already be listed under commits. 
-  - Update version number and the md5 hash (found in firmware.md5 file) in the manifest.json file
+- Run powershell command BuildDeskUpProRJ12Release.ps1 found in c:\[userfolder]\esphome
+- This will build a firmware version for all 3 variants (S3, C6, C6 with encryption).
+
+  - In VSCode the 6 bin files and a firmware.md5 file for each should already be listed under commits. 
+  - Update the version number in all 3 manifest json files
   - Wait until the the code changes are committed to Git for 24 hours due to caching in user's Home Assistant's of files downloaded from Git.
-  - Now check these 4 updated files into Git
-
-- Copy the ESPHome contents of the development DeskUp Pro device you saved (somewhere safe) back into ESPHome and save it.
-
-- REPEAT the above for the C6 chip using the c6 folders instead
+  - Now check these updated files into Git
 
 - Draft then publish a new Release version in Github using the changelog notes as its content, making sure to add a tag and setting this as the latest version.
 https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12/releases

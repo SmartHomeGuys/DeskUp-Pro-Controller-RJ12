@@ -5,7 +5,7 @@ substitutions:
 packages:
   device_base:
     url: https://github.com/SmartHomeGuys/DeskUp-Pro-Controller-RJ12
-    files: [common/c6-chip-config.yaml]
+    files: [common/c6-chip-with-encryption-config.yaml]
     ref: main
     refresh: 1min    #forces getting Latest code from github so we flash the latest and not what Homeassistant caches locally
 
@@ -24,10 +24,22 @@ dashboard_import:
   package_import_url: github://SmartHomeGuys/DeskUp-Pro-Controller-RJ12/deskup-pro-controller-c6.yaml@main
   import_full_config: false
 
-# Add OTA Encryption so firmware files are signed by us
+# Add OTA Encryption so firmware files are signed by us (RED EN 18031-1 requirement)
+# signed_ota_verification was added in ESPHome 2026.4.0
 esp32:
   framework:                        
     advanced:
       signed_ota_verification:
         signing_key: ota_signing_key.pem
         signing_scheme: rsa3072
+
+# 10 minutes to connect a powered device to wi-fi via BLE after which Wifi & BLE Improv are shutdown on the device.
+# You then need to power cycle the device to get another 10 minute window
+# This also sets the Api.Encryption.Key when the device first connects to Home Assistant see https://esphome.io/components/provisioning/
+# Added for RED EN 18031-1 compliance
+# The provisioning section was added in ESPHome 2026.7.0
+provisioning:
+  timeout: 10min
+  on_timeout:
+    then:
+      - logger.log: "Provisioning window closed. Power-cycle the device to reopen it."

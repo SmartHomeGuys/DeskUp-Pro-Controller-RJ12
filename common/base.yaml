@@ -19,6 +19,7 @@ packages:
   device_base: !include deployment-config.yaml
 
 esphome:
+  min_version: 2026.7.0
   name: ${name}
   friendly_name: ${friendly_name}
   project:

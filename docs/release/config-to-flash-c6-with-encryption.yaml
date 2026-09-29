@@ -21,7 +21,7 @@ update:
     update_interval: 6h
 
 dashboard_import:
-  package_import_url: github://SmartHomeGuys/DeskUp-Pro-Controller-RJ12/deskup-pro-controller-c6.yaml@main
+  package_import_url: github://SmartHomeGuys/DeskUp-Pro-Controller-RJ12/deskup-pro-controller-c6-with-encryption.yaml@main
   import_full_config: false
 
 # Add OTA Encryption so firmware files are signed by us (RED EN 18031-1 requirement)

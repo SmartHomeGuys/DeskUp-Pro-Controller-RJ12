@@ -1,5 +1,9 @@
 # Using the Rest API
 
+**Unfortunately we had to remove the ESPHome Web server as it does not comply with EN 18031-1 cyber security standards which means the Web UI and API are not available.  This affects devices shipped from 1st October 2026.**
+
+**You can adopt the device in ESPHome yourself and add the web server back in, we just cannot ship devices with it. Instead we will be looking to build native integrations for smart home platforms**
+
 Using the api is fairly simple as long as your using a Smart Home hub that sends local (on your house network) rest api calls.
 
 Smart home hubs that should be able to send local Rest Api requests are:

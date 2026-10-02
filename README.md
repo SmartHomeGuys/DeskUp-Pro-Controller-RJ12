@@ -11,7 +11,7 @@
 
 If your standing desk controller has an RJ11 / RJ12 port use DeskUp Pro to integrate your desk with your smart home automation system to control your standing desk from your phone, dashboards, automations or voice.
 
-DeskUp Pro has full integration with Home Assistant but any smart home hub that can send a Rest Api request is also supported using its [Api](docs/configuration/rest-api.md).
+DeskUp Pro has full integration with Home Assistant with Homey Pro planned.
 
 All the existing functionality of the desk's controller is retained.  Connect the DeskUp Pro to Wi-Fi, plug it into your desk controller and control your desk from your smart home system.
 
@@ -38,18 +38,10 @@ Images below show DeskUp Pro v2. The original v1 will always remain open source 
 
 34 entities are exposed in Home Assistant that let you control every function of the DeskUp pro.
 
-## Homey Pro App (coming soon to the app store Sept 2026)
+## Homey Pro App (coming soon to the app store Q1 2027)
 <p align="center">
   <img src="images/DeskUpPro-Homey.png" height="350px" />
 </p>
-
-## Other smart home systems can use the built in Web Interface and its Rest API
-<p align="center">
-  <img src="images/DeskUpPro-C6-Controls-Web.png" height="350px" width="320px" />
-  <img src="images/WebServer-screen2-black.jpg" height="250px" width="320px" />
-</p>
-
-Every function of the DeskUp pro can be controlled using its [Api](docs/configuration/rest-api.md).
 
 ## Automations you could create for your desk
 - If you're sitting down for too long, then automatically raise the desk to standing height.
@@ -102,15 +94,6 @@ If you need help to determine if your desk might be compatible the community sit
 Plus in this repository you will find:
 - Example Home Assistant [dashboard cards](docs/configuration/home-assistant-dashboard.md).
 - Example Home Assistant [automations](docs/configuration/home-assistant-automations.md).
-- For other smart home systems use our [api documentation](docs/configuration/rest-api.md).
-
-
-### We test every device before we ship it
-- After building a device we flash it with the latest firmware.
-- We plug it into one of our desks and connect it to Home Assistant where we check the device reads the sensor values from the desk and the controls move the desk.
-- We unplug and plug the device back in multiple times to check the cable and components are connected securely.
-- Finally we reflash the firmware and package it up in bubble wrap for shipping.
-
 
 ## Prefer to build one yourself 
 <p align="center">

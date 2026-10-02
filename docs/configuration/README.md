@@ -14,6 +14,9 @@ Before you use the DeskUp Pro make sure to specify your desks min / max physical
 
 
 # Configure and use the DeskUp Pro with another Smart Home Hub
+**Unfortunately we had to remove the ESPHome Web server as it does not comply with EN 18031-1 cyber security standards which means the Web UI and API are not available.  This affects devices shipped from 1st October 2026.**
+
+**You can adopt the device in ESPHome yourself and add the web server back in, we just cannot ship devices with it. Instead we will be looking to build native integrations for smart home platforms**
 
 Before you use the DeskUp Pro make sure to specify your desks min / max physical limits using the built in Web server.  
 [Read this page on why this is important](screen-layout/screen-layout-configuration.md#max-height-defaults-to-cm).

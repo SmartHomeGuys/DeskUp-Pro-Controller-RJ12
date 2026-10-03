@@ -31,10 +31,7 @@ Images below show DeskUp Pro v2. The original v1 will always remain open source 
 
 ## What is shown in Home Assistant
 <p align="center">
-  <img src="images/DeskUpPro-C6-Controls-HomeAssistant.png" height="350px" />
-  <img src="images/DeskUp-Pro-Cover-Slider-black.jpg" height="350px" />
-  <img src="images/DeskUpPro-Sensors-black.jpg" height="350px" />
-  <img src="images/DeskUpPro-Configuration-black.jpg" height="350px" />
+  <img src="images/DeskUpPro-HomeAssistant.png" height="450px" />
 </p>
 
 34 entities are exposed in Home Assistant that let you control every function of the DeskUp pro.

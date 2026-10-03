@@ -17,6 +17,7 @@ All the existing functionality of the desk's controller is retained.  Connect th
 
 Images below show DeskUp Pro v2. The original v1 will always remain open source to DIY (See the "Prefer to build one yourself" section below).
 
+***This repository is for desks with an RJ12 port, if you are looking for the DeskUp Pro for Flexispot desks <a href="https://smarthomeguys.github.io/DeskUp-Pro-Flexispot/">click here</a>.***
 
 <p align="center">
   <img src="images/DeskUpProv2_ontable.png" height="220px" />

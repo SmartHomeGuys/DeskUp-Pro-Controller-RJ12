@@ -21,6 +21,7 @@ Below is a list of desks we know should be compatible but any desk with an RJ11 
 - Maidesite TH2 Plus Art
 - Maidesite T2 Pro
 - Maidesite T2 Pro Plus
+- Maidesite T2 Pro Max
 - Maidesite SC2 Pro
 - Maidesite EL2 Pro Art
 - Maidesite EL2 Plus Art
@@ -63,6 +64,8 @@ These desks should be compatible as they come with this controller. The TH2 Plus
 ![](images/MaidesiteDeskControlBox-Premium.png)
 ![](images/MaidsiteDeskControlBox-Back.jpg)
 
+## Maidsite desks using the Piano controller:
+- T2 Pro Max
 
 ### Maidesite desks using the Standard controller
 These desks should be compatible as they come with this controller:
